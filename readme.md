@@ -10,7 +10,7 @@ what does _baseline_ mean?
 The body of a bella page is divided into 24 parts
 , so you can guess that the _baseline_ is the width 
 of each part, so try set up a suitable number.
-###raw
+### raw
 *raw-{WIDTH}  
 create a raw with width multiplied baseline by _WIDTH_
 *raw-f
