@@ -1,0 +1,67 @@
+@import "general"
+//
+@mixin layout
+  @if $debug == true
+    border: 1px solid $debugred
+
+@mixin center
+  margin: 0 auto
+  float: none !important
+body
+  padding: 0
+  margin: 0
+
+.center
+  margin: 0 auto
+  float: none !important
+.left
+  float: left !important
+.right
+  float: right !important
+.nofloat
+  float: none !important
+
+
+//
+//Create column
+
+//customized column
+
+@for $wid from 1 through 24
+  @for $hei from 1 through 20
+    .col-#{$wid}-#{$hei}
+      @include layout
+      width: $wid * $base
+      height: $hei * $base
+      float: left
+
+//full width column
+
+@for $hei from 1 through 20
+  .col-f-#{$hei}
+    @include layout
+    width: 100%
+    height: $hei * $base
+    float: left
+
+//
+//Create raw
+
+.raw-f
+  @include layout
+  @include center
+  float: left
+  width: 24*$base
+.raw-w
+  @include layout
+  @include center
+  width: 100%
+
+@for $wid from 1 through 24
+  .raw-#{$wid}
+    @include layout
+    width: $wid * $base
+    margin: 0 auto
+    height: auto
+    float: left
+

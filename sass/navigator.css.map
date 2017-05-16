@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAMA,OAAO;EAFH,MAAM,EAAE,iBAAmB;EAI7B,KAAK,EAAE,IAAI;;AACb,UAAU;EACR,OAAO,EAAE,YAAY;;AACvB,aAAa;EAPT,MAAM,EAAE,iBAAmB;EAS7B,OAAO,EAAE,MAAM;;AAEjB,gBAAgB;EAXZ,MAAM,EAAE,iBAAmB;EAa7B,OAAO,EAAE,IAAI",
+"sources": ["navigator.sass"],
+"names": [],
+"file": "navigator.css"
+}

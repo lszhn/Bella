@@ -1,0 +1,16 @@
+.bl-nav {
+  border: 1px solid #cc0033;
+  float: left; }
+
+.bl-nav h1 {
+  display: inline-block; }
+
+.bl-nav ul li {
+  border: 1px solid #cc0033;
+  display: inline; }
+
+.bl-nav ul li ul {
+  border: 1px solid #cc0033;
+  display: none; }
+
+/*# sourceMappingURL=navigator.css.map */

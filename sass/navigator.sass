@@ -1,0 +1,22 @@
+@import "general"
+
+@mixin navigator
+  @if $debug==true
+    border: 1px solid $debugred
+
+.bl-nav
+  @include navigator
+  float: left
+.bl-nav h1
+  display: inline-block
+.bl-nav ul li
+  @include navigator
+  display: inline
+
+.bl-nav ul li ul
+  @include navigator
+  display: none
+
+
+
+
