@@ -1,36 +1,156 @@
+@import "general"
+@import "hljs.default.min.css"
+
+$default-blue: #3884ff
+$default-light-grey: #fafafa
+$default-dark-grey: #555555
+$default-border-grey: #e8eaed
+$default-pink: #ff5252
+$default-bg-grey: #fafafa
+$default-selected-gery: #f8f8f8
+
 @font-face
   src: url("../fonts/MyriadProLight.woff")
   font-family: MyraidProLight
+
 @font-face
   src: url("../fonts/sf-pro-text_regular.woff")
   font-family: SFPro
-body
-  background-color: #eeeeee
+
+@font-face
+  src: url("../fonts/quickstandBold.woff2")
+  font-family: quickstandBold
+@font-face
+  src: url("../fonts/quickstandMed.woff2")
+  font-family: quickstandMed
+@font-face
+  src: url("../fonts/quickstandLight.woff2")
+  font-family: quickstandLight
 *
-  color: #373e40
-  font-family: SFPro
+  font-family: quickstandLight,"PingFang SC","Helvetica Neue",sans-serif
   font-size: 20px
   line-height: 40px
+  font-weight: 400
   margin: 0
   padding: 0
 
-h1
-  font-size: 60px
-  line-height: 80px
-  font-family: MyraidProLight
+*::selection
+  background: rgb(230, 230, 230)
+  color: #1589c9
+
+*::-moz-selection
+  background: rgb(230, 230, 230)
+  color: #1589c9
+body
+  background-color: $default-light-grey
 h2
   font-size: 40px
   line-height: 80px
-  font-family: MyraidProLight
+  color: $default-dark-grey
 h3
   font-size: 35px
   line-height: 40px
-  font-family: MyraidProLight
+
 h4
   font-size: 30px
   line-height: 40px
-  font-family: MyraidProLight
+
 h5
   font-size: 25px
   line-height: 40px
-  font-family: MyraidProLight
+
+.bl-nav
+  text-align: center
+  line-height: 50px
+.bl-nav *
+  font-size: 18px
+  font-family: quickstandLight
+  color: $default-dark-grey
+
+.bl-nav li
+  margin-right: 20px
+  line-height: 50px
+  cursor: pointer
+
+
+.bl-nav li ul *
+  margin: 0 auto
+  font-size: 18px
+  font-weight: bold
+  line-height: 35px
+  padding: 2px 30px
+
+.bl-nav li ul li:hover
+  border-radius: 2px
+  background-color: $default-blue
+  color: white
+
+.default-nav
+  height: 50px
+  background-color: white
+  box-shadow: 0 3px 2px -2px rgba(200,200,200,.35)
+.default-nav h1
+  font-family: quickstandLight
+  font-size: 25px
+  line-height: 50px
+  color: $default-pink
+.bl-nav-active
+  background-color: white
+  padding: 5px 5px
+  border: 1px solid #dddddd
+  border-top: none
+  box-shadow: 0 3px 12px rgba(0,0,0,.15)
+
+//
+.default-subnav h2
+  display: block
+  font-size: 30px
+  line-height: 50px
+
+.default-subnav
+  background-color: white
+  height: 50px
+  box-shadow: 0 3px 2px -2px rgba(200,200,200,.35)
+
+.default-subnav .bl-nav *
+  color: $default-dark-grey
+  font-size: 14px
+
+//
+.bl-view
+  box-shadow: 0 2px 5px 0 rgba(140,144,155,.15)
+  background-color: white
+  border-radius: 2px
+  border: 1px solid $default-border-grey
+  margin-top: 15px
+  margin-left: 15px
+
+
+.bl-view-header
+  line-height: 50px
+  padding-left: 15px
+  font-size: 14px
+  color: #999
+.bl-view-body
+  margin-bottom: -100px
+.bl-view-footer
+  padding-left: 15px
+  line-height: 50px
+  font-size: 14px
+  color: #999
+//
+.bl-sidebar a
+  transition: 0.1s
+  border-left: 4px solid transparent
+  padding-left: 11px
+  font-size: 15px
+  cursor: pointer
+  font-family: quickstandMed
+  color: $default-dark-grey
+
+.bl-sidebar a:hover
+  background-color: $default-selected-gery
+.bl-sidebar-active
+  border-left: 4px solid $default-blue!important
+  color: $default-blue!important
+  background-color: $default-selected-gery

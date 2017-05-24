@@ -17,6 +17,24 @@ body {
   user-select: text; }
 
 body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+body {
   padding: 0;
   margin: 0; }
 
@@ -34,3854 +52,2755 @@ body {
   float: none !important; }
 
 .col-1-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 40px;
   float: left; }
 
 .col-1-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 80px;
   float: left; }
 
 .col-1-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 120px;
   float: left; }
 
 .col-1-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 160px;
   float: left; }
 
 .col-1-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 200px;
   float: left; }
 
 .col-1-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 240px;
   float: left; }
 
 .col-1-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 280px;
   float: left; }
 
 .col-1-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 320px;
   float: left; }
 
 .col-1-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 360px;
   float: left; }
 
 .col-1-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 400px;
   float: left; }
 
 .col-1-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 440px;
   float: left; }
 
 .col-1-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 480px;
   float: left; }
 
 .col-1-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 520px;
   float: left; }
 
 .col-1-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 560px;
   float: left; }
 
 .col-1-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 600px;
   float: left; }
 
 .col-1-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 640px;
   float: left; }
 
 .col-1-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 680px;
   float: left; }
 
 .col-1-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 720px;
   float: left; }
 
 .col-1-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 760px;
   float: left; }
 
 .col-1-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   height: 800px;
   float: left; }
 
 .col-1-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   float: left; }
 
 .col-2-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 40px;
   float: left; }
 
 .col-2-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 80px;
   float: left; }
 
 .col-2-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 120px;
   float: left; }
 
 .col-2-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 160px;
   float: left; }
 
 .col-2-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 200px;
   float: left; }
 
 .col-2-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 240px;
   float: left; }
 
 .col-2-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 280px;
   float: left; }
 
 .col-2-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 320px;
   float: left; }
 
 .col-2-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 360px;
   float: left; }
 
 .col-2-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 400px;
   float: left; }
 
 .col-2-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 440px;
   float: left; }
 
 .col-2-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 480px;
   float: left; }
 
 .col-2-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 520px;
   float: left; }
 
 .col-2-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 560px;
   float: left; }
 
 .col-2-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 600px;
   float: left; }
 
 .col-2-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 640px;
   float: left; }
 
 .col-2-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 680px;
   float: left; }
 
 .col-2-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 720px;
   float: left; }
 
 .col-2-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 760px;
   float: left; }
 
 .col-2-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   height: 800px;
   float: left; }
 
 .col-2-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   float: left; }
 
 .col-3-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 40px;
   float: left; }
 
 .col-3-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 80px;
   float: left; }
 
 .col-3-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 120px;
   float: left; }
 
 .col-3-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 160px;
   float: left; }
 
 .col-3-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 200px;
   float: left; }
 
 .col-3-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 240px;
   float: left; }
 
 .col-3-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 280px;
   float: left; }
 
 .col-3-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 320px;
   float: left; }
 
 .col-3-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 360px;
   float: left; }
 
 .col-3-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 400px;
   float: left; }
 
 .col-3-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 440px;
   float: left; }
 
 .col-3-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 480px;
   float: left; }
 
 .col-3-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 520px;
   float: left; }
 
 .col-3-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 560px;
   float: left; }
 
 .col-3-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 600px;
   float: left; }
 
 .col-3-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 640px;
   float: left; }
 
 .col-3-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 680px;
   float: left; }
 
 .col-3-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 720px;
   float: left; }
 
 .col-3-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 760px;
   float: left; }
 
 .col-3-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   height: 800px;
   float: left; }
 
 .col-3-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   float: left; }
 
 .col-4-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 40px;
   float: left; }
 
 .col-4-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 80px;
   float: left; }
 
 .col-4-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 120px;
   float: left; }
 
 .col-4-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 160px;
   float: left; }
 
 .col-4-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 200px;
   float: left; }
 
 .col-4-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 240px;
   float: left; }
 
 .col-4-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 280px;
   float: left; }
 
 .col-4-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 320px;
   float: left; }
 
 .col-4-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 360px;
   float: left; }
 
 .col-4-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 400px;
   float: left; }
 
 .col-4-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 440px;
   float: left; }
 
 .col-4-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 480px;
   float: left; }
 
 .col-4-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 520px;
   float: left; }
 
 .col-4-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 560px;
   float: left; }
 
 .col-4-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 600px;
   float: left; }
 
 .col-4-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 640px;
   float: left; }
 
 .col-4-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 680px;
   float: left; }
 
 .col-4-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 720px;
   float: left; }
 
 .col-4-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 760px;
   float: left; }
 
 .col-4-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   height: 800px;
   float: left; }
 
 .col-4-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   float: left; }
 
 .col-5-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 40px;
   float: left; }
 
 .col-5-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 80px;
   float: left; }
 
 .col-5-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 120px;
   float: left; }
 
 .col-5-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 160px;
   float: left; }
 
 .col-5-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 200px;
   float: left; }
 
 .col-5-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 240px;
   float: left; }
 
 .col-5-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 280px;
   float: left; }
 
 .col-5-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 320px;
   float: left; }
 
 .col-5-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 360px;
   float: left; }
 
 .col-5-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 400px;
   float: left; }
 
 .col-5-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 440px;
   float: left; }
 
 .col-5-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 480px;
   float: left; }
 
 .col-5-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 520px;
   float: left; }
 
 .col-5-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 560px;
   float: left; }
 
 .col-5-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 600px;
   float: left; }
 
 .col-5-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 640px;
   float: left; }
 
 .col-5-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 680px;
   float: left; }
 
 .col-5-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 720px;
   float: left; }
 
 .col-5-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 760px;
   float: left; }
 
 .col-5-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   height: 800px;
   float: left; }
 
 .col-5-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   float: left; }
 
 .col-6-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 40px;
   float: left; }
 
 .col-6-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 80px;
   float: left; }
 
 .col-6-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 120px;
   float: left; }
 
 .col-6-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 160px;
   float: left; }
 
 .col-6-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 200px;
   float: left; }
 
 .col-6-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 240px;
   float: left; }
 
 .col-6-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 280px;
   float: left; }
 
 .col-6-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 320px;
   float: left; }
 
 .col-6-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 360px;
   float: left; }
 
 .col-6-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 400px;
   float: left; }
 
 .col-6-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 440px;
   float: left; }
 
 .col-6-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 480px;
   float: left; }
 
 .col-6-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 520px;
   float: left; }
 
 .col-6-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 560px;
   float: left; }
 
 .col-6-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 600px;
   float: left; }
 
 .col-6-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 640px;
   float: left; }
 
 .col-6-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 680px;
   float: left; }
 
 .col-6-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 720px;
   float: left; }
 
 .col-6-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 760px;
   float: left; }
 
 .col-6-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   height: 800px;
   float: left; }
 
 .col-6-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   float: left; }
 
 .col-7-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 40px;
   float: left; }
 
 .col-7-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 80px;
   float: left; }
 
 .col-7-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 120px;
   float: left; }
 
 .col-7-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 160px;
   float: left; }
 
 .col-7-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 200px;
   float: left; }
 
 .col-7-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 240px;
   float: left; }
 
 .col-7-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 280px;
   float: left; }
 
 .col-7-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 320px;
   float: left; }
 
 .col-7-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 360px;
   float: left; }
 
 .col-7-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 400px;
   float: left; }
 
 .col-7-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 440px;
   float: left; }
 
 .col-7-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 480px;
   float: left; }
 
 .col-7-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 520px;
   float: left; }
 
 .col-7-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 560px;
   float: left; }
 
 .col-7-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 600px;
   float: left; }
 
 .col-7-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 640px;
   float: left; }
 
 .col-7-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 680px;
   float: left; }
 
 .col-7-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 720px;
   float: left; }
 
 .col-7-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 760px;
   float: left; }
 
 .col-7-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   height: 800px;
   float: left; }
 
 .col-7-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   float: left; }
 
 .col-8-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 40px;
   float: left; }
 
 .col-8-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 80px;
   float: left; }
 
 .col-8-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 120px;
   float: left; }
 
 .col-8-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 160px;
   float: left; }
 
 .col-8-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 200px;
   float: left; }
 
 .col-8-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 240px;
   float: left; }
 
 .col-8-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 280px;
   float: left; }
 
 .col-8-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 320px;
   float: left; }
 
 .col-8-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 360px;
   float: left; }
 
 .col-8-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 400px;
   float: left; }
 
 .col-8-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 440px;
   float: left; }
 
 .col-8-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 480px;
   float: left; }
 
 .col-8-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 520px;
   float: left; }
 
 .col-8-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 560px;
   float: left; }
 
 .col-8-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 600px;
   float: left; }
 
 .col-8-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 640px;
   float: left; }
 
 .col-8-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 680px;
   float: left; }
 
 .col-8-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 720px;
   float: left; }
 
 .col-8-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 760px;
   float: left; }
 
 .col-8-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   height: 800px;
   float: left; }
 
 .col-8-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   float: left; }
 
 .col-9-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 40px;
   float: left; }
 
 .col-9-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 80px;
   float: left; }
 
 .col-9-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 120px;
   float: left; }
 
 .col-9-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 160px;
   float: left; }
 
 .col-9-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 200px;
   float: left; }
 
 .col-9-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 240px;
   float: left; }
 
 .col-9-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 280px;
   float: left; }
 
 .col-9-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 320px;
   float: left; }
 
 .col-9-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 360px;
   float: left; }
 
 .col-9-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 400px;
   float: left; }
 
 .col-9-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 440px;
   float: left; }
 
 .col-9-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 480px;
   float: left; }
 
 .col-9-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 520px;
   float: left; }
 
 .col-9-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 560px;
   float: left; }
 
 .col-9-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 600px;
   float: left; }
 
 .col-9-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 640px;
   float: left; }
 
 .col-9-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 680px;
   float: left; }
 
 .col-9-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 720px;
   float: left; }
 
 .col-9-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 760px;
   float: left; }
 
 .col-9-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   height: 800px;
   float: left; }
 
 .col-9-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   float: left; }
 
 .col-10-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 40px;
   float: left; }
 
 .col-10-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 80px;
   float: left; }
 
 .col-10-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 120px;
   float: left; }
 
 .col-10-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 160px;
   float: left; }
 
 .col-10-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 200px;
   float: left; }
 
 .col-10-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 240px;
   float: left; }
 
 .col-10-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 280px;
   float: left; }
 
 .col-10-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 320px;
   float: left; }
 
 .col-10-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 360px;
   float: left; }
 
 .col-10-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 400px;
   float: left; }
 
 .col-10-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 440px;
   float: left; }
 
 .col-10-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 480px;
   float: left; }
 
 .col-10-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 520px;
   float: left; }
 
 .col-10-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 560px;
   float: left; }
 
 .col-10-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 600px;
   float: left; }
 
 .col-10-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 640px;
   float: left; }
 
 .col-10-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 680px;
   float: left; }
 
 .col-10-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 720px;
   float: left; }
 
 .col-10-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 760px;
   float: left; }
 
 .col-10-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   height: 800px;
   float: left; }
 
 .col-10-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   float: left; }
 
 .col-11-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 40px;
   float: left; }
 
 .col-11-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 80px;
   float: left; }
 
 .col-11-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 120px;
   float: left; }
 
 .col-11-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 160px;
   float: left; }
 
 .col-11-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 200px;
   float: left; }
 
 .col-11-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 240px;
   float: left; }
 
 .col-11-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 280px;
   float: left; }
 
 .col-11-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 320px;
   float: left; }
 
 .col-11-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 360px;
   float: left; }
 
 .col-11-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 400px;
   float: left; }
 
 .col-11-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 440px;
   float: left; }
 
 .col-11-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 480px;
   float: left; }
 
 .col-11-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 520px;
   float: left; }
 
 .col-11-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 560px;
   float: left; }
 
 .col-11-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 600px;
   float: left; }
 
 .col-11-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 640px;
   float: left; }
 
 .col-11-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 680px;
   float: left; }
 
 .col-11-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 720px;
   float: left; }
 
 .col-11-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 760px;
   float: left; }
 
 .col-11-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   height: 800px;
   float: left; }
 
 .col-11-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   float: left; }
 
 .col-12-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 40px;
   float: left; }
 
 .col-12-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 80px;
   float: left; }
 
 .col-12-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 120px;
   float: left; }
 
 .col-12-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 160px;
   float: left; }
 
 .col-12-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 200px;
   float: left; }
 
 .col-12-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 240px;
   float: left; }
 
 .col-12-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 280px;
   float: left; }
 
 .col-12-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 320px;
   float: left; }
 
 .col-12-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 360px;
   float: left; }
 
 .col-12-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 400px;
   float: left; }
 
 .col-12-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 440px;
   float: left; }
 
 .col-12-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 480px;
   float: left; }
 
 .col-12-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 520px;
   float: left; }
 
 .col-12-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 560px;
   float: left; }
 
 .col-12-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 600px;
   float: left; }
 
 .col-12-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 640px;
   float: left; }
 
 .col-12-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 680px;
   float: left; }
 
 .col-12-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 720px;
   float: left; }
 
 .col-12-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 760px;
   float: left; }
 
 .col-12-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   height: 800px;
   float: left; }
 
 .col-12-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   float: left; }
 
 .col-13-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 40px;
   float: left; }
 
 .col-13-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 80px;
   float: left; }
 
 .col-13-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 120px;
   float: left; }
 
 .col-13-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 160px;
   float: left; }
 
 .col-13-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 200px;
   float: left; }
 
 .col-13-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 240px;
   float: left; }
 
 .col-13-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 280px;
   float: left; }
 
 .col-13-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 320px;
   float: left; }
 
 .col-13-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 360px;
   float: left; }
 
 .col-13-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 400px;
   float: left; }
 
 .col-13-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 440px;
   float: left; }
 
 .col-13-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 480px;
   float: left; }
 
 .col-13-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 520px;
   float: left; }
 
 .col-13-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 560px;
   float: left; }
 
 .col-13-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 600px;
   float: left; }
 
 .col-13-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 640px;
   float: left; }
 
 .col-13-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 680px;
   float: left; }
 
 .col-13-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 720px;
   float: left; }
 
 .col-13-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 760px;
   float: left; }
 
 .col-13-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   height: 800px;
   float: left; }
 
 .col-13-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   float: left; }
 
 .col-14-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 40px;
   float: left; }
 
 .col-14-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 80px;
   float: left; }
 
 .col-14-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 120px;
   float: left; }
 
 .col-14-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 160px;
   float: left; }
 
 .col-14-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 200px;
   float: left; }
 
 .col-14-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 240px;
   float: left; }
 
 .col-14-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 280px;
   float: left; }
 
 .col-14-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 320px;
   float: left; }
 
 .col-14-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 360px;
   float: left; }
 
 .col-14-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 400px;
   float: left; }
 
 .col-14-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 440px;
   float: left; }
 
 .col-14-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 480px;
   float: left; }
 
 .col-14-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 520px;
   float: left; }
 
 .col-14-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 560px;
   float: left; }
 
 .col-14-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 600px;
   float: left; }
 
 .col-14-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 640px;
   float: left; }
 
 .col-14-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 680px;
   float: left; }
 
 .col-14-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 720px;
   float: left; }
 
 .col-14-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 760px;
   float: left; }
 
 .col-14-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   height: 800px;
   float: left; }
 
 .col-14-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   float: left; }
 
 .col-15-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 40px;
   float: left; }
 
 .col-15-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 80px;
   float: left; }
 
 .col-15-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 120px;
   float: left; }
 
 .col-15-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 160px;
   float: left; }
 
 .col-15-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 200px;
   float: left; }
 
 .col-15-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 240px;
   float: left; }
 
 .col-15-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 280px;
   float: left; }
 
 .col-15-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 320px;
   float: left; }
 
 .col-15-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 360px;
   float: left; }
 
 .col-15-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 400px;
   float: left; }
 
 .col-15-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 440px;
   float: left; }
 
 .col-15-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 480px;
   float: left; }
 
 .col-15-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 520px;
   float: left; }
 
 .col-15-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 560px;
   float: left; }
 
 .col-15-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 600px;
   float: left; }
 
 .col-15-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 640px;
   float: left; }
 
 .col-15-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 680px;
   float: left; }
 
 .col-15-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 720px;
   float: left; }
 
 .col-15-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 760px;
   float: left; }
 
 .col-15-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   height: 800px;
   float: left; }
 
 .col-15-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   float: left; }
 
 .col-16-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 40px;
   float: left; }
 
 .col-16-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 80px;
   float: left; }
 
 .col-16-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 120px;
   float: left; }
 
 .col-16-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 160px;
   float: left; }
 
 .col-16-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 200px;
   float: left; }
 
 .col-16-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 240px;
   float: left; }
 
 .col-16-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 280px;
   float: left; }
 
 .col-16-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 320px;
   float: left; }
 
 .col-16-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 360px;
   float: left; }
 
 .col-16-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 400px;
   float: left; }
 
 .col-16-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 440px;
   float: left; }
 
 .col-16-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 480px;
   float: left; }
 
 .col-16-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 520px;
   float: left; }
 
 .col-16-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 560px;
   float: left; }
 
 .col-16-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 600px;
   float: left; }
 
 .col-16-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 640px;
   float: left; }
 
 .col-16-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 680px;
   float: left; }
 
 .col-16-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 720px;
   float: left; }
 
 .col-16-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 760px;
   float: left; }
 
 .col-16-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   height: 800px;
   float: left; }
 
 .col-16-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   float: left; }
 
 .col-17-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 40px;
   float: left; }
 
 .col-17-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 80px;
   float: left; }
 
 .col-17-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 120px;
   float: left; }
 
 .col-17-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 160px;
   float: left; }
 
 .col-17-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 200px;
   float: left; }
 
 .col-17-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 240px;
   float: left; }
 
 .col-17-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 280px;
   float: left; }
 
 .col-17-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 320px;
   float: left; }
 
 .col-17-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 360px;
   float: left; }
 
 .col-17-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 400px;
   float: left; }
 
 .col-17-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 440px;
   float: left; }
 
 .col-17-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 480px;
   float: left; }
 
 .col-17-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 520px;
   float: left; }
 
 .col-17-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 560px;
   float: left; }
 
 .col-17-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 600px;
   float: left; }
 
 .col-17-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 640px;
   float: left; }
 
 .col-17-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 680px;
   float: left; }
 
 .col-17-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 720px;
   float: left; }
 
 .col-17-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 760px;
   float: left; }
 
 .col-17-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   height: 800px;
   float: left; }
 
 .col-17-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   float: left; }
 
 .col-18-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 40px;
   float: left; }
 
 .col-18-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 80px;
   float: left; }
 
 .col-18-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 120px;
   float: left; }
 
 .col-18-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 160px;
   float: left; }
 
 .col-18-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 200px;
   float: left; }
 
 .col-18-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 240px;
   float: left; }
 
 .col-18-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 280px;
   float: left; }
 
 .col-18-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 320px;
   float: left; }
 
 .col-18-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 360px;
   float: left; }
 
 .col-18-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 400px;
   float: left; }
 
 .col-18-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 440px;
   float: left; }
 
 .col-18-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 480px;
   float: left; }
 
 .col-18-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 520px;
   float: left; }
 
 .col-18-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 560px;
   float: left; }
 
 .col-18-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 600px;
   float: left; }
 
 .col-18-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 640px;
   float: left; }
 
 .col-18-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 680px;
   float: left; }
 
 .col-18-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 720px;
   float: left; }
 
 .col-18-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 760px;
   float: left; }
 
 .col-18-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   height: 800px;
   float: left; }
 
 .col-18-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   float: left; }
 
 .col-19-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 40px;
   float: left; }
 
 .col-19-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 80px;
   float: left; }
 
 .col-19-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 120px;
   float: left; }
 
 .col-19-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 160px;
   float: left; }
 
 .col-19-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 200px;
   float: left; }
 
 .col-19-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 240px;
   float: left; }
 
 .col-19-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 280px;
   float: left; }
 
 .col-19-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 320px;
   float: left; }
 
 .col-19-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 360px;
   float: left; }
 
 .col-19-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 400px;
   float: left; }
 
 .col-19-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 440px;
   float: left; }
 
 .col-19-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 480px;
   float: left; }
 
 .col-19-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 520px;
   float: left; }
 
 .col-19-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 560px;
   float: left; }
 
 .col-19-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 600px;
   float: left; }
 
 .col-19-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 640px;
   float: left; }
 
 .col-19-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 680px;
   float: left; }
 
 .col-19-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 720px;
   float: left; }
 
 .col-19-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 760px;
   float: left; }
 
 .col-19-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   height: 800px;
   float: left; }
 
 .col-19-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   float: left; }
 
 .col-20-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 40px;
   float: left; }
 
 .col-20-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 80px;
   float: left; }
 
 .col-20-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 120px;
   float: left; }
 
 .col-20-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 160px;
   float: left; }
 
 .col-20-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 200px;
   float: left; }
 
 .col-20-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 240px;
   float: left; }
 
 .col-20-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 280px;
   float: left; }
 
 .col-20-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 320px;
   float: left; }
 
 .col-20-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 360px;
   float: left; }
 
 .col-20-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 400px;
   float: left; }
 
 .col-20-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 440px;
   float: left; }
 
 .col-20-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 480px;
   float: left; }
 
 .col-20-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 520px;
   float: left; }
 
 .col-20-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 560px;
   float: left; }
 
 .col-20-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 600px;
   float: left; }
 
 .col-20-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 640px;
   float: left; }
 
 .col-20-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 680px;
   float: left; }
 
 .col-20-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 720px;
   float: left; }
 
 .col-20-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 760px;
   float: left; }
 
 .col-20-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   height: 800px;
   float: left; }
 
 .col-20-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   float: left; }
 
 .col-21-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 40px;
   float: left; }
 
 .col-21-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 80px;
   float: left; }
 
 .col-21-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 120px;
   float: left; }
 
 .col-21-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 160px;
   float: left; }
 
 .col-21-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 200px;
   float: left; }
 
 .col-21-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 240px;
   float: left; }
 
 .col-21-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 280px;
   float: left; }
 
 .col-21-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 320px;
   float: left; }
 
 .col-21-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 360px;
   float: left; }
 
 .col-21-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 400px;
   float: left; }
 
 .col-21-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 440px;
   float: left; }
 
 .col-21-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 480px;
   float: left; }
 
 .col-21-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 520px;
   float: left; }
 
 .col-21-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 560px;
   float: left; }
 
 .col-21-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 600px;
   float: left; }
 
 .col-21-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 640px;
   float: left; }
 
 .col-21-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 680px;
   float: left; }
 
 .col-21-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 720px;
   float: left; }
 
 .col-21-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 760px;
   float: left; }
 
 .col-21-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   height: 800px;
   float: left; }
 
 .col-21-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   float: left; }
 
 .col-22-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 40px;
   float: left; }
 
 .col-22-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 80px;
   float: left; }
 
 .col-22-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 120px;
   float: left; }
 
 .col-22-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 160px;
   float: left; }
 
 .col-22-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 200px;
   float: left; }
 
 .col-22-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 240px;
   float: left; }
 
 .col-22-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 280px;
   float: left; }
 
 .col-22-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 320px;
   float: left; }
 
 .col-22-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 360px;
   float: left; }
 
 .col-22-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 400px;
   float: left; }
 
 .col-22-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 440px;
   float: left; }
 
 .col-22-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 480px;
   float: left; }
 
 .col-22-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 520px;
   float: left; }
 
 .col-22-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 560px;
   float: left; }
 
 .col-22-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 600px;
   float: left; }
 
 .col-22-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 640px;
   float: left; }
 
 .col-22-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 680px;
   float: left; }
 
 .col-22-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 720px;
   float: left; }
 
 .col-22-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 760px;
   float: left; }
 
 .col-22-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   height: 800px;
   float: left; }
 
 .col-22-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   float: left; }
 
 .col-23-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 40px;
   float: left; }
 
 .col-23-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 80px;
   float: left; }
 
 .col-23-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 120px;
   float: left; }
 
 .col-23-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 160px;
   float: left; }
 
 .col-23-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 200px;
   float: left; }
 
 .col-23-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 240px;
   float: left; }
 
 .col-23-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 280px;
   float: left; }
 
 .col-23-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 320px;
   float: left; }
 
 .col-23-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 360px;
   float: left; }
 
 .col-23-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 400px;
   float: left; }
 
 .col-23-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 440px;
   float: left; }
 
 .col-23-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 480px;
   float: left; }
 
 .col-23-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 520px;
   float: left; }
 
 .col-23-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 560px;
   float: left; }
 
 .col-23-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 600px;
   float: left; }
 
 .col-23-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 640px;
   float: left; }
 
 .col-23-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 680px;
   float: left; }
 
 .col-23-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 720px;
   float: left; }
 
 .col-23-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 760px;
   float: left; }
 
 .col-23-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   height: 800px;
   float: left; }
 
 .col-23-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   float: left; }
 
 .col-24-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 40px;
   float: left; }
 
 .col-24-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 80px;
   float: left; }
 
 .col-24-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 120px;
   float: left; }
 
 .col-24-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 160px;
   float: left; }
 
 .col-24-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 200px;
   float: left; }
 
 .col-24-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 240px;
   float: left; }
 
 .col-24-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 280px;
   float: left; }
 
 .col-24-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 320px;
   float: left; }
 
 .col-24-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 360px;
   float: left; }
 
 .col-24-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 400px;
   float: left; }
 
 .col-24-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 440px;
   float: left; }
 
 .col-24-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 480px;
   float: left; }
 
 .col-24-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 520px;
   float: left; }
 
 .col-24-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 560px;
   float: left; }
 
 .col-24-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 600px;
   float: left; }
 
 .col-24-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 640px;
   float: left; }
 
 .col-24-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 680px;
   float: left; }
 
 .col-24-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 720px;
   float: left; }
 
 .col-24-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 760px;
   float: left; }
 
 .col-24-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   height: 800px;
   float: left; }
 
 .col-24-a {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   float: left; }
 
 .col-f-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 40px;
   float: left; }
 
 .col-f-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 80px;
   float: left; }
 
 .col-f-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 120px;
   float: left; }
 
 .col-f-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 160px;
   float: left; }
 
 .col-f-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 200px;
   float: left; }
 
 .col-f-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 240px;
   float: left; }
 
 .col-f-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 280px;
   float: left; }
 
 .col-f-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 320px;
   float: left; }
 
 .col-f-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 360px;
   float: left; }
 
 .col-f-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 400px;
   float: left; }
 
 .col-f-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 440px;
   float: left; }
 
 .col-f-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 480px;
   float: left; }
 
 .col-f-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 520px;
   float: left; }
 
 .col-f-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 560px;
   float: left; }
 
 .col-f-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 600px;
   float: left; }
 
 .col-f-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 640px;
   float: left; }
 
 .col-f-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 680px;
   float: left; }
 
 .col-f-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 720px;
   float: left; }
 
 .col-f-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 760px;
   float: left; }
 
 .col-f-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 100%;
   height: 800px;
   float: left; }
 
 .raw-f {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   margin: auto;
   float: none !important;
-  width: 960px;
+  width: 970px;
   float: left;
   position: relative; }
 
 .raw-w {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
-  width: 100%; }
+  width: 100%;
+  float: left; }
 
 .raw-separate {
   float: left;
   margin: 5px; }
 
 .raw-1 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 40px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-2 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 80px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-3 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 120px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-4 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 160px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-5 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 200px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-6 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 240px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-7 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 280px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-8 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 320px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-9 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 360px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-10 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 400px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-11 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 440px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-12 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 480px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-13 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 520px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-14 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 560px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-15 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 600px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-16 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 640px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-17 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 680px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-18 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 720px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-19 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 760px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-20 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 800px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-21 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 840px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-22 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 880px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-23 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 920px;
   margin: 0 auto;
   height: auto;
   float: left; }
 
 .raw-24 {
-  border: 1px solid #cc0033;
-  transition: 0.2s;
   width: 960px;
   margin: 0 auto;
   height: auto;
@@ -3890,5 +2809,125 @@ body {
 @media screen and (max-device-width: 480px) {
   .bl-nav ul {
     display: none; } }
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
-/*# sourceMappingURL=layout.css.map */
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.bl-nav {
+  display: block;
+  float: left; }
+
+.bl-nav h1 {
+  display: inline-block; }
+
+.bl-nav li {
+  display: inline-block; }
+
+.bl-nav li ul {
+  display: none; }
+
+.bl-nav li ul li {
+  display: block; }
+
+.bl-nav-active {
+  z-index: 100;
+  position: absolute;
+  display: inline-block; }
+
+.bl-nav-active li {
+  margin: 0 auto; }
+
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.bl-view-header {
+  width: 100%; }
+
+.bl-view-body {
+  min-height: 100%;
+  width: 100%; }
+
+.bl-view-footer {
+  width: 100%; }
+
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.bl-sidebar {
+  overflow: hidden; }
+
+.bl-sidebar a {
+  display: block; }
+
+.bl-sidebar a ul {
+  display: none; }
+
+.bl-sidebar a ul a {
+  display: block; }
+
+.bl-sidebar-active a {
+  margin: 0 auto; }
+
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+/*# sourceMappingURL=release.css.map */

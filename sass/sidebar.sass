@@ -1,0 +1,25 @@
+@import "general"
+
+@mixin sidebar
+  @if $debug==true
+    box-shadow: inset 0 0 1px $debugred
+
+.bl-sidebar
+  @include sidebar
+  overflow: hidden
+.bl-sidebar ul
+.bl-sidebar a
+  @include sidebar
+  display: block
+
+.bl-sidebar a ul
+  @include sidebar
+  display: none
+.bl-sidebar a ul a
+  display: block
+.bl-sidebar-active
+.bl-sidebar-active a
+  margin: 0 auto
+
+
+

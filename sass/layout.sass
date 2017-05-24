@@ -1,12 +1,15 @@
 @import "general"
 //
+//
 @mixin layout
   @if $debug == true
-    border: 1px solid $debugred
+    box-shadow: inset 0 0 1px $debugred
+    transition: 0.2s
 
 @mixin center
-  margin: 0 auto
+  margin: auto
   float: none !important
+
 body
   padding: 0
   margin: 0
@@ -34,6 +37,10 @@ body
       width: $wid * $base
       height: $hei * $base
       float: left
+  .col-#{$wid}-a
+    @include layout
+    width: $wid * $base
+    float: left
 
 //full width column
 
@@ -50,12 +57,17 @@ body
 .raw-f
   @include layout
   @include center
+  width: 24*$base + 10px
   float: left
-  width: 24*$base
+  position: relative
 .raw-w
   @include layout
-  @include center
   width: 100%
+  float: left
+
+.raw-separate
+  float: left
+  margin: 5px
 
 @for $wid from 1 through 24
   .raw-#{$wid}
@@ -65,3 +77,9 @@ body
     height: auto
     float: left
 
+//
+//Mobile Device
+@media screen and (max-device-width: 480px)
+  .bl-nav ul
+    display: none
+  $base : 20px

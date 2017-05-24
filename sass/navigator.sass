@@ -2,21 +2,28 @@
 
 @mixin navigator
   @if $debug==true
-    border: 1px solid $debugred
+    box-shadow: inset 0 0 1px $debugred
 
 .bl-nav
   @include navigator
+  display: block
   float: left
 .bl-nav h1
   display: inline-block
-.bl-nav ul li
+.bl-nav li
   @include navigator
-  display: inline
+  display: inline-block
 
-.bl-nav ul li ul
+.bl-nav li ul
   @include navigator
   display: none
-
-
+.bl-nav li ul li
+  display: block
+.bl-nav-active
+  z-index: 100
+  position: absolute
+  display: inline-block
+.bl-nav-active li
+  margin: 0 auto
 
 

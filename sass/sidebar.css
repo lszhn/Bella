@@ -16,31 +16,25 @@ body {
   -ms-user-select: text;
   user-select: text; }
 
-.bl-nav {
-  border: 1px solid #cc0033;
+.bl-sidebar {
   display: block;
   float: left; }
 
-.bl-nav h1 {
+.bl-sidebar li {
   display: inline-block; }
 
-.bl-nav li {
-  border: 1px solid #cc0033;
-  display: inline-block; }
-
-.bl-nav li ul {
-  border: 1px solid #cc0033;
+.bl-sidebar li ul {
   display: none; }
 
-.bl-nav li ul li {
+.bl-sidebar li ul li {
   display: block; }
 
-.bl-nav-active {
+.bl-sidebar-active {
   z-index: 100;
   position: absolute;
   display: inline-block; }
 
-.bl-nav-active li {
+.bl-sidebar-active li {
   margin: 0 auto; }
 
-/*# sourceMappingURL=navigator.css.map */
+/*# sourceMappingURL=sidebar.css.map */
