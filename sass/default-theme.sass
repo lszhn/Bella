@@ -68,17 +68,27 @@ h5
 .bl-nav *
   font-size: 18px
   font-family: quickstandLight
+  font-weight: 600
   color: $default-dark-grey
+  text-decoration: none
+  transition: 0.2s
 
 .bl-nav li
   margin-right: 20px
   line-height: 50px
   cursor: pointer
+.bl-nav li:hover>a
+  color: $default-pink
+.bl-nav li:hover>i
+  color: $default-pink
+.bl-nav li:hover
+  color: $default-pink
 
-.bl-nav li ul *
+.bl-nav li ul li
+  text-decoration: none
   margin: 0 auto
   font-size: 18px
-  font-weight: bold
+  font-weight: 600
   line-height: 35px
   padding: 2px 30px
 
@@ -86,18 +96,9 @@ h5
   border-radius: 2px
   background-color: $default-blue
   color: white
-.bl-nav a li
-  transition: 0.1s
-.bl-nav a i
-  transition: 0.1s
-.bl-nav a:hover i
-  color: $default-pink
-.bl-nav a:hover li
-  color: $default-pink
-.bl-nav li
-  transition: 0.1s
-.bl-nav li:hover
-  color: $default-pink
+.bl-nav li ul li:hover *
+  color: white
+
 .default-nav
   height: 50px
   background-color: white
@@ -138,7 +139,8 @@ h5
   margin-top: 15px
   margin-left: 15px
 
-
+.bl-tab-view
+  @extend .bl-view
 .bl-view-header
   line-height: 50px
   padding-left: 15px
@@ -151,6 +153,26 @@ h5
   line-height: 50px
   font-size: 14px
   color: #999
+
+
+.bl-tab-view .bl-view-header
+  padding: 0
+  height: 50px
+.bl-tab-view .bl-view-header ul
+  line-height: 50px
+.bl-tab-view .bl-view-header ul li
+  transition: 0.1s
+  line-height: 50px
+  background-color: $default-selected-gery
+  border-top: 4px solid transparent
+
+.bl-tab-view ul li:hover
+  border-top: 4px solid $default-selected-gery
+  background-color: $default-selected-gery
+.bl-tab-view-active
+  border-top: 4px solid $default-blue!important
+  color: $default-blue!important
+  background-color: white!important
 //
 .bl-sidebar a
   transition: 0.1s

@@ -78,17 +78,30 @@ h5 {
 .bl-nav * {
   font-size: 18px;
   font-family: quickstandLight;
-  color: #555555; }
+  font-weight: 600;
+  color: #555555;
+  text-decoration: none;
+  transition: 0.2s; }
 
 .bl-nav li {
   margin-right: 20px;
   line-height: 50px;
   cursor: pointer; }
 
-.bl-nav li ul * {
+.bl-nav li:hover > a {
+  color: #ff5252; }
+
+.bl-nav li:hover > i {
+  color: #ff5252; }
+
+.bl-nav li:hover {
+  color: #ff5252; }
+
+.bl-nav li ul li {
+  text-decoration: none;
   margin: 0 auto;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 35px;
   padding: 2px 30px; }
 
@@ -97,23 +110,8 @@ h5 {
   background-color: #3884ff;
   color: white; }
 
-.bl-nav a li {
-  transition: 0.1s; }
-
-.bl-nav a i {
-  transition: 0.1s; }
-
-.bl-nav a:hover i {
-  color: #ff5252; }
-
-.bl-nav a:hover li {
-  color: #ff5252; }
-
-.bl-nav li {
-  transition: 0.1s; }
-
-.bl-nav li:hover {
-  color: #ff5252; }
+.bl-nav li ul li:hover * {
+  color: white; }
 
 .default-nav {
   height: 50px;
@@ -147,7 +145,7 @@ h5 {
   color: #555555;
   font-size: 14px; }
 
-.bl-view {
+.bl-view, .bl-tab-view {
   box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15);
   background-color: white;
   border-radius: 2px;
@@ -169,6 +167,28 @@ h5 {
   line-height: 50px;
   font-size: 14px;
   color: #999; }
+
+.bl-tab-view .bl-view-header {
+  padding: 0;
+  height: 50px; }
+
+.bl-tab-view .bl-view-header ul {
+  line-height: 50px; }
+
+.bl-tab-view .bl-view-header ul li {
+  transition: 0.1s;
+  line-height: 50px;
+  background-color: #f8f8f8;
+  border-top: 4px solid transparent; }
+
+.bl-tab-view ul li:hover {
+  border-top: 4px solid #f8f8f8;
+  background-color: #f8f8f8; }
+
+.bl-tab-view-active {
+  border-top: 4px solid #3884ff !important;
+  color: #3884ff !important;
+  background-color: white !important; }
 
 .bl-sidebar a {
   transition: 0.1s;

@@ -2879,6 +2879,23 @@ body {
 .bl-view-footer {
   width: 100%; }
 
+.bl-tab-view .bl-view-header ul {
+  width: 100%;
+  float: left;
+  display: inline;
+  padding: 0 !important;
+  text-align: center;
+  list-style: none; }
+
+.bl-tab-view .bl-view-body {
+  display: none; }
+
+.bl-tab-view .bl-view-header ul li {
+  display: block;
+  float: left;
+  text-align: center;
+  cursor: pointer; }
+
 body {
   moz-user-select: -moz-none;
   -moz-user-select: none;

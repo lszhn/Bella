@@ -11,11 +11,15 @@
 var globalElements = [
 
     //layout::
+    '.bl-tab-view',
 
     //bella universal elements::
     '.bl-nav',
     '.bl-sidebar',
-    '.bl-page'
+    '.bl-page',
+
+    //delegate
+    '.attach-delegate'
 
 ];
 
@@ -23,19 +27,20 @@ $(document).ready(function () {
 
     //initialize global bella class
     blClassGlbCov();
-    $('pre code').each(function(i, block) {
-        hljs.highlightBlock(block);
-    });
+
+    //call highlight.js
+    hljs();
+
+    //
 
 });
 
-window.onscroll = function () {
-    if($('.scroll-attach').scrollTop == 0){
 
-    }
-};
-
-
+function hljs() {
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
+}
 //
 //
 function blClassGlbCov() {
@@ -45,9 +50,58 @@ function blClassGlbCov() {
         var $eleList = $(e).toArray();
         $eleList.forEach(function (eleListMember) {
             var funcName = String(e.replace(/-/,''));
+            while (funcName.indexOf('-')>0)
+                funcName = funcName.replace(/-/,'');
             funcName = funcName.replace(/./,'') + 'Cov(eleListMember)';
             eval(funcName);
         });
+    });
+}
+
+function bltabviewCov(oneTabView) {
+    var $oneTabView = $(oneTabView);
+    var $oneTabViewList = $oneTabView.find('.bl-view-header li').toArray();
+    var oneTabViewBodyList = $oneTabView.find('.bl-view-body').toArray();
+    var fullWid = parseFloat($oneTabView.find('.bl-view-header').css('width'));
+    var memberWid = fullWid/$oneTabViewList.length;
+    var index = -1;
+    $oneTabViewList.forEach(function (oneTabViewListMember) {
+        index++;
+        $(oneTabViewListMember).css({
+            'width':memberWid
+        });
+    });
+    $oneTabView.children('li:first').addClass('bl-tab-view-active');
+    $oneTabViewList.forEach(function (oneTabViewListMember) {
+        var $oneTabViewListMember = $(oneTabViewListMember);
+        $oneTabViewListMember.on('click',function () {
+            var t_index = index;
+            $(oneTabViewBodyList).css({'display':'none'});
+            $(oneTabViewBodyList[t_index]).css({'display':'block'});
+            $oneTabView.find('li').removeClass('bl-tab-view-active');
+            $oneTabViewListMember.addClass('bl-tab-view-active');
+
+        });
+    });
+}
+function attachdelegateCov(oneAttachDelegate) {
+    var $oneAttachDelegate = $(oneAttachDelegate);
+    $(document).scroll(function () {
+        var scrollTop = $(document).scrollTop();
+        var objScrollTop = $oneAttachDelegate.position().top;
+        if(scrollTop > objScrollTop && $('.attach-delegate-clone').length == 0){
+            var $attachDelegateInstant = $oneAttachDelegate.clone(true);
+            $oneAttachDelegate.append($attachDelegateInstant);
+            $attachDelegateInstant.addClass('attach-delegate-clone');
+            $attachDelegateInstant.css({
+                'position':'fixed',
+                'top':$oneAttachDelegate.position().top - parseFloat($oneAttachDelegate.css('height')) + 'px',
+                'left':$oneAttachDelegate.position().left + 'px',
+                'z-index':500
+            });
+        }else if(scrollTop <= objScrollTop){
+            $(document).find($('.attach-delegate-clone')).remove();
+        }
     });
 }
 function blpageCov(onePage) {
@@ -76,7 +130,6 @@ function blpageCov(onePage) {
     });
 
     var $pageParagList = $pageRoot.find('p').toArray();
-    console.log($pageParagList);
     $pageParagList.forEach(function (oneParag) {
         var $oneParag = $(oneParag);
         $oneParag.html(converter.makeHtml($oneParag.html()));
@@ -108,7 +161,6 @@ function blnavCov(oneBlHeaderListMember) {
     $itemList.forEach(function (itemListMember) {
         var $itemListMember = $(itemListMember);
         var $itemListMemberUl = $itemListMember.children('ul');
-        console.log($itemListMemberUl);
         $itemListMemberUl.before("<i class=\"fa fa-angle-down\"></i>");
 
         //
