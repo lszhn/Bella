@@ -10,7 +10,9 @@
     <link href="sass/default-theme.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/hljs.default.min.css" rel="stylesheet">
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="js/shutdown.min.js" type="text/javascript"></script>
 
 </head>
 <body>
@@ -18,15 +20,22 @@
     <div class="raw-f">
         <h1 class="col-5-a"><i class="fa fa-leaf" aria-hidden="true">&nbsp</i>bella</h1>
         <ul class="bl-nav col-12-a">
-            <li>Home</li>
-            <li>Download</li>
+            <a href="index.html"><li>Home</li></a>
+            <li>beLang
+                <ul>
+                    <li>Usage</li>
+                    <li>beLang instant</li>
+                    <li>API</li>
+                </ul>
+            </li>
             <li>Components
                 <ul>
                     <li>Layout</li>
                     <li>elements</li>
-                    <li>API</li>
+                    <li>demo</li>
                 </ul>
             </li>
+            <a href="https://github.com/HJIO/bella"><li>Github</li></a>
             <li>About</li>
         </ul>
     </div>
@@ -38,8 +47,23 @@
 </div>
 <div class="raw-w">
     <div class="raw-f">
-        <div class="col-6-10 bl-view">
-            <div class="bl-view-header">导航</div>
+        <div class="col-24-10 bl-view bl-page">
+            <div class="bl-view-header">布局</div>
+            <div class="bl-view-body">
+                <p>##视图</p>
+                <p>1.使用*.bl-view*来创建视图</p>
+                <p>2.视图（view）是bella的基础布局类组件，它允许为其添加页眉与页脚</p>
+                <p>3.通过为*.bl-view*添加同级类*.bl-page*来实现Markdown渲染</p>
+                </p>
+            </div>
+            <div class="bl-view-footer">视图</div>
+        </div>
+    </div>
+</div>
+<div class="raw-w">
+    <div class="raw-f">
+        <div class="col-6-15 bl-view">
+            <div class="bl-view-header">侧边栏的页眉</div>
             <div class="bl-view-body">
                 <ul class="bl-sidebar">
                     <a>Apple Inc.</a>
@@ -48,15 +72,20 @@
                     <a>Amazon</a>
                 </ul>
             </div>
-            <div class="bl-view-footer">footer</div>
+            <div class="bl-view-footer">页脚</div>
         </div>
-        <div class="col-17-10 bl-view bl-page">
-            <div class="bl-view-header">侧边栏</div>
+        <div class="col-17-15 bl-view bl-page">
+            <div class="bl-view-header">组件</div>
             <div class="bl-view-body">
-                <h3>有页眉页脚的侧边栏</h3>
-                <p>使用*.bl-view*的header-body-footer结构来创建</p>
+                <p>##侧边栏</p>
+                <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
+                <p>2.使用ul-a来添加侧边栏的内容</p>
+                <p>3.有页眉页脚侧边栏是固定高度的</p>
+
+
+                </p>
             </div>
-            <div class="bl-view-footer">footer</div>
+            <div class="bl-view-footer">侧边栏-1</div>
         </div>
     </div>
 </div>
@@ -70,17 +99,36 @@
                 <a>Amazon</a>
             </ul>
         </div>
-        <div class="col-17-10 bl-view">
+        <div class="col-17-10 bl-view bl-page">
+            <div class="bl-view-header">组件</div>
+            <div class="bl-view-body">
+                <p>##无样式侧边栏</p>
+                <p>1.使用*.bl-sidebar*来创建侧边栏</p>
+                <p>2.使用ul-a来添加元素</p>
+                <p>3.无样式的侧边栏是自动高度、对齐网格的</p>
+
+
+                </p>
+            </div>
+            <div class="bl-view-footer">侧边栏-2</div>
         </div>
     </div>
 </div>
 <div class="raw-w">
     <div class="raw-f">
-        <div class="col-24-10 bl-view ">
-
+        <div class="col-24-10 bl-view bl-page">
+            <div class="bl-view-header">组件</div>
+            <div class="bl-view-body">
+                <p>##输入输出元素</p>
+                <p>1.使用*.bl-input*来创建输入输出元素</p>
+                <p>2.输入输出元素的表单提交需要嵌套*&ltform&gt*标签</p>
+                </p>
+            </div>
+            <div class="bl-view-footer">视图</div>
         </div>
     </div>
 </div>
 </body>
+<script src="js/highlight.min.js" type="text/javascript"></script>
 <script src="js/bella.js"></script>
 </html>

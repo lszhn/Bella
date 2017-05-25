@@ -14,7 +14,8 @@ var globalElements = [
 
     //bella universal elements::
     '.bl-nav',
-    '.bl-sidebar'
+    '.bl-sidebar',
+    '.bl-page'
 
 ];
 
@@ -22,14 +23,18 @@ $(document).ready(function () {
 
     //initialize global bella class
     blClassGlbCov();
+    $('pre code').each(function(i, block) {
+        hljs.highlightBlock(block);
+    });
 
 });
 
 window.onscroll = function () {
-    if(('.scroll-attach').screenTop == 0){
+    if($('.scroll-attach').scrollTop == 0){
 
     }
 };
+
 
 //
 //
@@ -45,32 +50,65 @@ function blClassGlbCov() {
         });
     });
 }
+function blpageCov(onePage) {
+    var $pageRoot = $(onePage);
+    var converter = new showdown.Converter({
+        "omitExtraWLInCodeBlocks":true,
+        "noHeaderId":false,
+        "prefixHeaderId":"",
+        "ghCompatibleHeaderId":true,
+        "headerLevelStart":1,
+        "parseImgDimensions":true,
+        "simplifiedAutoLink":true,
+        "excludeTrailingPunctuationFromURLs":false,
+        "literalMidWordUnderscores":true,
+        "strikethrough":true,
+        "tables":true,
+        "tablesHeaderId":false,
+        "ghCodeBlocks":true,
+        "tasklists":true,
+        "smoothLivePreview":true,
+        "smartIndentationFix":false,
+        "disableForced4SpacesIndentedSublists":false,
+        "simpleLineBreaks":false,
+        "requireSpaceBeforeHeadingText":false,
+        "ghMentions":false,"extensions":[],"sanitize":false
+    });
 
-function blsidebarCov(OneSidebar) {
-    var $OneSidebar = $(OneSidebar);
-    var $OneSidebarMember = $OneSidebar.children('a').toArray();
-    $OneSidebar.children('a:first').addClass('bl-sidebar-active');
-    $OneSidebarMember.forEach(function (OneSidebarbarMemberA) {
-        var $OneSidebarbarMemberA = $(OneSidebarbarMemberA);
-        $OneSidebarbarMemberA.on('click',function () {
-            $OneSidebar.children('a').removeClass('bl-sidebar-active');
-            $OneSidebarbarMemberA.addClass('bl-sidebar-active');
+    var $pageParagList = $pageRoot.find('p').toArray();
+    console.log($pageParagList);
+    $pageParagList.forEach(function (oneParag) {
+        var $oneParag = $(oneParag);
+        $oneParag.html(converter.makeHtml($oneParag.html()));
+    });
+}
+function blsidebarCov(oneSidebar) {
+    var $oneSidebar = $(oneSidebar);
+    var $oneSidebarMember = $oneSidebar.children('a').toArray();
+    $oneSidebar.children('a:first').addClass('bl-sidebar-active');
+    $oneSidebarMember.forEach(function (oneSidebarbarMemberA) {
+        var $oneSidebarbarMemberA = $(oneSidebarbarMemberA);
+        $oneSidebarbarMemberA.on('click',function () {
+            $oneSidebar.children('a').removeClass('bl-sidebar-active');
+            $oneSidebarbarMemberA.addClass('bl-sidebar-active');
         });
     });
 }
 
-function blnavCov(OneBlHeaderListMember) {
+function blnavCov(oneBlHeaderListMember) {
 
     //nav > ul-body
-    var $rootItem = $(OneBlHeaderListMember);
+    var $rootItem = $(oneBlHeaderListMember);
 
     //ul-body > li-list
     var $itemList = $rootItem.children('li').toArray();
+
 
     //
     $itemList.forEach(function (itemListMember) {
         var $itemListMember = $(itemListMember);
         var $itemListMemberUl = $itemListMember.children('ul');
+        console.log($itemListMemberUl);
         $itemListMemberUl.before("<i class=\"fa fa-angle-down\"></i>");
 
         //

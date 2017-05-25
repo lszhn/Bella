@@ -1,5 +1,4 @@
 @import "general"
-@import "hljs.default.min.css"
 
 $default-blue: #3884ff
 $default-light-grey: #fafafa
@@ -8,6 +7,10 @@ $default-border-grey: #e8eaed
 $default-pink: #ff5252
 $default-bg-grey: #fafafa
 $default-selected-gery: #f8f8f8
+@font-face
+  font-family: 'SFMono'
+  font-weight: 200
+  src: url('../fonts/sf-mono_regular.woff')
 
 @font-face
   src: url("../fonts/MyriadProLight.woff")
@@ -72,7 +75,6 @@ h5
   line-height: 50px
   cursor: pointer
 
-
 .bl-nav li ul *
   margin: 0 auto
   font-size: 18px
@@ -84,7 +86,18 @@ h5
   border-radius: 2px
   background-color: $default-blue
   color: white
-
+.bl-nav a li
+  transition: 0.1s
+.bl-nav a i
+  transition: 0.1s
+.bl-nav a:hover i
+  color: $default-pink
+.bl-nav a:hover li
+  color: $default-pink
+.bl-nav li
+  transition: 0.1s
+.bl-nav li:hover
+  color: $default-pink
 .default-nav
   height: 50px
   background-color: white
@@ -154,3 +167,40 @@ h5
   border-left: 4px solid $default-blue!important
   color: $default-blue!important
   background-color: $default-selected-gery
+
+//
+.bl-page .bl-view-body
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important
+  font-size: 16px
+  line-height: 1.5
+  word-wrap: break-word
+.bl-page .bl-view-body *
+  color: $default-dark-grey
+  padding: 5px 15px
+.bl-page .bl-view-body h2
+  font-size: 40px
+.bl-page .bl-view-body h3
+  font-size: 30px
+.bl-page .bl-view-body h4
+  font-size: 25px
+.bl-page .bl-view-body em
+  font-size: 18px
+  background-color: $default-selected-gery
+  border: 1px solid $default-border-grey
+  border-radius: 5px
+  padding: 3px!important
+  margin: 0 2px
+  font-style: normal
+  color: $default-pink
+  flex-wrap: wrap
+  font-family: quickstandMed
+
+.bl-page .bl-view-body pre code *
+  font-size: 13px
+  line-height: 17px
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace!important
+.bl-page .bl-view-body pre code
+  line-height: 17px
+  font-size: 13px
+  font-family: "SF Mono",Consolas, "Liberation Mono", Menlo, Courier, monospace!important
+

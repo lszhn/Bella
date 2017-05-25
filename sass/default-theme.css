@@ -1,4 +1,3 @@
-@import url(hljs.default.min.css);
 body {
   moz-user-select: -moz-none;
   -moz-user-select: none;
@@ -17,6 +16,10 @@ body {
   -ms-user-select: text;
   user-select: text; }
 
+@font-face {
+  font-family: "SFMono";
+  font-weight: 200;
+  src: url("../fonts/sf-mono_regular.woff"); }
 @font-face {
   src: url("../fonts/MyriadProLight.woff");
   font-family: MyraidProLight; }
@@ -94,6 +97,24 @@ h5 {
   background-color: #3884ff;
   color: white; }
 
+.bl-nav a li {
+  transition: 0.1s; }
+
+.bl-nav a i {
+  transition: 0.1s; }
+
+.bl-nav a:hover i {
+  color: #ff5252; }
+
+.bl-nav a:hover li {
+  color: #ff5252; }
+
+.bl-nav li {
+  transition: 0.1s; }
+
+.bl-nav li:hover {
+  color: #ff5252; }
+
 .default-nav {
   height: 50px;
   background-color: white;
@@ -165,5 +186,46 @@ h5 {
   border-left: 4px solid #3884ff !important;
   color: #3884ff !important;
   background-color: #f8f8f8; }
+
+.bl-page .bl-view-body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word; }
+
+.bl-page .bl-view-body * {
+  color: #555555;
+  padding: 5px 15px; }
+
+.bl-page .bl-view-body h2 {
+  font-size: 40px; }
+
+.bl-page .bl-view-body h3 {
+  font-size: 30px; }
+
+.bl-page .bl-view-body h4 {
+  font-size: 25px; }
+
+.bl-page .bl-view-body em {
+  font-size: 18px;
+  background-color: #f8f8f8;
+  border: 1px solid #e8eaed;
+  border-radius: 5px;
+  padding: 3px !important;
+  margin: 0 2px;
+  font-style: normal;
+  color: #ff5252;
+  flex-wrap: wrap;
+  font-family: quickstandMed; }
+
+.bl-page .bl-view-body pre code * {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
+
+.bl-page .bl-view-body pre code {
+  line-height: 17px;
+  font-size: 13px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
 
 /*# sourceMappingURL=default-theme.css.map */
