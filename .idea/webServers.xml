@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0c393d4b-5451-4404-b6e7-34bb0bd4e084" name="belang.org" url="http://belang.org">
+        <fileTransfer host="belang.org" port="22" rootFolder="/home/wwwroot/belang.org/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

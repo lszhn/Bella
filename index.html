@@ -6,17 +6,18 @@
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
     <title>标题</title>
-    <link href="sass/release.css" rel="stylesheet">
-    <link href="sass/default-theme.css" rel="stylesheet">
+    <link href="release/bella.css" rel="stylesheet">
+    <link href="release/default-theme.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/hljs.default.min.css" rel="stylesheet">
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/shutdown.min.js" type="text/javascript"></script>
+    <script src="js/showdown.min.js" type="text/javascript"></script>
+    <script src="js/pace.min.js" type="text/javascript"></script>
 
 </head>
 <body>
-<div class="raw-w default-nav">
+<div class="raw-w default-nav ">
     <div class="raw-f">
         <h1 class="col-5-a"><i class="fa fa-leaf" aria-hidden="true">&nbsp</i>bella</h1>
         <ul class="bl-nav col-12-a">
@@ -157,19 +158,33 @@
 </div>
 <div class="raw-w">
     <div class="raw-f">
-        <div class="col-24-10 bl-view bl-page">
+        <div class="col-6-a bl-view">
+            <ul class="bl-sidebar default-sidebar-elements">
+                <a>按钮与按钮组</a>
+                <a>文本输入与特殊输入</a>
+                <a>信息输出</a>
+                <a>其他组件</a>
+            </ul>
+        </div>
+        <div class="col-17-10 bl-view bl-page">
             <div class="bl-view-header">组件</div>
             <div class="bl-view-body">
-                <p>##输入输出元素</p>
-                <p>1.使用*.bl-input*来创建输入输出元素</p>
-                <p>2.输入输出元素的表单提交需要嵌套*&ltform&gt*标签</p>
-                </p>
-            </div>
-            <div class="bl-view-footer">视图</div>
+                <p>##基础组件</p>
+                <input type="text" placeholder = "demo">
+                <button>button</button>
+                <input type="checkbox" name="hh">
+                <input type="checkbox" name="hh">
+
+        <input type="checkbox" name="hh"/>
+
+</div>
+            <div class="bl-view-footer">侧边栏-2</div>
         </div>
     </div>
 </div>
 </body>
 <script src="js/highlight.min.js" type="text/javascript"></script>
+<script src="js/jquery.pin.js"></script>
+
 <script src="js/bella.js"></script>
 </html>

@@ -60,24 +60,22 @@ function blClassGlbCov() {
 
 function bltabviewCov(oneTabView) {
     var $oneTabView = $(oneTabView);
-    var $oneTabViewList = $oneTabView.find('.bl-view-header li').toArray();
+    var oneTabViewList = $oneTabView.find('.bl-view-header li').toArray();
     var oneTabViewBodyList = $oneTabView.find('.bl-view-body').toArray();
     var fullWid = parseFloat($oneTabView.find('.bl-view-header').css('width'));
-    var memberWid = fullWid/$oneTabViewList.length;
-    var index = -1;
-    $oneTabViewList.forEach(function (oneTabViewListMember) {
-        index++;
+    var memberWid = fullWid/oneTabViewList.length;
+    oneTabViewList.forEach(function (oneTabViewListMember) {
         $(oneTabViewListMember).css({
             'width':memberWid
         });
     });
-    $oneTabView.children('li:first').addClass('bl-tab-view-active');
-    $oneTabViewList.forEach(function (oneTabViewListMember) {
+    $(oneTabViewList[0]).addClass('bl-tab-view-active');
+    $(oneTabViewBodyList[0]).css({'display':'block'});
+    oneTabViewList.forEach(function (oneTabViewListMember) {
         var $oneTabViewListMember = $(oneTabViewListMember);
         $oneTabViewListMember.on('click',function () {
-            var t_index = index;
             $(oneTabViewBodyList).css({'display':'none'});
-            $(oneTabViewBodyList[t_index]).css({'display':'block'});
+            $(oneTabViewBodyList[oneTabViewList.indexOf($oneTabViewListMember.get(0))]).css({'display':'block'});
             $oneTabView.find('li').removeClass('bl-tab-view-active');
             $oneTabViewListMember.addClass('bl-tab-view-active');
 
