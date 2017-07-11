@@ -1,0 +1,52 @@
+@import "general"
+.bl-nav
+  text-align: center
+  line-height: 50px
+.bl-nav *
+  font-size: 18px
+  font-family: quickstandLight
+  font-weight: 600
+  color: $default-dark-grey
+  text-decoration: none
+
+.bl-nav li
+  margin-right: 20px
+  line-height: 50px
+  cursor: pointer
+.bl-nav li:hover>a
+  color: $default-pink
+.bl-nav li:hover>i
+  color: $default-pink
+.bl-nav li:hover
+  color: $default-pink
+
+.bl-nav li ul li
+  text-decoration: none
+  margin: 0 auto
+  font-size: 18px
+  font-weight: 600
+  line-height: 35px
+  padding: 2px 30px
+
+.bl-nav li ul li:hover
+  border-radius: 2px
+  background-color: $default-blue
+  color: white
+.bl-nav li ul li:hover *
+  color: white
+
+.default-nav
+  height: 50px
+  background-color: white
+  box-shadow: 0 3px 2px -2px rgba(200,200,200,.35)
+.default-nav h1
+  font-family: quickstandLight
+  font-size: 25px
+  line-height: 50px
+  color: $default-pink
+.bl-nav-active
+  background-color: white
+  padding: 5px 5px
+  border: 1px solid #dddddd
+  border-top: none
+  box-shadow: 0 3px 12px rgba(0,0,0,.15)

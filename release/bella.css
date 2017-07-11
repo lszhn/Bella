@@ -1,3 +1,5 @@
+@import url(../css/font-awesome.min.css);
+@import url(../css/hljs.default.min.css);
 body {
   moz-user-select: -moz-none;
   -moz-user-select: none;
@@ -2873,7 +2875,6 @@ body {
   width: 100%; }
 
 .bl-view-body {
-  min-height: 100%;
   width: 100%; }
 
 .bl-view-footer {
@@ -2964,5 +2965,20 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.bl-notification-hide-button {
+  position: absolute;
+  display: block;
+  right: 40px;
+  top: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  padding-bottom: 6.66667px;
+  transition: 0.2s;
+  color: white; }
+
+.bl-notification-hide-button:hover {
+  padding-bottom: 0;
+  top: 16.66667px; }
 
 /*# sourceMappingURL=bella.css.map */

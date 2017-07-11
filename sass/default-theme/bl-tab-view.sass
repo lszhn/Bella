@@ -1,0 +1,24 @@
+@import "general"
+
+.bl-tab-view
+  @extend .bl-view
+.bl-tab-view .bl-view-header
+  padding: 0
+  height: 50px
+.bl-tab-view .bl-view-header ul
+  line-height: 50px
+.bl-tab-view .bl-view-header ul li
+  transition: 0.1s
+  line-height: 50px
+  background-color: $default-selected-gery
+  border-top: 4px solid transparent
+
+.bl-tab-view ul li:hover
+  border-top: 4px solid $default-selected-gery
+  background-color: $default-selected-gery
+.bl-tab-view-active
+  position: relative
+  border-top: 4px solid $default-blue!important
+  color: $default-blue!important
+  background-color: white!important
+  @include animate

@@ -7,14 +7,9 @@
     <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
     <title>标题</title>
     <link href="release/bella.css" rel="stylesheet">
-    <link href="release/default-theme.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/hljs.default.min.css" rel="stylesheet">
-    <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-    <script src="js/showdown.min.js" type="text/javascript"></script>
-    <script src="js/pace.min.js" type="text/javascript"></script>
-
+    <link href="release/default-theme.css" rel="stylesheet"><link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery.bella.min.js"></script>
+    <script src="js/bella.js"></script>
 </head>
 <body>
 <div class="raw-w default-nav ">
@@ -64,7 +59,7 @@
 </div>
 <div class="raw-w">
     <div class="raw-f">
-        <div class="col-24-10 bl-tab-view bl-page">
+        <div class="col-24-a bl-tab-view bl-page">
             <div class="bl-view-header">
                 <ul>
                     <li class="bl-tab-view-active">Apple Inc.</li>
@@ -76,30 +71,26 @@
             <div class="bl-view-body">
                 <p>##标签视图0</p>
                 <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                <p>2.标签视图（tabView）继承自*.bl-view*</p>
                 <p>3.通过为*.bl-tab-view*添加同级类*.bl-page*来实现Markdown渲染</p>
-                </p>
+
             </div>
             <div class="bl-view-body">
                 <p>##标签视图1</p>
                 <p>1.使用*.bl-tab-view*来创建标签视图</p>
                 <p>2.标签视图（tabView）继承自*.bl-view*</p>
                 <p>3.通过为*.bl-tab-view*添加同级类*.bl-page*来实现Markdown渲染</p>
-                </p>
+
             </div>
             <div class="bl-view-body">
                 <p>##标签视图2</p>
-                <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                <p>2.标签视图（tabView）继承自*.bl-view*</p>
-                <p>3.通过为*.bl-tab-view*添加同级类*.bl-page*来实现Markdown渲染</p>
-                </p>
+
             </div>
             <div class="bl-view-body">
                 <p>##标签视图3</p>
                 <p>1.使用*.bl-tab-view*来创建标签视图</p>
                 <p>2.标签视图（tabView）继承自*.bl-view*</p>
                 <p>3.通过为*.bl-tab-view*添加同级类*.bl-page*来实现Markdown渲染</p>
-                </p>
+
             </div>
             <div class="bl-view-footer">视图</div>
         </div>
@@ -126,9 +117,6 @@
                 <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
                 <p>2.使用ul-a来添加侧边栏的内容</p>
                 <p>3.有页眉页脚侧边栏是固定高度的</p>
-
-
-                </p>
             </div>
             <div class="bl-view-footer">侧边栏-1</div>
         </div>
@@ -171,11 +159,9 @@
             <div class="bl-view-body">
                 <p>##基础组件</p>
                 <input type="text" placeholder = "demo">
-                <button>button</button>
-                <input type="checkbox" name="hh">
-                <input type="checkbox" name="hh">
-
-        <input type="checkbox" name="hh"/>
+                <button>按钮</button>
+                <a class="bl-btn">高亮按钮</a>
+                <a class="bl-btn-alert">警示按钮</a>
 
 </div>
             <div class="bl-view-footer">侧边栏-2</div>

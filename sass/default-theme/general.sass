@@ -1,0 +1,93 @@
+@import "../general"
+
+$default-blue: #3884ff
+$default-dark-blue: #3277e6
+$default-light-grey: #fafafa
+$default-dark-grey: #555555
+$default-border-grey: #e8eaed
+$default-pink: #ff5252
+$default-bg-grey: #fafafa
+
+$default-selected-gery: #f8f8f8
+@font-face
+  font-family: 'SFMono'
+  font-weight: 200
+  src: url('../fonts/sf-mono_regular.woff')
+
+@font-face
+  src: url("../fonts/MyriadProLight.woff")
+  font-family: MyraidProLight
+
+@font-face
+  src: url("../fonts/sf-pro-text_regular.woff")
+  font-family: SFPro
+@font-face
+  src: url("../fonts/quickstandLight.woff2")
+  font-family: quickstandLight
+.pace
+  -webkit-pointer-events: none
+  pointer-events: none
+
+  -webkit-user-select: none
+  -moz-user-select: none
+  user-select: none
+
+
+.pace-inactive
+  display: none
+
+
+.pace .pace-progress
+  background: $default-blue
+  position: fixed
+  z-index: 2000
+  top: 0
+  right: 100%
+  width: 100%
+  height: 2px
+@mixin animate
+  transition: 0.3s
+*
+  font-family: quickstandLight,"PingFang SC","Microsoft yahei light","Microsoft yahei"
+  font-size: 20px
+  line-height: 40px
+  font-weight: 400
+  margin: 0
+  padding: 0
+
+*::selection
+  background: rgb(230, 230, 230)
+  color: #1589c9
+
+*::-moz-selection
+  background: rgb(230, 230, 230)
+  color: #1589c9
+body
+  background-color: $default-light-grey
+h2
+  font-size: 40px
+  line-height: 80px
+  color: $default-dark-grey
+h3
+  font-size: 35px
+  line-height: 40px
+
+h4
+  font-size: 30px
+  line-height: 40px
+
+h5
+  font-size: 25px
+  line-height: 40px
+.tiny
+  font-size: 15px!important
+  line-height: 20px!important
+  height: 30px!important
+.lg
+  font-size: 30px!important
+  line-height: 40px!important
+  height: 60px!important
+.lg-plus
+  font-size: 40px!important
+  line-height: 50px!important
+  height: 80px!important

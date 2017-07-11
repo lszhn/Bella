@@ -1,0 +1,8 @@
+sys need demoView::ui.bl-tab-view
+sys need demoNum::var
+
+demoView has 3 tabs
+
+sys create demoView
+sys print demoNum
+

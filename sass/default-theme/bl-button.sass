@@ -1,0 +1,45 @@
+@import "general"
+@mixin btn
+  margin: 10px 5px
+  cursor: pointer
+  text-align: center
+  min-width: 50px
+  outline: none
+  border-radius: 3px
+  height: 40px
+  font-size: 20px
+  line-height: 30px
+  display: inline-block
+  border: 1px solid transparent
+  transition: 200ms
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+
+button
+  @include btn
+  color: black
+  background-color: white
+  padding: 5px 15px
+  height: 42px!important
+button:hover
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
+button:active
+  background-color: $default-selected-gery
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+
+.bl-btn
+  @include btn
+  padding: 0 15px!important
+  line-height: 40px!important
+  background: $default-blue
+  color: #fff
+.bl-btn:hover
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
+.bl-btn:active
+  background-color: $default-dark-blue
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+.bl-attr-alert
+  background-color: $default-pink!important
+
+
+
+
