@@ -7,6 +7,7 @@
  *
  * */
 //element list
+
 var globalElements = [
 
     //elements need to be initialized by JavaScript
@@ -25,22 +26,24 @@ var globalElements = [
 
 ];
 var globalStaticClasses = [
-
     '.switch-delegate'
 ];
 
 
 $(document).ready(function () {
-
     //initialize global bella class
     blClassGlbCov();
     //call highlight.js
     // hljs();
     //
+
 });
 bella = {
     version: "0.1",
-
+    currHashRoute:"",
+    getUrlHash: function () {
+        console.log(location.hash);
+    },
     //MobileSupport
     mobileSupport: function () {
         $('title').after('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />');
@@ -93,6 +96,27 @@ bella = {
         });
     }
 };
+function bellaRouter() {
+    window.addEventListener('load', this.route.bind(this), false);
+    window.addEventListener('hashchange', this.route.bind(this), false);
+
+}
+bellaRouter.prototype.route = function () {
+    this.curHash = location.hash.slice(1) || '#';
+    bella.currHashRoute = this.curHash;
+    console.log(bella.currHashRoute);
+    $.post(
+        "router.php",
+        {
+            routePath: bella.currHashRoute
+        },
+        function (data) {
+            $('#main').css("display",'none').html(data).fadeIn(200);
+            blClassGlbCov();
+        }
+    );
+};
+var router = new bellaRouter();
 
 function hljs() {
     $('pre code').each(function (i, block) {
@@ -107,13 +131,14 @@ function blClassGlbCov() {
 
     //bellaConvertIterator
     globalElements.forEach(function (e) {
-        var $eleList = $(e).toArray();
+        var $eleList = $(e + ':not(.alive)').toArray();
         $eleList.forEach(function (eleListMember) {
             var funcName = String(e.replace(/-/, ''));
             while (funcName.indexOf('-') > 0)
                 funcName = funcName.replace(/-/, '');
             funcName = funcName.replace(/./, '') + 'Cov(eleListMember)';
             eval(funcName);
+            console.log(funcName);
         });
     });
     blStaticClassGlbCov();
@@ -174,7 +199,6 @@ function bltabviewCov(oneTabView) {
             $(oneTabViewBodyList[oneTabViewList.indexOf($oneTabViewListMember.get(0))]).css({'display': 'block'});
             $oneTabView.find('li').removeClass('bl-tab-view-active');
             $oneTabViewListMember.addClass('bl-tab-view-active');
-
         });
     });
 }
@@ -265,7 +289,6 @@ function blsidebarCov(oneSidebar) {
 }
 
 function blnavCov(oneBlHeaderListMember) {
-
     //nav > ul-body
     var $rootItem = $(oneBlHeaderListMember);
 
@@ -277,15 +300,14 @@ function blnavCov(oneBlHeaderListMember) {
     $itemList.forEach(function (itemListMember) {
         var $itemListMember = $(itemListMember);
         var $itemListMemberUl = $itemListMember.children('ul');
-        // $itemListMemberUl.before("<i class=\"fa fa-angle-down\"></i>");
+        $itemListMemberUl.before("<i class=\"fa fa-angle-down\"></i>");
 
         //
         $itemListMember.on('click', function () {
             if ($itemListMemberUl.hasClass('bl-nav-active')) {
-                // $itemListMemberUl.fadeOut(100, function () {
-                //
-                //     $('.bl-nav-active').css('display', 'none').removeClass('bl-nav-active');
-                // })
+                $itemListMemberUl.fadeOut(100, function () {
+                    $('.bl-nav-active').css('display', 'none').removeClass('bl-nav-active');
+                })
             }
             else {
                 $('.bl-nav-active')
@@ -306,4 +328,5 @@ function blnavCov(oneBlHeaderListMember) {
             });
         })
     });
+    $rootItem.addClass('alive');
 }

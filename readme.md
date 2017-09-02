@@ -1,5 +1,5 @@
 # bellaFront 开发者指南
-_建议_
+_TIPS_
 > bellaFront（以下简称"bella"）仍然是开发中的框架，API变更与框架源关闭是随时可能发生的。
 ## 框架结构
 ### 栅格布局
@@ -8,8 +8,16 @@ bella 为开发者提供全局的布局(default 40px)，开发者通过定义
 * bella提供40px长的设计基线
 * 行元素没有高度，是网页的x方向布局元素
 * 列元素有高度与宽度，高度是可选的，当开发者希望列元素与内部元素自适应时，请使用a属性
-
-
+> 如下是一个栅格布局的示例：
+```
+<div class="raw-w">
+    <div class="raw-f">
+        <div class="col-24-10">
+            ##hello,world.
+        </div>
+    </div>
+</div>
+```
 
 ## 视图与视图切换器
 > bella页面的基本显示元素是*bl-view*
@@ -19,6 +27,18 @@ bl-view有如下子类
 * bl-tab-view
 * bl-sidebar
 * bl-page
+
+> 如下是*视图*的代码的示例
+```$xslt
+
+<div class="col-24-10 bl-view bl-page">
+    <div class="bl-view-header">布局</div>
+         <div class="bl-view-body">
+         </div>
+    </div>
+</div>
+```
+
 
 通过在bl-view中添加*bl-view-header*和*bl-view-footer*来添加页眉与页脚
 

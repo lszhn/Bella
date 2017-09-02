@@ -45,7 +45,8 @@ body {
   float: none !important; }
 
 .left {
-  float: left !important; }
+  float: left !important;
+  text-align: left !important; }
 
 .right {
   float: right !important; }
