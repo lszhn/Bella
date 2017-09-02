@@ -39,10 +39,34 @@ bl-view有如下子类
 </div>
 ```
 
+### 多标签视图
+> 使用*bl-tab-view*来创建多标签视图
+bl-tab-view不需要使用切换器来
+```$xslt
+<div class="raw-w">
+        <div class="raw-f">
+            <div class="col-24-a bl-tab-view bl-page">
+                <div class="bl-view-header">
+                    <ul>
+                        <li class="bl-tab-view-active">Apple Inc.</li>
+                        <li>Google</li>
+                        <li>Microsoft</li>
+                        <li>Amazon</li>
+                    </ul>
+                </div>
+                <div class="bl-view-body"> view 0 </div>
+                <div class="bl-view-body"> view 1 </div>
+                <div class="bl-view-body"> view 2 </div>
+                <div class="bl-view-body"> view 3 </div>
+            </div>
+        </div>
+    </div>
+```
+
 
 通过在bl-view中添加*bl-view-header*和*bl-view-footer*来添加页眉与页脚
 
-### 视图切换器
+## 视图切换器
 
 >注意：为了避免视图切换器匹配冲突，bella建议开发者使用 sw- 前缀来区分普通元素与切换器元素
 
