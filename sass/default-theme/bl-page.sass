@@ -1,6 +1,6 @@
 @import "general"
 //
-.bl-page .bl-view-body
+.bl-markdown .bl-view-body
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important
   font-size: 16px
   line-height: 1.5
@@ -8,18 +8,23 @@
   margin: 15px 3%
   width: 94%
   color: $default-dark-grey
-.bl-page *
+.bl-markdown *
   position: relative
 
-.bl-page .bl-view-body h2
+.bl-markdown .bl-view-body h2
   font-size: 40px
-.bl-page .bl-view-body h3
+.bl-markdown .bl-view-body h3
+  padding-left: 5px
   font-size: 30px
-.bl-page .bl-view-body h4
+.bl-markdown .bl-view-body h4
+  padding-left: 7px
   font-size: 25px
-.bl-page .bl-view-body em
+.bl-markdown .bl-view-body h5
+  font-size: 16px
+  padding-left: 9px
+.bl-markdown .bl-view-body em
   font-size: 18px
-  background-color: $default-selected-gery
+  background-color: $default-selected-grey
   border: 1px solid $default-border-grey
   border-radius: 5px
   padding: 3px!important
@@ -28,11 +33,11 @@
   color: $default-orig
   flex-wrap: wrap
 
-.bl-page .bl-view-body pre code *
+.bl-markdown .bl-view-body pre code *
   font-size: 13px
   line-height: 17px
   font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace!important
-.bl-page .bl-view-body pre code
+.bl-markdown .bl-view-body pre code
   line-height: 17px
   font-size: 13px
   font-family: "SF Mono",Consolas, "Liberation Mono", Menlo, Courier, monospace!important

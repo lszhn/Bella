@@ -1,18 +1,5 @@
 <div class="raw-w">
     <div class="raw-f">
-        <div class="col-24-10 bl-view bl-page">
-            <div class="bl-view-header">布局</div>
-            <div class="bl-view-body">
-                <p>##视图</p>
-                <p>1.使用*.bl-view*来创建视图</p>
-                <p>2.视图（view）是bella的基础布局类组件，它允许为其添加页眉与页脚</p>
-                <p>3.通过为*.bl-view*添加同级类*.bl-page*来实现Markdown渲染</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="raw-w">
-    <div class="raw-f">
         <div class="col-24-a bl-tab-view bl-page">
             <div class="bl-view-header">
                 <ul>
