@@ -17,16 +17,19 @@ var globalElements = [
     //bella universal elements::
     '.bl-nav',
     '.bl-sidebar',
-    '.bl-page',
+    '.bl-markdown',
     '.bl-view',
 
-    //delegate
-    '.attach-delegate'
+    //tag
+    '.attach-tag',
+
+    //
+    '.bella-script'
 
 
 ];
 var globalStaticClasses = [
-    '.switch-delegate'
+    '.switch-tag'
 ];
 
 
@@ -38,9 +41,10 @@ $(document).ready(function () {
     //
 
 });
+
 bella = {
     version: "0.1",
-    currHashRoute:"",
+    currHashRoute: "",
     getUrlHash: function () {
         console.log(location.hash);
     },
@@ -63,6 +67,9 @@ bella = {
     },
     getWindowHeight: function () {
         return $(window).height();
+    },
+    getWindowWidth: function () {
+        return $(window).width();
     },
     //timestamp
 
@@ -96,27 +103,29 @@ bella = {
         });
     }
 };
+bella.mobileSupport();
+
 function bellaRouter() {
     window.addEventListener('load', this.route.bind(this), false);
     window.addEventListener('hashchange', this.route.bind(this), false);
-
 }
-bellaRouter.prototype.route = function () {
-    this.curHash = location.hash.slice(1) || '#';
-    bella.currHashRoute = this.curHash;
-    console.log(bella.currHashRoute);
-    $.post(
-        "router.php",
-        {
-            routePath: bella.currHashRoute
-        },
-        function (data) {
-            $('#main').css("display",'none').html(data).fadeIn(200);
-            blClassGlbCov();
-        }
-    );
-};
-var router = new bellaRouter();
+
+// bellaRouter.prototype.route = function () {
+//     this.curHash = location.hash.slice(1) || '#';
+//     bella.currHashRoute = this.curHash;
+//     console.log(bella.currHashRoute);
+//     $.post(
+//         "router.php",
+//         {
+//             routePath: bella.currHashRoute
+//         },
+//         function (data) {
+//             $('#main').css("display", 'none').html(data).fadeIn(200);
+//             blClassGlbCov();
+//         }
+//     );
+// };
+// var router = new bellaRouter();
 
 function hljs() {
     $('pre code').each(function (i, block) {
@@ -175,6 +184,12 @@ function blNotificationCov(type, msg) {
     var notifDiv = $('<div style="display: none" id="' + currTimeStamp + '" class="' + type + ' raw-w"><div class="raw-f"><p></p></div><div onclick="bella.hideNotification()" class="tiny bl-notification-hide-button">Hide</div></div>');
     $('body').before(notifDiv);
     $('#' + currTimeStamp + ' p').html(msg);
+    if ($(document).scrollTop() > 0) {
+        $("#currTimeStamp").css({
+            "position": "fixed",
+            "top": "0"
+        });
+    }
     $('.' + type + '').slideUp(300);
     $('#' + currTimeStamp).slideDown(300);
 }
@@ -203,47 +218,47 @@ function bltabviewCov(oneTabView) {
     });
 }
 
-function switchdelegateCov() {
-    var $switchDelegateTotalList = $('.switch-delegate').toArray();
-    $switchDelegateTotalList.forEach(function (oneswitchDelegate) {
-        var oneSlotName = $(oneswitchDelegate).attr("name");
-        var slotList = $("ul[name=" + oneSlotName + "]:not(\".switch-delegate\")").find('.bl-view-body');
-        var oneSwitchDelegateAList = $(oneswitchDelegate).find('a').toArray();
-        oneSwitchDelegateAList.forEach(function (oneSwitchDelegateAListMember) {
-            $(oneSwitchDelegateAListMember).on('click', function () {
-                $(oneSwitchDelegateAList).removeClass("bl-view-active");
-                $(oneSwitchDelegateAListMember).addClass("bl-view-active");
+function switchtagCov() {
+    var $switchTagTotalList = $('.switch-tag').toArray();
+    $switchTagTotalList.forEach(function (oneswitchTag) {
+        var oneSlotName = $(oneswitchTag).attr("name");
+        var slotList = $("ul[name=" + oneSlotName + "]:not(\".switch-tag\")").find('.bl-view-body');
+        var oneSwitchTagAList = $(oneswitchTag).find('a').toArray();
+        oneSwitchTagAList.forEach(function (oneSwitchTagAListMember) {
+            $(oneSwitchTagAListMember).on('click', function () {
+                $(oneSwitchTagAList).removeClass("bl-view-active");
+                $(oneSwitchTagAListMember).addClass("bl-view-active");
                 $(slotList).css('display', 'none');
-                $(slotList[oneSwitchDelegateAList.indexOf(oneSwitchDelegateAListMember)]).css('display', 'block');
-                $('.m-bl-view-header').text($(oneSwitchDelegateAListMember).text());
+                $(slotList[oneSwitchTagAList.indexOf(oneSwitchTagAListMember)]).css('display', 'block');
+                $('.m-bl-view-header').text($(oneSwitchTagAListMember).text());
             });
         });
-        $(oneSwitchDelegateAList[0]).addClass("bl-view-active");
+        $(oneSwitchTagAList[0]).addClass("bl-view-active");
     });
 }
 
-function attachdelegateCov(oneAttachDelegate) {
-    var $oneAttachDelegate = $(oneAttachDelegate);
+function attachtagCov(oneAttachTag) {
+    var $oneAttachTag = $(oneAttachTag);
     $(document).scroll(function () {
         var scrollTop = $(document).scrollTop();
-        var objScrollTop = $oneAttachDelegate.position().top;
-        if (scrollTop > objScrollTop && $('.attach-delegate-clone').length == 0) {
-            var $attachDelegateInstant = $oneAttachDelegate.clone(true);
-            $oneAttachDelegate.append($attachDelegateInstant);
-            $attachDelegateInstant.addClass('attach-delegate-clone');
-            $attachDelegateInstant.css({
+        var objScrollTop = $oneAttachTag.position().top;
+        if (scrollTop > objScrollTop && $('.attach-tag-clone').length == 0) {
+            var $attachTagInstant = $oneAttachTag.clone(true);
+            $oneAttachTag.append($attachTagInstant);
+            $attachTagInstant.addClass('attach-tag-clone');
+            $attachTagInstant.css({
                 'position': 'fixed',
-                'top': $oneAttachDelegate.position().top - parseFloat($oneAttachDelegate.css('height')) + 'px',
-                'left': $oneAttachDelegate.position().left + 'px',
+                'top': $oneAttachTag.position().top - parseFloat($oneAttachTag.css('height')) + 'px',
+                'left': $oneAttachTag.position().left + 'px',
                 'z-index': 500
             });
         } else if (scrollTop <= objScrollTop) {
-            $(document).find($('.attach-delegate-clone')).remove();
+            $(document).find($('.attach-tag-clone')).remove();
         }
     });
 }
 
-function blpageCov(onePage) {
+function blmarkdownCov(onePage) {
     var $pageRoot = $(onePage);
     var converter = new showdown.Converter({
         "omitExtraWLInCodeBlocks": true,
@@ -267,7 +282,6 @@ function blpageCov(onePage) {
         "requireSpaceBeforeHeadingText": false,
         "ghMentions": false, "extensions": [], "sanitize": false
     });
-
     var $pageParagList = $pageRoot.find('p').toArray();
     $pageParagList.forEach(function (oneParag) {
         var $oneParag = $(oneParag);
@@ -329,4 +343,124 @@ function blnavCov(oneBlHeaderListMember) {
         })
     });
     $rootItem.addClass('alive');
+}
+
+function bellascriptCov(e) {
+    $blExpDom = $(e);
+
+    //split a html content into blocks.
+    var blExpDomExpSet = $blExpDom.html().split("}");
+    $blExpDom.html("");
+    blExpDomExpSet.pop();
+
+    //solve each block.
+    blExpDomExpSet.forEach(function (blExpDomExp) {
+            blExpDomExp += '}';
+            //clean code.
+            blExpDomExp = blExpDomExp.replace(/[\r\n\t\s]/g, "");
+            var blExpDomExpArray = /(.+?)\{(.+?|)}/.exec(blExpDomExp);
+
+            //deduct block type and solve child expression.
+            switch (blExpDomExpArray[1]) {
+                case "form": {
+
+                    //construct form.
+                    $blExpDom.append('<div class = "qform-compiling">');
+                    $blExpDomCompiling = $blExpDom.children(".qform-compiling");
+
+
+                    //
+                    var blExpDomExpChildExpSet = blExpDomExpArray[2].split(";");
+                    blExpDomExpChildExpSet.pop();
+
+                    //these children will be split into sepreate code.
+                    blExpDomExpChildExpSet.forEach(function (blExpDomExpChildExp) {
+                        var blExpDomExpChildExpSource = blExpDomExpChildExp;
+                        blExpDomExpChildExp = /\((.+?)\)(.+?)]/.exec(blExpDomExpChildExp);
+                        switch (blExpDomExpChildExp[1]) {
+
+                            case "select": {
+                                blExpDomExpChildExp = /\((.+?)\)(.+?):\((.+?)\)\[(.+?)]/.exec(blExpDomExpChildExp);
+                                $blExpDomCompiling.append('<h5>' + blExpDomExpChildExp[2] + '</h5>');
+                                $blExpDomCompiling.append('<select id="' + blExpDomExpChildExp[3] + '" name="' + blExpDomExpChildExp[3] + '"/>');
+                                var blExpDomExpChildExpSelect = blExpDomExpChildExp[4].split(",");
+                                blExpDomExpChildExpSelect.forEach(function (blExpDomExpChildExpCell) {
+                                    $blExpDomCompiling.children('#' + blExpDomExpChildExp[3]).append('<option>' + blExpDomExpChildExpCell);
+
+                                });
+                                break;
+                            }
+                            case "checkbox": {
+                                blExpDomExpChildExp = /\((.+?)\)(.+?):\((.+?)\)\[(.+?)]/.exec(blExpDomExpChildExp);
+                                $blExpDomCompiling.append('<h5>' + blExpDomExpChildExp[2] + '</h5>');
+                                $blExpDomCompiling.append('<div class="bl-checkbox" id="' + blExpDomExpChildExp[3] + '">');
+                                var blExpDomExpChildExpCheckbox = blExpDomExpChildExp[4].split(",");
+                                blExpDomExpChildExpCheckbox.forEach(function (blExpDomExpChildExpCell) {
+                                    $blExpDomCompiling.children('#' + blExpDomExpChildExp[3]).append('<span><input type="checkbox" name="' + blExpDomExpChildExp[3] + '" value="' + blExpDomExpChildExpCell + '"><label>' + blExpDomExpChildExpCell + '</label></span>');
+                                });
+
+                                break;
+                            }
+                            case "radio": {
+                                blExpDomExpChildExp = /\((.+?)\)(.+?):\((.+?)\)\[(.+?)]/.exec(blExpDomExpChildExp);
+                                $blExpDomCompiling.append('<h5>' + blExpDomExpChildExp[2] + '</h5>');
+                                $blExpDomCompiling.append('<div class="bl-radiobox" id="' + blExpDomExpChildExp[3] + '">');
+                                var blExpDomExpChildExpCheckbox = blExpDomExpChildExp[4].split(",");
+                                blExpDomExpChildExpCheckbox.forEach(function (blExpDomExpChildExpCell) {
+                                    $blExpDomCompiling.append('<h5 class="h5_fill">&nbsp</h5>');
+                                    $blExpDomCompiling.children('#' + blExpDomExpChildExp[3]).append('<span><input type="radio" name="' + blExpDomExpChildExp[3] + '" value="' + blExpDomExpChildExpCell + '"><label>' + blExpDomExpChildExpCell + '</label></span>');
+                                });
+                                $blExpDomCompiling.children('#' + blExpDomExpChildExp[3] + 'input:first-child').attr("checked", this.checked);
+
+
+                                break;
+                            }
+                        }
+                    });
+                    $blExpDomCompiling.removeClass('belang-compiling');
+                    $blExpDom.removeClass("belang");
+                    $blExpDom.addClass("belang-compiled");
+                    break;
+                }
+                case "table": {
+                    $blExpDom.append('<div class = "qform-compiling">');
+                    var $blExpDomCompiling = $blExpDom.children(".qform-compiling");
+                    var $result = "";
+
+                    //
+                    var blExpDomExpChildExpSet = blExpDomExpArray[2].split(";");
+                    blExpDomExpChildExpSet.pop();
+
+                    //these children will be split into sepreate code.
+                    var isCaption = true;
+                    blExpDomExpChildExpSet.forEach(function (blExpDomExpChildExp) {
+                        var blExpDomExpChildExpSource = blExpDomExpChildExp;
+                        var blExpDomExpChildSet = blExpDomExpChildExp.split("|");
+                        if (isCaption) {
+                            $result += "<table><thead><tr>";
+                            var i = 0;
+                            blExpDomExpChildSet.forEach(function (e) {
+                                $result += ("<th>" + blExpDomExpChildSet[i] + "</th>");
+                                i++;
+                            });
+                            $result += "</tr></thead><tbody>";
+                            isCaption = false;
+
+                        } else {
+                            var j = 0;
+                            $result += "<tr>";
+                            blExpDomExpChildSet.forEach(function (e) {
+                                $result += ("<td>" + blExpDomExpChildSet[j] + "</td>");
+                                j++
+                            });
+                            $result += "</tr>";
+                        }
+                    });
+                    $result += "</tbody></table>";
+                    $blExpDomCompiling.html($result);
+                }
+            }
+        }
+    );
+
 }
