@@ -20,15 +20,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -40,7 +31,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -49,12 +40,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -64,64 +60,57 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 input, select, .bl-checkbox input[type=checkbox], .bl-radiobox input[type=radio] {
   margin: 10px 5px;
   height: 40px;
   line-height: 30px;
-  border-radius: 3px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: #fff;
+  color: black !important;
+  border-radius: 0 !important;
+  background-color: #f1f1f1;
   outline: none;
-  border: 1px solid transparent;
-  color: #444;
-  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  border: 1px solid transparent; }
 
 span label {
-  color: black;
-  transition: 100ms; }
+  color: black !important;
+  background-color: transparent !important;
+  transition: 200ms; }
 
 input:hover, select:hover, .bl-checkbox input[type=checkbox]:hover, .bl-radiobox input[type=radio]:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+  background-color: #dedede; }
 
 select {
   appearance: none;
@@ -130,6 +119,7 @@ select {
   outline: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  min-width: 5em;
   -ms-user-select: none;
   user-select: none;
   text-decoration: none;
@@ -137,29 +127,21 @@ select {
   vertical-align: middle;
   cursor: pointer; }
 
-select:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.1); }
-
 .bl-checkbox {
   position: relative;
   width: 250px;
+  border: 0;
   color: black;
-  border: 0; }
-
-.bl-checkbox span:first-child {
-  border-radius: 5px 5px 0 0; }
+  background-color: #f1f1f1; }
 
 .bl-checkbox span {
   width: 94%;
   position: relative;
   min-width: 25%;
-  line-height: 38px;
+  line-height: 33px;
   font-size: 20px;
   padding: 0 10px;
   display: inline-block; }
-
-.bl-checkbox span:last-child {
-  border-radius: 0 0 5px 5px !important; }
 
 .bl-checkbox select[type=checkbox], .bl-checkbox input[type=checkbox] {
   transition: 0.1s;
@@ -178,18 +160,20 @@ select:hover {
   z-index: 2; }
 
 .bl-checkbox select[type=checkbox]:hover, .bl-checkbox input[type=checkbox]:hover {
-  border-left: 8px solid #bebebe;
-  padding-left: 8px; }
+  border-left: 3px solid #666;
+  padding-left: 3px;
+  background-color: #dedede; }
 
 .bl-checkbox select[type=checkbox]:checked, .bl-checkbox input[type=checkbox]:checked {
-  border-left: 4px solid #05c679; }
+  border-left: 2px solid #0070c9; }
 
 .bl-checkbox select[type=checkbox]:hover + label, .bl-checkbox input[type=checkbox]:hover + label, .bl-checkbox .bl-radiobox input[type=checkbox][type=radio]:hover + label {
-  padding-left: 8px; }
+  padding-left: 3px;
+  background-color: #dedede; }
 
 .bl-checkbox select[type=checkbox]:checked + label, .bl-checkbox input[type=checkbox]:checked + label, .bl-checkbox .bl-radiobox input[type=checkbox][type=radio]:checked + label {
-  padding-left: 8px;
-  color: #bebebe; }
+  padding-left: 3px;
+  color: #666; }
 
 .bl-radiobox {
   position: relative;
@@ -197,24 +181,17 @@ select:hover {
   color: black;
   border: 0; }
 
-.bl-radiobox span:first-child {
-  border-radius: 5px 5px 0 0; }
-
 .bl-radiobox span {
   width: 94%;
   position: relative;
   min-width: 25%;
-  line-height: 38px;
+  line-height: 33px;
   font-size: 20px;
   padding: 0 10px;
   display: inline-block; }
 
-.bl-radiobox span:last-child {
-  border-radius: 0 0 5px 5px !important; }
-
 .bl-radiobox select[type=radio], .bl-radiobox input[type=radio] {
   background-color: transparent;
-  transition: 0.1s;
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -229,19 +206,20 @@ select:hover {
   z-index: 2; }
 
 .bl-radiobox select[type=radio]:hover, .bl-radiobox input[type=radio]:hover {
-  border-left: 8px solid #bebebe;
-  padding-left: 8px;
-  z-index: 5; }
+  border-left: 2px solid #666;
+  padding-left: 2px;
+  z-index: 5;
+  background-color: #dedede; }
 
 .bl-radiobox select[type=radio]:checked, .bl-radiobox input[type=radio]:checked {
-  border-left: 4px solid #05c679; }
+  border-left: 2px solid #0070c9; }
 
 .bl-radiobox select[type=radio]:hover + label, .bl-radiobox .bl-checkbox input[type=radio][type=checkbox]:hover + label, .bl-radiobox input[type=radio]:hover + label {
-  padding-left: 8px; }
+  padding-left: 3px;
+  background-color: #dedede; }
 
 .bl-radiobox select[type=radio]:checked + label, .bl-radiobox .bl-checkbox input[type=radio][type=checkbox]:checked + label, .bl-radiobox input[type=radio]:checked + label {
-  padding-left: 8px;
-  color: #bebebe; }
+  padding-left: 3px; }
 
 body {
   moz-user-select: -moz-none;
@@ -265,15 +243,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -285,7 +254,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -294,12 +263,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -309,98 +283,89 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 button {
-  margin: 10px 5px;
+  margin: 1em 1em;
+  padding: 0.5em 2em;
   cursor: pointer;
   text-align: center;
-  min-width: 50px;
+  min-width: 5em;
   outline: none;
   border-radius: 3px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1em;
   display: inline-block;
   border: 1px solid transparent;
   transition: 200ms;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
   color: black;
-  background-color: white;
-  padding: 5px 15px;
-  height: 42px !important; }
+  background-color: #f1f1f1; }
 
 button:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+  background-color: #dedede; }
 
 button:active {
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  background-color: #c1c1c1; }
 
 .bl-btn, .bl-btn-alert {
-  margin: 10px 5px;
+  margin: 1em 1em;
+  padding: 0.5em 2em;
   cursor: pointer;
   text-align: center;
-  min-width: 50px;
+  min-width: 5em;
   outline: none;
   border-radius: 3px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1em;
   display: inline-block;
   border: 1px solid transparent;
   transition: 200ms;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  padding: 0 15px !important;
-  line-height: 40px !important;
-  background: #0079d1;
-  color: #fff; }
+  color: white;
+  background: #0079d1; }
 
 .bl-btn:hover, .bl-btn-alert:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+  background-color: #0070bb; }
 
 .bl-btn:active, .bl-btn-alert:active {
-  background-color: #0066aa;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  background-color: #0066aa; }
 
 .bl-btn-alert {
+  color: white;
   background-color: #ff5252 !important; }
+
+.bl-btn-alert:hover {
+  background-color: #e64a4a !important; }
+
+.bl-btn-alert:active {
+  background-color: #cc4242 !important; }
 
 body {
   moz-user-select: -moz-none;
@@ -424,15 +389,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -444,7 +400,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -453,12 +409,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -468,52 +429,46 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 .bl-nav {
   text-align: center;
   line-height: 50px; }
 
 .bl-nav * {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none; }
 
 .bl-nav li {
@@ -547,10 +502,12 @@ h5 {
 .bl-nav li ul li:hover * {
   color: black; }
 
+.default-nav * {
+  color: rgba(255, 255, 255, 0.8); }
+
 .default-nav {
   height: 50px;
-  background-color: #24292e;
-  box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.35); }
+  background-color: #006666; }
 
 .default-nav h1 {
   font-size: 25px;
@@ -561,8 +518,7 @@ h5 {
   background-color: white;
   padding: 5px 5px;
   border: 1px solid #dddddd;
-  border-top: none;
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
+  border-top: none; }
 
 body {
   moz-user-select: -moz-none;
@@ -586,15 +542,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -606,7 +553,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -615,12 +562,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -630,43 +582,85 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
+
+.bl-markdown.bl-view-body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 15px 3%;
+  width: 94%;
+  color: #333333; }
+
+.bl-markdown * {
+  position: relative; }
+
+.bl-markdown.bl-view-body h2 {
+  font-size: 40px; }
+
+.bl-markdown.bl-view-body h3 {
+  padding-left: 5px;
+  font-size: 30px; }
+
+.bl-markdown.bl-view-body h4 {
+  padding-left: 7px;
+  font-size: 25px; }
+
+.bl-markdown.bl-view-body h5 {
+  font-size: 16px;
+  padding-left: 9px; }
+
+.bl-markdown.bl-view-body em {
+  font-size: 18px;
+  background-color: #f8f8f8;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  padding: 3px !important;
+  margin: 0 2px;
+  font-style: normal;
+  color: #333333;
+  flex-wrap: wrap; }
+
+.bl-markdown.bl-view-body pre code * {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
+
+.bl-markdown.bl-view-body pre code {
+  line-height: 17px;
+  font-size: 13px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
 
 .bl-markdown .bl-view-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
@@ -675,7 +669,7 @@ h5 {
   word-wrap: break-word;
   margin: 15px 3%;
   width: 94%;
-  color: #6a737d; }
+  color: #333333; }
 
 .bl-markdown * {
   position: relative; }
@@ -698,12 +692,12 @@ h5 {
 .bl-markdown .bl-view-body em {
   font-size: 18px;
   background-color: #f8f8f8;
-  border: 1px solid #e8eaed;
+  border: 1px solid #888888;
   border-radius: 5px;
   padding: 3px !important;
   margin: 0 2px;
   font-style: normal;
-  color: #e36209;
+  color: #333333;
   flex-wrap: wrap; }
 
 .bl-markdown .bl-view-body pre code * {
@@ -738,15 +732,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -758,7 +743,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -767,12 +752,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -782,57 +772,53 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 .bl-sidebar a {
-  transition: 0.1s;
-  border-left: 4px solid transparent;
+  transition: 200ms;
+  line-height: 3em !important;
+  border-left: 1px solid transparent;
   padding-left: 11px;
   font-size: 15px;
   cursor: pointer;
-  color: #0366d6; }
+  color: #666; }
 
 .bl-sidebar a:hover {
   background-color: #f8f8f8; }
 
 .bl-sidebar-active {
-  border-left: 4px solid #e36209 !important;
+  transition: 200ms;
+  border-left: 2px solid #333333 !important;
   color: black !important;
   background-color: #f8f8f8; }
 
@@ -858,15 +844,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -878,7 +855,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -887,12 +864,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -902,43 +884,37 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 .default-subnav h2 {
   display: block;
@@ -951,7 +927,7 @@ h5 {
   box-shadow: 0 3px 2px -2px rgba(200, 200, 200, 0.35); }
 
 .default-subnav .bl-nav * {
-  color: #6a737d;
+  color: #333333;
   font-size: 14px; }
 
 body {
@@ -976,15 +952,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -996,7 +963,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -1005,12 +972,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -1020,54 +992,48 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 .bl-tab-view .bl-view-header {
   padding: 0;
   height: 50px; }
 
 .bl-tab-view .bl-view-header ul {
-  line-height: 50px; }
+  line-height: 40px; }
 
 .bl-tab-view .bl-view-header ul li {
   transition: 0.1s;
-  line-height: 50px;
+  line-height: 40px;
   background-color: #f8f8f8;
   border-top: 4px solid transparent; }
 
@@ -1077,7 +1043,7 @@ h5 {
 
 .bl-tab-view-active {
   position: relative;
-  border-top: 4px solid #e36209 !important;
+  border-top: 4px solid #333333 !important;
   color: black !important;
   background-color: white !important;
   transition: 0.3s; }
@@ -1104,15 +1070,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -1124,7 +1081,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -1133,12 +1090,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -1148,75 +1110,73 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
-.bl-view, .bl-tab-view {
-  box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15);
+.bl-view, .bl-tab-view, .bl-pop-view {
   background-color: white;
-  border-radius: 3px;
-  border: 1px solid #e8eaed;
-  margin-top: 15px;
-  margin-left: 15px; }
+  margin-top: 1em;
+  margin-left: 1em; }
 
 .bl-view-header {
-  line-height: 50px;
-  padding-left: 15px;
+  line-height: 3em;
+  padding-left: 1em;
   position: relative;
-  font-size: 14px;
+  font-size: 1em;
   display: block;
   color: #999; }
 
 .bl-view-body {
   margin: 0;
   transition: 200ms;
-  min-height: 300px; }
+  min-height: 20em; }
 
 .bl-view-footer {
-  padding-left: 15px;
-  line-height: 50px;
-  font-size: 14px;
+  padding-left: 1em;
+  line-height: 3em;
+  font-size: 1em;
   color: #999; }
+
+.shadowed {
+  box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15) !important; }
+
+.fusion {
+  background-color: transparent !important;
+  border: none !important; }
 
 .bl-notification-normal {
   position: relative;
   height: 70px;
-  background-color: #006699;
+  background-color: #006666;
   color: white;
   width: 100%; }
 
@@ -1263,15 +1223,6 @@ body {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
-@font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -1283,7 +1234,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -1292,12 +1243,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
 
 *::selection {
   background: #e6e6e6;
@@ -1307,43 +1263,37 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
-
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-size: 2em;
+  line-height: 2.5em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
 table {
   border-collapse: collapse;
@@ -1366,17 +1316,132 @@ tbody tr {
   color: black; }
 
 thead {
-  color: #0366d6; }
+  color: #0070c9; }
+
+th {
+  text-align: center; }
 
 tbody tr:hover {
-  background-color: #0079d1;
-  color: white; }
+  transition: 100ms;
+  background-color: #eff7ff; }
 
 tbody tr:nth-child(odd) {
   background: #f8f8f8; }
 
 tbody tr:nth-child(odd):hover {
-  background-color: #0079d1;
-  color: white; }
+  transition: 100ms;
+  background-color: #eff7ff; }
+
+body {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.selectable {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+@font-face {
+  font-family: "SFMono";
+  font-weight: 200;
+  src: url("../fonts/sf-mono_regular.woff"); }
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #666;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
+
+*::selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+*::-moz-selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+h2 {
+  font-size: 2em;
+  line-height: 2.5em; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 2em; }
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+.tiny {
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
+
+.lg {
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
+
+.lg-plus {
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
+
+.bl-pop-view-bg {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.5; }
+
+.bl-pop-view {
+  box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15);
+  display: none;
+  border-radius: 2px #888888;
+  width: 640px;
+  height: auto;
+  position: relative;
+  margin: 240px auto;
+  background-color: white; }
 
 /*# sourceMappingURL=default-theme.css.map */

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="0c393d4b-5451-4404-b6e7-34bb0bd4e084" name="belang.org" url="https://www.belang.org">
-        <fileTransfer host="https://www.belang.org" port="22" rootFolder="/home/wwwroot/www.belang.org/" accessType="SFTP">
+      <webServer id="0c393d4b-5451-4404-b6e7-34bb0bd4e084" name="belang.org" url="http://huaji.io">
+        <fileTransfer host="huaji.io" port="22" rootFolder="/home/wwwroot/bella.huaji.io" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

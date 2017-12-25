@@ -1,7 +1,7 @@
 @import url(../css/font-awesome.css);
 @import url(../css/hljs.default.min.css);
 @import url(../css/unslider-dots.css);
-@import url(../css/unslider-dots.css);
+@import url(../css/unslider.css);
 body {
   moz-user-select: -moz-none;
   -moz-user-select: none;
@@ -2811,9 +2811,13 @@ body {
   height: auto;
   float: left; }
 
-@media screen and (max-device-width: 480px) {
-  .bl-nav ul {
-    display: none; } }
+@media screen and (max-device-width: 1000px) {
+  .raw-f {
+    margin: auto;
+    float: none !important;
+    width: 100%;
+    float: left;
+    position: relative; } }
 body {
   moz-user-select: -moz-none;
   -moz-user-select: none;

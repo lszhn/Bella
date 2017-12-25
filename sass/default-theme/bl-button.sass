@@ -1,46 +1,42 @@
 @import "general"
 @mixin btn
-  margin: 10px 5px
+  margin: 1em 1em
+  padding: 0.5em 2em
   cursor: pointer
   text-align: center
-  min-width: 50px
+  min-width: 5em
   outline: none
   border-radius: 3px
-  height: 40px
-  font-size: 20px
-  line-height: 30px
+  font-size: 1em
   display: inline-block
   border: 1px solid transparent
   transition: 200ms
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
 
 button
   @include btn
   color: black
-  background-color: white
-  padding: 5px 15px
-  height: 42px!important
+  background-color: #f1f1f1
 button:hover
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
-button:active
-  background-color: $default-selected-grey
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+  background-color: #dedede
 
+button:active
+  background-color: #f1f1f1 * 0.8
 .bl-btn
   @include btn
-  padding: 0 15px!important
-  line-height: 40px!important
+  color: white
   background: $default-light-blue
-  color: #fff
 .bl-btn:hover
-  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
+  background-color: #0066aa * 1.1
 .bl-btn:active
   background-color: #0066aa
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
 .bl-btn-alert
   @extend .bl-btn
+  color: white
   background-color: $default-pink!important
-
+.bl-btn-alert:hover
+  background-color: $default-pink * 0.9!important
+.bl-btn-alert:active
+  background-color: $default-pink * 0.8!important
 
 
 

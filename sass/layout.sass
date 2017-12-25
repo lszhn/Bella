@@ -78,8 +78,12 @@ body
     float: left
 
 //
-//Mobile Device
-@media screen and (max-device-width: 480px)
-  .bl-nav ul
-    display: none
-  $base : 20px
+//Large Screen Device
+@media screen and (max-device-width: 1000px)
+  .raw-f
+    @include layout
+    @include center
+    width: 100%
+    float: left
+    position: relative
+

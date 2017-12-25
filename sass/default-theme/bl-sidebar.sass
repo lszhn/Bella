@@ -1,16 +1,18 @@
 @import "general"
 //
 .bl-sidebar a
-  transition: 0.1s
-  border-left: 4px solid transparent
+  transition: 200ms
+  line-height: 3em!important
+  border-left: 1px solid transparent
   padding-left: 11px
   font-size: 15px
   cursor: pointer
-  color: $default-link-blue
+  color: $default-light-grey
 
 .bl-sidebar a:hover
   background-color: $default-selected-grey
 .bl-sidebar-active
-  border-left: 4px solid $default-orig!important
+  transition: 200ms
+  border-left: 2px solid $default-orig!important
   color: black!important
   background-color: $default-selected-grey

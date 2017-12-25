@@ -23,15 +23,15 @@ var globalElements = [
     //tag
     '.attach-tag',
 
-    //
-    '.bella-script'
+    //live script
+    '.bella-script',
+
 
 
 ];
 var globalStaticClasses = [
     '.switch-tag'
 ];
-
 
 $(document).ready(function () {
     //initialize global bella class
@@ -100,6 +100,15 @@ bella = {
         });
         $('.bl-notification-alert').slideUp(500, function () {
             $('.bl-notification-alert').remove();
+        });
+    },
+    showPopView: function (popViewId) {
+        $(document.body).append('<div class="bl-pop-view-bg">');
+        var $currPopView = $('#'+popViewId).clone();
+        $('.bl-pop-view-bg').fadeIn(300).append($currPopView);
+        $currPopView.fadeIn(300);
+        $('.bl-pop-view-cancel').on('click', function () {
+            $('.bl-pop-view-bg').remove();
         });
     }
 };
@@ -197,7 +206,7 @@ function blNotificationCov(type, msg) {
 function bltabviewCov(oneTabView) {
     var $oneTabView = $(oneTabView);
     var oneTabViewList = $oneTabView.find('.bl-view-header li').toArray();
-    var oneTabViewBodyList = $oneTabView.find('.bl-view-body').toArray();
+    var oneTabViewBodyList = $oneTabView.children('.bl-view-body').toArray();
     var fullWid = parseFloat($oneTabView.find('.bl-view-header').css('width'));
     var memberWid = fullWid / oneTabViewList.length;
     oneTabViewList.forEach(function (oneTabViewListMember) {
@@ -257,7 +266,6 @@ function attachtagCov(oneAttachTag) {
         }
     });
 }
-
 function blmarkdownCov(onePage) {
     var $pageRoot = $(onePage);
     var converter = new showdown.Converter({
@@ -357,11 +365,11 @@ function bellascriptCov(e) {
     blExpDomExpSet.forEach(function (blExpDomExp) {
             blExpDomExp += '}';
             //clean code.
-            blExpDomExp = blExpDomExp.replace(/[\r\n\t\s]/g, "");
-            var blExpDomExpArray = /(.+?)\{(.+?|)}/.exec(blExpDomExp);
 
+            blExpDomExp = blExpDomExp.replace(/[\r\n\t]/g, "");
+            var blExpDomExpArray = /(.+?)\{(.+?|)}/.exec(blExpDomExp);
             //deduct block type and solve child expression.
-            switch (blExpDomExpArray[1]) {
+            switch (blExpDomExpArray[1].replace(/[\r\n\t\s]/g, "")) {
                 case "form": {
 
                     //construct form.
