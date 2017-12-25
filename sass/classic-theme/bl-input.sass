@@ -1,0 +1,164 @@
+@import "general"
+input
+  margin: 10px 5px
+  height: 40px
+  line-height: 30px
+  border-radius: 3px
+  font-size: 20px
+  padding: 0 10px
+  background-color: #fff
+  outline: none
+  border: 1px solid transparent
+  color: #444
+  transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1)
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08)
+span label
+  color: black
+  transition: 100ms
+input:hover
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
+
+
+select
+  @extend input
+  appearance: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  outline: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  text-decoration: none
+  white-space: nowrap
+  vertical-align: middle
+  cursor: pointer
+select:hover
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.26), 0 0 0 1px rgba(0,0,0,0.1)
+
+
+.bl-checkbox 
+  position: relative
+  width: 250px
+  color: black
+  border: 0
+
+
+.bl-checkbox span:first-child
+  border-radius: 5px 5px 0 0
+
+.bl-checkbox span 
+  width: 94%
+  position: relative
+  min-width: 25%
+  line-height: 38px
+  font-size: 20px
+  padding: 0 10px
+  display: inline-block
+
+
+.bl-checkbox span:last-child 
+  border-radius: 0 0 5px 5px !important
+
+
+.bl-checkbox input[type=checkbox]
+  @extend input
+  transition: 0.1s
+  background-color: transparent
+  outline: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  position: absolute
+  top: 0
+  margin: 0
+  padding: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: 2
+
+
+.bl-checkbox input[type=checkbox]:hover 
+  border-left: 8px solid rgb(190,190,190)
+  padding-left: 8px
+
+
+.bl-checkbox input[type=checkbox]:checked 
+  border-left: 4px solid #05c679
+
+
+
+.bl-checkbox input[type=checkbox]:hover + label 
+  padding-left: 8px
+
+
+
+.bl-checkbox input[type=checkbox]:checked + label 
+  padding-left: 8px
+  color: rgb(190,190,190)
+
+
+
+.bl-radiobox
+
+  position: relative
+  width: 250px
+  color: black
+  border: 0
+
+
+.bl-radiobox span:first-child 
+  border-radius: 5px 5px 0 0
+
+
+.bl-radiobox span 
+  width: 94%
+  position: relative
+  min-width: 25%
+  line-height: 38px
+  font-size: 20px
+  padding: 0 10px
+  display: inline-block
+
+
+.bl-radiobox span:last-child 
+  border-radius: 0 0 5px 5px !important
+
+
+.bl-radiobox input[type=radio]
+  @extend input
+  background-color: transparent
+  transition: 0.1s
+  outline: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  appearance: none
+  position: absolute
+  top: 0
+  margin: 0
+  padding: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: 2
+
+.bl-radiobox input[type=radio]:hover 
+  border-left: 8px solid rgb(190,190,190)
+  padding-left: 8px
+  z-index: 5
+
+
+.bl-radiobox input[type=radio]:checked 
+  border-left: 4px solid #05c679
+
+
+
+.bl-radiobox input[type=radio]:hover + label 
+  padding-left: 8px
+
+
+.bl-radiobox input[type=radio]:checked + label 
+  padding-left: 8px
+  color: rgb(190,190,190)
+

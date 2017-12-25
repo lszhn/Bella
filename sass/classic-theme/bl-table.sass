@@ -1,0 +1,33 @@
+@import "general"
+table
+  border-collapse: collapse
+  width: 100%
+  margin: 0 auto
+
+caption
+  text-align: left
+  font-weight: 600 !important
+  font-size: 16px
+  margin: 1em auto
+
+th, td
+  text-align: left
+  padding: 0.1em
+  padding-left: 0.5em
+tbody tr
+  background: white
+  color: black
+thead
+  color: $default-link-blue
+th
+  text-align: center
+tbody tr:hover
+  transition: 100ms
+  background-color: $default-bg-blue
+
+tbody tr:nth-child(odd)
+  background: $default-selected-grey
+
+tbody tr:nth-child(odd):hover
+  transition: 100ms
+  background-color: $default-bg-blue
