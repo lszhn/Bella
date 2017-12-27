@@ -8,162 +8,90 @@
     <title>标题</title>
     <link href="release/bella.css" rel="stylesheet">
     <link href="release/default-theme.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/showdown.min.js"></script>
-    <script src="js/bella.js"></script>
+    <script src="release/jquery.bella.min.js"></script>
+    <script src="release/bella.js"></script>
 </head>
 <body>
 <div class="raw-w default-nav">
     <div class="raw-f">
-        <a><h1 class="col-5-a"><i class="fa fa-leaf" aria-hidden="true"></i>bella</h1></a>
-        <ul class="bl-nav col-13-a left">
-            <a href="#func">
-                <li>功能</li>
-            </a>
-            <li>组件
+        <ul class="bl-nav col-13-a center auto-compose">
+            <i class="fa fa-leaf lazy-compose left" aria-hidden="true"></i>
+            <li class="bl-color-white">Home</li>
+            <li class="bl-color-yellow-gold">Getting Start</li>
+            <li>Component
                 <ul>
-                    <li>布局</li>
-                    <li>页面元素</li>
+                    <li>Layout</li>
+                    <li>Elements</li>
                 </ul>
             </li>
-            <a href="native.php">
-                <li>Native</li>
-            </a>
-            <a href="https://github.com/HJIO/bella">
-                <li>Github</li>
-            </a>
-            <li>关于</li>
-
+            <li>Fusion Apps</li>
+            <li>About</li>
+            <a><i class="fa fa-github lazy-compose right" aria-hidden="true"></i></a>
         </ul>
     </div>
 </div>
-<div class="raw-w default-subnav attach-tag">
-    <div class="raw-f">
-        <h2 class="col-13-a">功能</h2>
-    </div>
+<!--<div class="raw-w default-subnav attach-tag">-->
+<!--<div class="raw-f">-->
+<!--<h2 class="raw-20">功能</h2>-->
+<!--</div>-->
+<!--</div>-->
+<div class="container raw-w col-10 bl-color-bg-light-grey">
+    <h2 class="bl-color-green center"></h2>
 </div>
-<div id="main">
-    <div class="raw-w">
-        <div class="raw-f">
-            <div class="col-24-10 bl-view bl-markdown">
-                <div class="bl-view-header">布局</div>
-                <div class="bl-view-body">
-                    <p>##视图</p>
-                    <p>1.使用*.bl-view*来创建视图</p>
-                    <p>2.视图（view）是bella的基础布局类组件，它允许为其添加页眉与页脚</p>
-                    <p>3.通过为*.bl-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="raw-w">
-        <div class="raw-f">
-            <div class="col-24-a bl-tab-view bl-markdown">
-                <div class="bl-view-header">
-                    <ul>
-                        <li class="bl-tab-view-active">Apple Inc.</li>
-                        <li>Google</li>
-                        <li>Microsoft</li>
-                        <li>Amazon</li>
-                    </ul>
-                </div>
-                <div class="bl-view-body">
-                    <p>##标签视图0</p>
-                    <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                    <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-                </div>
-                <div class="bl-view-body">
-                    <p>##标签视图1</p>
-                    <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                    <p>2.标签视图（tabView）继承自*.bl-view*</p>
-                    <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-                </div>
-                <div class="bl-view-body">
-                    <p>##标签视图2</p>
-
-                </div>
-                <div class="bl-view-body">
-                    <p>##标签视图3</p>
-                    <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                    <p>2.标签视图（tabView）继承自*.bl-view*</p>
-                    <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-                </div>
+<div class="raw-w">
+    <div class="raw-f auto-compose">
+        <div class="raw-f bl-view bl-markdown">
+            <div class="bl-view-header">布局</div>
+            <div class="bl-view-body">
+                <p>##视图</p>
+                <p>1.使用*.bl-view*来创建视图</p>
+                <p>2.视图（view）是bella的基础布局类组件，它允许为其添加页眉与页脚</p>
+                <p>3.通过为*.bl-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
             </div>
         </div>
     </div>
 </div>
 <div class="raw-w">
-    <div class="raw-f">
-        <div class="col-6-15 bl-view">
-            <div class="bl-view-header">侧边栏的页眉</div>
-            <div class="bl-view-body">
-                <ul class="bl-sidebar switch-tag" name="fuck">
-                    <a>Apple Inc.</a>
-                    <a>Google</a>
-                    <a>Microsoft</a>
-                    <a>Amazon</a>
+    <div class="raw-f auto-compose">
+        <div class="raw-f bl-view bl-tab-view bl-markdown">
+            <div class="bl-view-header">
+                <ul>
+                    <li class="bl-tab-view-active">Apple Inc.</li>
+                    <li>Google</li>
+                    <li>Microsoft</li>
+                    <li>Amazon</li>
                 </ul>
             </div>
-        </div>
-        <div class="col-17-15 bl-view bl-markdown">
-            <div class="bl-view-header">组件</div>
-            <ul name="fuck">
-                <div class="bl-view-body">
-                    <p>##侧边栏0</p>
-                    <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
-                    <p>2.使用ul-a来添加侧边栏的内容</p>
-                    <p>3.有页眉页脚侧边栏是固定高度的</p>
-                </div>
-                <div class="bl-view-body">
-                    <p>##侧边栏1</p>
-                    <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
-                    <p>2.使用ul-a来添加侧边栏的内容</p>
-                    <p>3.有页眉页脚侧边栏是固定高度的</p>
-                </div>
-                <div class="bl-view-body">
-                    <p>##侧边栏2</p>
-                    <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
-                    <p>2.使用ul-a来添加侧边栏的内容</p>
-                    <p>3.有页眉页脚侧边栏是固定高度的</p>
-                </div>
-                <div class="bl-view-body">
-                    <p>##侧边栏3</p>
-                    <p>1.使用*.bl-sidebar*来创建侧边栏，若要为其添加页眉与页脚，请使用*.bl-view*的header-body-footer布局</p>
-                    <p>2.使用ul-a来添加侧边栏的内容</p>
-                    <p>3.有页眉页脚侧边栏是固定高度的</p>
-                </div>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="raw-w">
-    <div class="raw-f">
-        <div class="col-6-a bl-view">
-            <ul class="bl-sidebar">
-                <a>Apple Inc.</a>
-                <a>Google</a>
-                <a>Microsoft</a>
-                <a>Amazon</a>
-            </ul>
-        </div>
-        <div class="col-17-10 bl-view bl-markdown">
-            <div class="bl-view-header">组件</div>
             <div class="bl-view-body">
-                <p>##无样式侧边栏</p>
-                <p>1.使用*.bl-sidebar*来创建侧边栏</p>
-                <p>2.使用ul-a来添加元素</p>
-                <p>3.无样式的侧边栏是自动高度、对齐网格的</p>
+                <p>##标签视图0</p>
+                <p>1.使用*.bl-tab-view*来创建标签视图</p>
+                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
+
+            </div>
+            <div class="bl-view-body">
+                <p>##标签视图1</p>
+                <p>1.使用*.bl-tab-view*来创建标签视图</p>
+                <p>2.标签视图（tabView）继承自*.bl-view*</p>
+                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
+
+            </div>
+            <div class="bl-view-body">
+                <p>##标签视图2</p>
+
+            </div>
+            <div class="bl-view-body">
+                <p>##标签视图3</p>
+                <p>1.使用*.bl-tab-view*来创建标签视图</p>
+                <p>2.标签视图（tabView）继承自*.bl-view*</p>
+                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
+
             </div>
         </div>
     </div>
 </div>
 <div class="raw-w">
-    <div class="raw-f">
-        <div class="col-6-a bl-view switch-tag" name="comp">
+    <div class="raw-f auto-compose">
+        <div class="raw-2 bl-view switch-tag" name="comp">
             <ul class="bl-sidebar default-sidebar-elements switch-tag">
                 <a>按钮与按钮组</a>
                 <a>输入组件</a>
@@ -171,7 +99,7 @@
                 <a>表格输出</a>
             </ul>
         </div>
-        <div class="col-17-a bl-view bl-markdown">
+        <div class="raw-8 bl-view bl-markdown">
             <div class="bl-view-header">组件</div>
             <ul name="comp">
                 <div class="bl-view-body bl-markdown">
@@ -201,10 +129,18 @@
                     <div class="bella-script">table
                         {
                         col1 | col2 | col3 | col4;
-                        data0 |data1 |data2 | <button>按钮</button>;
-                        data |data |data | <button>按钮</button>;
-                        data |data |data | <button>按钮</button>;
-                        data |data |data | <button>按钮</button>;
+                        data0 |data1 |data2 |
+                        <button>按钮</button>
+                        ;
+                        data0 |data1 |data2 |
+                        <button>按钮</button>
+                        ;
+                        data0 |data1 |data2 |
+                        <button>按钮</button>
+                        ;
+                        data0 |data1 |data2 |
+                        <button>按钮</button>
+                        ;
                         }
                     </div>
                 </div>

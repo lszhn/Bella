@@ -13,35 +13,36 @@
 body
   padding: 0
   margin: 0
+
 .center
   margin: 0 auto
   float: none !important
+
 .left
   float: left !important
-  text-align: left!important
+  text-align: left !important
+
 .right
   float: right !important
+
 .nofloat
   float: none !important
-
 
 //
 //Create column
 
 //customized column
 
-@for $wid from 1 through 24
-  @for $hei from 1 through 20
-    .col-#{$wid}-#{$hei}
-      @include layout
-      width: $wid * $base
-      height: $hei * $base
-      float: left
-  .col-#{$wid}-a
+@for $hei from 1 through 50
+  .col-#{$hei}
     @include layout
-    width: $wid * $base
+    height: $hei * $base
     float: left
-
+.col-a
+  float: left
+  @include layout
+  min-height: $base
+  height: auto
 //full width column
 
 @for $hei from 1 through 20
@@ -56,10 +57,11 @@ body
 
 .raw-f
   @include layout
-  @include center
-  width: 24*$base + 10px
+  width: 80%
+  margin-left: 10%
   float: left
   position: relative
+
 .raw-w
   @include layout
   width: 100%
@@ -69,10 +71,10 @@ body
   float: left
   margin: 5px
 
-@for $wid from 1 through 24
+@for $wid from 1 through 100
   .raw-#{$wid}
     @include layout
-    width: $wid * $base
+    width: 1% * $wid
     margin: 0 auto
     height: auto
     float: left

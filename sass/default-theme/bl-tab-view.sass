@@ -8,17 +8,17 @@
 .bl-tab-view .bl-view-header ul
   line-height: 40px
 .bl-tab-view .bl-view-header ul li
-  transition: 0.1s
+  transition: 200ms
   line-height: 40px
-  background-color: $default-selected-grey
-  border-top: 4px solid transparent
+  color: $default-light-grey
+  background-color: white
+  border-top: 1px solid transparent
 
 .bl-tab-view ul li:hover
-  border-top: 4px solid $default-selected-grey
   background-color: $default-selected-grey
 .bl-tab-view-active
   position: relative
-  border-top: 4px solid $default-orig!important
-  color: black!important
+  border-top: 2px solid $default-orig!important
+  color: $default-dark-grey
   background-color: white!important
   @include animate

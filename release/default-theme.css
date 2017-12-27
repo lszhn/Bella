@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -15,6 +6,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -59,6 +59,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -222,15 +226,6 @@ select {
   padding-left: 3px; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -238,6 +233,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -282,6 +286,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -368,15 +376,6 @@ button:active {
   background-color: #cc4242 !important; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -384,6 +383,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -428,6 +436,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -466,14 +478,17 @@ h5 {
   line-height: 50px; }
 
 .bl-nav * {
-  font-size: 1em;
-  font-weight: 600;
+  transition: 200ms;
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none; }
 
+.bl-nav li * {
+  font-size: 1em;
+  font-weight: 700; }
+
 .bl-nav li {
   transition: 100ms;
-  margin-right: 20px;
+  margin-right: 1.6em;
   line-height: 50px;
   cursor: pointer; }
 
@@ -511,8 +526,7 @@ h5 {
 
 .default-nav h1 {
   font-size: 25px;
-  line-height: 50px;
-  color: white; }
+  line-height: 50px; }
 
 .bl-nav-active {
   background-color: white;
@@ -521,15 +535,6 @@ h5 {
   border-top: none; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -537,6 +542,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -581,6 +595,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -711,15 +729,6 @@ h5 {
   font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -727,6 +736,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -771,6 +789,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -823,15 +845,6 @@ h5 {
   background-color: #f8f8f8; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -839,6 +852,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -883,6 +905,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -931,15 +957,6 @@ h5 {
   font-size: 14px; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -947,6 +964,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -991,6 +1017,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -1032,32 +1062,23 @@ h5 {
   line-height: 40px; }
 
 .bl-tab-view .bl-view-header ul li {
-  transition: 0.1s;
+  transition: 200ms;
   line-height: 40px;
-  background-color: #f8f8f8;
-  border-top: 4px solid transparent; }
+  color: #666;
+  background-color: white;
+  border-top: 1px solid transparent; }
 
 .bl-tab-view ul li:hover {
-  border-top: 4px solid #f8f8f8;
   background-color: #f8f8f8; }
 
 .bl-tab-view-active {
   position: relative;
-  border-top: 4px solid #333333 !important;
-  color: black !important;
+  border-top: 2px solid #333333 !important;
+  color: #333333;
   background-color: white !important;
   transition: 0.3s; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1065,6 +1086,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1109,6 +1139,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -1144,12 +1178,11 @@ h5 {
 
 .bl-view, .bl-tab-view, .bl-pop-view {
   background-color: white;
-  margin-top: 1em;
-  margin-left: 1em; }
+  margin: 3px; }
 
 .bl-view-header {
   line-height: 3em;
-  padding-left: 1em;
+  padding-left: 1%;
   position: relative;
   font-size: 1em;
   display: block;
@@ -1161,7 +1194,7 @@ h5 {
   min-height: 20em; }
 
 .bl-view-footer {
-  padding-left: 1em;
+  padding-left: 1%;
   line-height: 3em;
   font-size: 1em;
   color: #999; }
@@ -1173,44 +1206,7 @@ h5 {
   background-color: transparent !important;
   border: none !important; }
 
-.bl-notification-normal {
-  position: relative;
-  height: 70px;
-  background-color: #006666;
-  color: white;
-  width: 100%; }
-
-.bl-notification-normal p {
-  text-align: center;
-  font-size: 20px;
-  width: 70%;
-  line-height: 70px;
-  display: inline; }
-
-.bl-notification-alert {
-  position: relative;
-  height: 70px;
-  color: white;
-  width: 100%;
-  background-color: #ff5252; }
-
-.bl-notification-alert p {
-  text-align: center;
-  font-size: 20px;
-  width: 70%;
-  line-height: 70px;
-  display: inline; }
-
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1218,6 +1214,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1262,6 +1267,150 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
+
+h2 {
+  font-size: 2em;
+  line-height: 2.5em; }
+
+h3 {
+  font-size: 1.5em;
+  line-height: 2em; }
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #333333; }
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+.tiny {
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
+
+.lg {
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
+
+.lg-plus {
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
+
+.bl-notification-normal {
+  position: relative;
+  height: 3em;
+  background-color: #333333;
+  width: 100%; }
+
+.bl-notification-normal p {
+  text-align: center;
+  font-size: 1em;
+  width: 70%;
+  line-height: 3em;
+  color: white;
+  display: inline; }
+
+.bl-notification-alert {
+  position: relative;
+  height: 3em;
+  width: 100%;
+  background-color: #ad2131; }
+
+.bl-notification-alert p {
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  width: 70%;
+  line-height: 3em;
+  display: inline; }
+
+.bl-notification-hide-button {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  padding: 0 1em;
+  line-height: 2.99em;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  transition: 0.2s;
+  color: white; }
+
+.bl-notification-hide-button:hover {
+  opacity: 0.6; }
+
+body {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+@font-face {
+  font-family: "SFMono";
+  font-weight: 200;
+  src: url("../fonts/sf-mono_regular.woff"); }
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #666;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f2f2f2; }
+
+*::selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+*::-moz-selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -1333,15 +1482,6 @@ tbody tr:nth-child(odd):hover {
   background-color: #eff7ff; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1349,6 +1489,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1393,6 +1542,10 @@ body {
 *::-moz-selection {
   background: #e6e6e6;
   color: #1589c9; }
+
+h1 {
+  font-size: 4em;
+  line-height: 3.5em; }
 
 h2 {
   font-size: 2em;
@@ -1443,5 +1596,23 @@ h5 {
   position: relative;
   margin: 240px auto;
   background-color: white; }
+
+.bl-color-green {
+  color: #006666; }
+
+.bl-color-bg-dark-green {
+  background-color: #003d3d; }
+
+.bl-color-light-grey {
+  color: #666; }
+
+.bl-color-white {
+  color: white; }
+
+.bl-color-yellow-gold {
+  color: #fff38e; }
+
+.bl-color-bg-light-grey {
+  background-color: #666; }
 
 /*# sourceMappingURL=default-theme.css.map */

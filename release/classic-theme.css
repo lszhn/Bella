@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -15,6 +6,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -245,15 +245,6 @@ select:hover {
   color: #bebebe; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -261,6 +252,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -405,15 +405,6 @@ button:active {
   background-color: #ff5252 !important; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -421,6 +412,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -568,15 +568,6 @@ h5 {
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15); }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -584,6 +575,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -769,15 +769,6 @@ h5 {
   font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -785,6 +776,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -890,15 +890,6 @@ h5 {
   background-color: #f8f8f8; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -906,6 +897,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1009,15 +1009,6 @@ h5 {
   font-size: 14px; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1025,6 +1016,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1138,15 +1138,6 @@ h5 {
   transition: 0.3s; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1154,6 +1145,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1305,15 +1305,6 @@ h5 {
   display: inline; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1321,6 +1312,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -1447,15 +1447,6 @@ tbody tr:nth-child(odd):hover {
   background-color: #eff7ff; }
 
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -1463,6 +1454,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";

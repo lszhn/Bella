@@ -1,24 +1,42 @@
+@import "general"
 .bl-notification-normal
   position: relative
-  height: 70px
-  background-color: $default-green
-  color: white
+  height: 3em
+  background-color: $default-dark-grey
   width: 100%
 .bl-notification-normal p
   text-align: center
-  font-size: 20px
+  font-size: 1em
   width: 70%
-  line-height: 70px
+  line-height: 3em
+  color: white
   display: inline
 .bl-notification-alert
   position: relative
-  height: 70px
-  color: white
+  height: 3em
   width: 100%
-  background-color: $default-pink
+  background-color: $default-red
 .bl-notification-alert p
   text-align: center
-  font-size: 20px
+  font-size: 1em
+  color: white
   width: 70%
-  line-height: 70px
+  line-height: 3em
   display: inline
+.bl-notification-hide-button
+  position: absolute
+  top: 0
+  right: $base
+  padding: 0 1em
+  line-height: 2.99em
+  cursor: pointer
+  border-bottom: 1px solid white
+  transition: 0.2s
+  color: white
+.bl-notification-hide-button:hover
+  opacity: 0.6
+
+
+
+
+

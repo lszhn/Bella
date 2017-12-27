@@ -12,20 +12,20 @@ var globalElements = [
 
     //elements need to be initialized by JavaScript
     //layout::
-    '.bl-tab-view',
+    '.auto-compose',
 
     //bella universal elements::
     '.bl-nav',
     '.bl-sidebar',
     '.bl-markdown',
     '.bl-view',
+    '.bl-tab-view',
 
     //tag
     '.attach-tag',
 
     //live script
-    '.bella-script',
-
+    '.bella-script'
 
 
 ];
@@ -45,9 +45,6 @@ $(document).ready(function () {
 bella = {
     version: "0.1",
     currHashRoute: "",
-    getUrlHash: function () {
-        console.log(location.hash);
-    },
     //MobileSupport
     mobileSupport: function () {
         $('title').after('<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />');
@@ -104,7 +101,7 @@ bella = {
     },
     showPopView: function (popViewId) {
         $(document.body).append('<div class="bl-pop-view-bg">');
-        var $currPopView = $('#'+popViewId).clone();
+        var $currPopView = $('#' + popViewId).clone();
         $('.bl-pop-view-bg').fadeIn(300).append($currPopView);
         $currPopView.fadeIn(300);
         $('.bl-pop-view-cancel').on('click', function () {
@@ -112,7 +109,6 @@ bella = {
         });
     }
 };
-bella.mobileSupport();
 
 function bellaRouter() {
     window.addEventListener('load', this.route.bind(this), false);
@@ -174,6 +170,48 @@ function blStaticClassGlbCov() {
     });
 }
 
+function autocomposeCov(rawTotalSet) {
+
+    var $rawSet = $(rawTotalSet);
+    $rawSet.toArray().forEach(function (oneRaw) {
+
+        //.bl-view
+        var $oneblviewTotalSet = $(oneRaw).children('.bl-view');
+        var oneblviewTotalList = $oneblviewTotalSet.toArray();
+        var parentWid = parseFloat($(oneRaw).css('width'));
+        var len = oneblviewTotalList.length;
+        var totalWid = 0;
+        oneblviewTotalList.forEach(function (oneblview) {
+            totalWid += parseFloat($(oneblview).css("width"));
+        });
+        var rest = parseFloat(parentWid - totalWid) - len * 6;
+        var avgWeight = rest / totalWid;
+        oneblviewTotalList.forEach(function (oneblview) {
+            var currWid = parseFloat($(oneblview).css("width"));
+            $(oneblview).css("width", currWid + avgWeight * currWid + 'px');
+        });
+
+        //uni
+        var $oneuniTotalSet = $(oneRaw).find('.lazy-compose');
+        $oneuniTotalSet.push($(oneRaw).children());
+        var oneuniTotalList = $oneuniTotalSet.toArray();
+        var parentHei = parseFloat($(oneRaw).css('height'));
+
+        oneuniTotalList.forEach(function (oneuni) {
+            var currHei = parseFloat($(oneuni).css("height"));
+            if(currHei>parentHei+1){
+                $(oneuni).css({
+                    "line-height":parentHei+'px',
+                    "height":parentHei+'px'
+                });
+            }
+        });
+
+
+
+    });
+}
+
 function blviewCov(blviewTotalSet) {
 
     var $blviewTotalSet = $(blviewTotalSet);
@@ -190,7 +228,7 @@ function blviewCov(blviewTotalSet) {
 function blNotificationCov(type, msg) {
     // clearTimeout(NotificationTimer);
     var currTimeStamp = bella.getTimeStamp();
-    var notifDiv = $('<div style="display: none" id="' + currTimeStamp + '" class="' + type + ' raw-w"><div class="raw-f"><p></p></div><div onclick="bella.hideNotification()" class="tiny bl-notification-hide-button">Hide</div></div>');
+    var notifDiv = $('<div style="display: none" id="' + currTimeStamp + '" class="' + type + ' raw-w"><div class="raw-f"><p></p></div><div onclick="bella.hideNotification()" class="bl-notification-hide-button">Hide</div></div>');
     $('body').before(notifDiv);
     $('#' + currTimeStamp + ' p').html(msg);
     if ($(document).scrollTop() > 0) {
@@ -266,6 +304,7 @@ function attachtagCov(oneAttachTag) {
         }
     });
 }
+
 function blmarkdownCov(onePage) {
     var $pageRoot = $(onePage);
     var converter = new showdown.Converter({
@@ -373,8 +412,8 @@ function bellascriptCov(e) {
                 case "form": {
 
                     //construct form.
-                    $blExpDom.append('<div class = "qform-compiling">');
-                    $blExpDomCompiling = $blExpDom.children(".qform-compiling");
+                    $blExpDom.append('<div class = "bs-compiling">');
+                    $blExpDomCompiling = $blExpDom.children(".bs-compiling");
 
 
                     //
@@ -425,14 +464,14 @@ function bellascriptCov(e) {
                             }
                         }
                     });
-                    $blExpDomCompiling.removeClass('belang-compiling');
-                    $blExpDom.removeClass("belang");
-                    $blExpDom.addClass("belang-compiled");
+                    $blExpDomCompiling.removeClass('bs-compiling');
+                    $blExpDom.removeClass("bella-script");
+                    $blExpDom.addClass("bella-script-compiled");
                     break;
                 }
                 case "table": {
-                    $blExpDom.append('<div class = "qform-compiling">');
-                    var $blExpDomCompiling = $blExpDom.children(".qform-compiling");
+                    $blExpDom.append('<div class = "bs-compiling">');
+                    var $blExpDomCompiling = $blExpDom.children(".bs-compiling");
                     var $result = "";
 
                     //
@@ -466,6 +505,9 @@ function bellascriptCov(e) {
                     });
                     $result += "</tbody></table>";
                     $blExpDomCompiling.html($result);
+                    $blExpDomCompiling.removeClass('bs-compiling');
+                    $blExpDom.removeClass("bella-script");
+                    $blExpDom.addClass("bella-script-compiled");
                 }
             }
         }
