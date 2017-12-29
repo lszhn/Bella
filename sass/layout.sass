@@ -57,8 +57,9 @@ body
 
 .raw-f
   @include layout
-  width: 80%
-  margin-left: 10%
+  width: 100%
+  box-sizing: border-box
+  padding: 0 5em
   float: left
   position: relative
 
@@ -70,6 +71,8 @@ body
 .raw-separate
   float: left
   margin: 5px
+.separate
+  padding: .5em
 
 @for $wid from 1 through 100
   .raw-#{$wid}

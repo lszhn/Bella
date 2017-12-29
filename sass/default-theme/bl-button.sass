@@ -1,6 +1,6 @@
 @import "general"
 @mixin btn
-  margin: 1em 1em
+  margin: .5em .5em
   padding: 0.5em 2em
   cursor: pointer
   text-align: center
@@ -23,20 +23,29 @@ button:active
   background-color: #f1f1f1 * 0.8
 .bl-btn
   @include btn
+
+.bl-btn.primary
+  @include btn
   color: white
   background: $default-light-blue
-.bl-btn:hover
-  background-color: #0066aa * 1.1
-.bl-btn:active
-  background-color: #0066aa
-.bl-btn-alert
+.bl-btn.primary:hover
+  background-color: $default-light-blue * 0.9
+.bl-btn.primary:active
+  background-color: $default-light-blue * 0.8
+
+.bl-btn.alert
   @extend .bl-btn
   color: white
-  background-color: $default-pink!important
-.bl-btn-alert:hover
-  background-color: $default-pink * 0.9!important
-.bl-btn-alert:active
-  background-color: $default-pink * 0.8!important
+  background-color: $default-pink
+.bl-btn.alert:hover
+  background-color: $default-pink * 0.9
+.bl-btn.alert:active
+  background-color: $default-pink * 0.8
 
-
-
+.bl-btn.disabled
+  background-color: $default-selected-grey
+  cursor: not-allowed
+  color: $default-light-grey
+.bl-btn i
+  line-height: 100%
+  padding: 0 3px

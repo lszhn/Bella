@@ -8,11 +8,10 @@
   text-decoration: none
 .bl-nav li *
   font-size: 1em
-  font-weight: 700
 .bl-nav li
   transition: 100ms
   margin-right: 1.6em
-  line-height: 50px
+  line-height: 2em
   cursor: pointer
 .bl-nav li:hover>a
   color: white
@@ -21,17 +20,23 @@
 .bl-nav li:hover
   color: white
 
+.bl-nav li ul
+  padding: .5em 0
+  box-sizing: border-box
+  border: 1px solid $default-light-grey
+  border-radius: 5px
 .bl-nav li ul *
+  text-align: left!important
   text-decoration: none
   color: black
   margin: 0 auto
-  font-size: 14px
-  line-height: 30px
-  padding: 2px 10px
+  font-size: 1em
+  line-height: 2em
+  padding: 0 1em
 
 .bl-nav li ul li:hover
   border-radius: 2px
-  background-color: #f5f5f5
+  background-color: $default-selected-grey
   color: black
 .bl-nav li ul li:hover *
   color: black
@@ -45,6 +50,5 @@
   line-height: 50px
 .bl-nav-active
   background-color: white
-  padding: 5px 5px
-  border: 1px solid #dddddd
+  border: 1px solid $default-light-grey
   border-top: none

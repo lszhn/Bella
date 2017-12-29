@@ -1,0 +1,34 @@
+$colorConfig: (
+        dark-green: #006666,
+        darker-green: #006666 * 0.6,
+        dark-red: #ad2131,
+        bg-blue: #eff7ff,
+        light-blue: #0079d1,
+        link-blue: #0070c9,
+        light-grey: #666,
+        dark-grey: #333333,
+        border-grey: #888888,
+        light-pink: #ff5252,
+        bg-grey: #fafafa,
+        orig: #333333,
+        white:white,
+        selected-grey: #f8f8f8,
+        yellow-gold: #fff38e
+);
+$colorScheme: (
+  left-bordered: 'border-left',
+  font:'color',
+  bg:'background-color',
+  right-bordered: 'border-right',
+  top-bordered:'border-top',
+  buttom-bordered:'border-buttom'
+);
+@each $schemaName,$schemeValue in $colorScheme {
+  .#{$schemaName}- {
+    @each $colorName,$colorValue in $colorConfig {
+      &color-#{$colorName} {
+        #{$schemeValue}:$colorValue!important;
+      }
+    }
+  }
+}

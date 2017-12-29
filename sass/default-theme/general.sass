@@ -17,6 +17,10 @@ $default-yellow-gold: #fff38e
   font-family: 'SFMono'
   font-weight: 200
   src: url('../fonts/sf-mono_regular.woff')
+@font-face
+  font-family: 'MyraidProLight'
+  font-weight: 200
+  src: url('../fonts/MyriadProLight.woff')
 
 .pace
   -webkit-pointer-events: none
@@ -51,8 +55,7 @@ $default-yellow-gold: #fff38e
   padding: 0
   color: black
 body
-  background-color: #f2f2f2
-
+  background-color: $default-bg-grey
 
 *::selection
   background: rgb(230, 230, 230)
@@ -62,21 +65,32 @@ body
   background: rgb(230, 230, 230)
   color: #1589c9
 h1
-  font-size: 4em
-  line-height: 3.5em
+  font-weight: 700
+  font-size: 5em
 h2
-  font-size: 2em
-  line-height: 2.5em
+  font-weight: 700
+  font-size: 4em
 h3
-  font-size: 1.5em
-  line-height: 2em
+  font-weight: 700
+  font-size: 3em
 h4
-  font-size: 1.5em
-  line-height: 2em
+  font-size: 2em
   color: $default-dark-grey
 h5
   font-size: 1.2em
   line-height: 1.5em
+@for $num from 1 through 10
+  .display-#{$num}
+    font-family: MyraidProLight
+    font-size: #{$num/2}em
+    line-height: 2em
+@for $num from 1 through 10
+  .code-#{$num}
+    font-family: SFMono
+    line-height: 1em
+    font-size: #{$num/3}em
+i
+  padding: 0 .2em!important
 .tiny
   font-size: 1em!important
   line-height: 1em!important
@@ -91,4 +105,10 @@ h5
   height: 4em!important
 @mixin default-shadow
   box-shadow: 0 2px 5px 0 rgba(140,144,155,.15)
+.left-bordered
+  border-left: 1px solid
+.right-bordered
+  border-right: 1px solid
+
+
 

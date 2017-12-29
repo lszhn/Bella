@@ -1,43 +1,55 @@
 @import "general"
 input
-  margin: 10px 5px
+  height: 40px
+  margin: 1em .5em
+  line-height: 30px
+  font-size: 20px
+  padding: 0 10px
+  background-color: #f1f1f1
+  outline: none
+  transition: 100ms
+  border: 1px solid $default-selected-grey
+  border-radius: 2px
+@mixin innerInput
+  margin: 0!important
   height: 40px
   line-height: 30px
   font-size: 20px
   padding: 0 10px
-  color: black!important
-  border-radius: 0!important
   background-color: #f1f1f1
   outline: none
-  border: 1px solid transparent
+  transition: 100ms
+  border: 1px solid $default-selected-grey
+  border-radius: 2px
+
 span label
   color: black!important
   background-color: transparent!important
-  transition: 200ms
+  transition: 100ms
 input:hover
   background-color: #dedede
 
 select
   @extend input
+  margin: 1em .5em
+  border-radius: 0!important
   appearance: none
   -moz-appearance: none
   -webkit-appearance: none
   outline: none
   -webkit-user-select: none
   -moz-user-select: none
-  min-width: 5em
   -ms-user-select: none
   user-select: none
   text-decoration: none
   white-space: nowrap
   vertical-align: middle
   cursor: pointer
-select:hover
 
 
-.bl-checkbox 
+.bl-checkbox
+  margin: 1em .5em
   position: relative
-  width: 250px
   border: 0
   color: black
   background-color: #f1f1f1
@@ -46,21 +58,21 @@ select:hover
 .bl-checkbox span:first-child
 
 .bl-checkbox span 
-  width: 94%
+  width: 100%
   position: relative
-  min-width: 25%
-  line-height: 33px
+  line-height: 34px
   font-size: 20px
   padding: 0 10px
   display: inline-block
 
 
-.bl-checkbox span:last-child
-
+.bl-checkbox label
+  z-index: 5
+.bl-radiobox label
+  z-index: 5
 
 .bl-checkbox input[type=checkbox]
-  @extend input
-  transition: 0.1s
+  @include innerInput
   background-color: transparent
   outline: none
   -moz-appearance: none
@@ -68,7 +80,6 @@ select:hover
   appearance: none
   position: absolute
   top: 0
-  margin: 0
   padding: 0
   left: 0
   height: 100%
@@ -77,55 +88,52 @@ select:hover
 
 
 .bl-checkbox input[type=checkbox]:hover
-  border-left: 3px solid $default-light-grey
-  padding-left: 3px
+  border-left: 4px solid $default-light-grey
+  padding-left: 4px
   background-color: #dedede
 
 
 .bl-checkbox input[type=checkbox]:checked
-  border-left: 2px solid $default-link-blue
+  border-left: 3px solid $default-link-blue
   
 
 
 .bl-checkbox input[type=checkbox]:hover + label
-  padding-left: 3px
+  padding-left: 4px
   background-color: #dedede
 
 
 
 .bl-checkbox input[type=checkbox]:checked + label
-  padding-left: 3px
+  padding-left: 4px
   color: $default-light-grey
 
 
 
 .bl-radiobox
-
+  overflow: hidden
+  box-sizing: border-box
   position: relative
-  width: 250px
   color: black
+  margin: 1em .5em
   border: 0
 
 
-.bl-radiobox span:first-child
 
 
 .bl-radiobox span
-  width: 94%
+  width: 100%
   position: relative
-  min-width: 25%
-  line-height: 33px
+  line-height: 34px
   font-size: 20px
   padding: 0 10px
   display: inline-block
 
 
-.bl-radiobox span:last-child
 
 
 .bl-radiobox input[type=radio]
-  @extend input
-  background-color: transparent
+  @include innerInput
   outline: none
   -moz-appearance: none
   -webkit-appearance: none
@@ -137,26 +145,24 @@ select:hover
   left: 0
   height: 100%
   width: 100%
-  z-index: 2
 
 .bl-radiobox input[type=radio]:hover 
-  border-left: 2px solid $default-light-grey
-  padding-left: 2px
-  z-index: 5
+  border-left: 3px solid $default-light-grey
+  padding-left: 3px
   background-color: #dedede
 
 
 
 .bl-radiobox input[type=radio]:checked 
-  border-left: 2px solid $default-link-blue
+  border-left: 3px solid $default-link-blue
 
 
 
 .bl-radiobox input[type=radio]:hover + label 
-  padding-left: 3px
+  padding-left: 4px
   background-color: #dedede
 
 
 .bl-radiobox input[type=radio]:checked + label 
-  padding-left: 3px
+  padding-left: 4px
   

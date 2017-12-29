@@ -1,32 +1,23 @@
 @import "general"
-.bl-notification-normal
+.bl-notification
   position: relative
   height: 3em
+  width: 100%
+.bl-notification p
+  text-align: center
+  font-size: 1em
+  width: 70%
+  line-height: 3em
+  color: white
+  display: inline
+.bl-notification.normal
   background-color: $default-dark-grey
-  width: 100%
-.bl-notification-normal p
-  text-align: center
-  font-size: 1em
-  width: 70%
-  line-height: 3em
-  color: white
-  display: inline
-.bl-notification-alert
-  position: relative
-  height: 3em
-  width: 100%
+.bl-notification.alert
   background-color: $default-red
-.bl-notification-alert p
-  text-align: center
-  font-size: 1em
-  color: white
-  width: 70%
-  line-height: 3em
-  display: inline
 .bl-notification-hide-button
   position: absolute
   top: 0
-  right: $base
+  right: 5em
   padding: 0 1em
   line-height: 2.99em
   cursor: pointer

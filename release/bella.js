@@ -36,10 +36,6 @@ var globalStaticClasses = [
 $(document).ready(function () {
     //initialize global bella class
     blClassGlbCov();
-    //call highlight.js
-    // hljs();
-    //
-
 });
 
 bella = {
@@ -79,24 +75,21 @@ bella = {
         if (document.documentElement.scrollTop == 0) clearTimeout(scrolldelay);
     },
     //notification
-    notify: function (msg) {
-        blNotificationCov("bl-notification-normal", msg);
-        // NotificationTimer = setTimeout("bella.hideNotification()",5000);
+    notify: function (msg,time) {
+        blNotificationCov("normal", msg);
+        if(typeof time !== 'undefined')
+            setTimeout("bella.hideNotification()",time);
     },
-    alert: function (msg) {
-        blNotificationCov("bl-notification-alert", msg);
-        // NotificationTimer = setTimeout("bella.hideNotification()",5000);
+    alert: function (msg,time) {
+        blNotificationCov("alert", msg);
+        if(typeof time !== 'undefined')
+            setTimeout("bella.hideNotification()",time);
 
     },
     hideNotification: function () {
-        $('.bl-notification-alert button').remove();
-        $('.bl-notification-normal button').remove();
-
-        $('.bl-notification-normal').slideUp(500, function () {
-            $('.bl-notification-normal').remove();
-        });
-        $('.bl-notification-alert').slideUp(500, function () {
-            $('.bl-notification-alert').remove();
+        $('.bl-notification button').remove();
+        $('.bl-notification').slideUp(500, function () {
+            $('.bl-notification').remove();
         });
     },
     showPopView: function (popViewId) {
@@ -107,6 +100,9 @@ bella = {
         $('.bl-pop-view-cancel').on('click', function () {
             $('.bl-pop-view-bg').remove();
         });
+    },
+    hidePopView: function () {
+        $('.bl-pop-view-bg').remove();
     }
 };
 
@@ -131,12 +127,6 @@ function bellaRouter() {
 //     );
 // };
 // var router = new bellaRouter();
-
-function hljs() {
-    $('pre code').each(function (i, block) {
-        hljs.highlightBlock(block);
-    });
-}
 
 //
 //
@@ -175,16 +165,18 @@ function autocomposeCov(rawTotalSet) {
     var $rawSet = $(rawTotalSet);
     $rawSet.toArray().forEach(function (oneRaw) {
 
-        //.bl-view
-        var $oneblviewTotalSet = $(oneRaw).children('.bl-view');
+        //.container
+        var $oneblviewTotalSet = $(oneRaw).children('.bl-view,.section,.container');
         var oneblviewTotalList = $oneblviewTotalSet.toArray();
         var parentWid = parseFloat($(oneRaw).css('width'));
+        var parentPad = parseFloat($(oneRaw).css('padding-left')) + parseFloat($(oneRaw).css('padding-right'));
         var len = oneblviewTotalList.length;
         var totalWid = 0;
         oneblviewTotalList.forEach(function (oneblview) {
             totalWid += parseFloat($(oneblview).css("width"));
         });
-        var rest = parseFloat(parentWid - totalWid) - len * 6;
+
+        var rest = parseFloat(parentWid - totalWid) - len * 6 - parentPad;
         var avgWeight = rest / totalWid;
         oneblviewTotalList.forEach(function (oneblview) {
             var currWid = parseFloat($(oneblview).css("width"));
@@ -228,7 +220,7 @@ function blviewCov(blviewTotalSet) {
 function blNotificationCov(type, msg) {
     // clearTimeout(NotificationTimer);
     var currTimeStamp = bella.getTimeStamp();
-    var notifDiv = $('<div style="display: none" id="' + currTimeStamp + '" class="' + type + ' raw-w"><div class="raw-f"><p></p></div><div onclick="bella.hideNotification()" class="bl-notification-hide-button">Hide</div></div>');
+    var notifDiv = $('<div style="display: none" id="' + currTimeStamp + '" class="bl-notification ' + type + ' raw-w"><div class="raw-f"><p></p></div><div onclick="bella.hideNotification()" class="bl-notification-hide-button">Hide</div></div>');
     $('body').before(notifDiv);
     $('#' + currTimeStamp + ' p').html(msg);
     if ($(document).scrollTop() > 0) {
@@ -237,7 +229,7 @@ function blNotificationCov(type, msg) {
             "top": "0"
         });
     }
-    $('.' + type + '').slideUp(300);
+    $('.bl-notification.' + type + '').slideUp(300);
     $('#' + currTimeStamp).slideDown(300);
 }
 
@@ -291,14 +283,16 @@ function attachtagCov(oneAttachTag) {
         var objScrollTop = $oneAttachTag.position().top;
         if (scrollTop > objScrollTop && $('.attach-tag-clone').length == 0) {
             var $attachTagInstant = $oneAttachTag.clone(true);
-            $oneAttachTag.append($attachTagInstant);
+            $('body').append($attachTagInstant);
             $attachTagInstant.addClass('attach-tag-clone');
-            $attachTagInstant.css({
-                'position': 'fixed',
-                'top': $oneAttachTag.position().top - parseFloat($oneAttachTag.css('height')) + 'px',
-                'left': $oneAttachTag.position().left + 'px',
-                'z-index': 500
-            });
+            $attachTagInstant.scroll(function () {
+                $attachTagInstant.css({
+                    'position': 'fixed',
+                    'top': $oneAttachTag.position().top - parseFloat($oneAttachTag.css('height')-$(document).scrollTop()) + 'px',
+                    'left': $oneAttachTag.position().left + 'px',
+                    'z-index': 5000
+                });
+            })
         } else if (scrollTop <= objScrollTop) {
             $(document).find($('.attach-tag-clone')).remove();
         }
@@ -389,7 +383,6 @@ function blnavCov(oneBlHeaderListMember) {
             });
         })
     });
-    $rootItem.addClass('alive');
 }
 
 function bellascriptCov(e) {

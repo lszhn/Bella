@@ -362,8 +362,9 @@ body {
   float: left; }
 
 .raw-f {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 5em;
   float: left;
   position: relative; }
 
@@ -374,6 +375,9 @@ body {
 .raw-separate {
   float: left;
   margin: 5px; }
+
+.separate {
+  padding: 0.5em; }
 
 .raw-1 {
   width: 1%;
@@ -1069,7 +1073,7 @@ body {
   cursor: pointer; }
 
 .container {
-  padding: 3em;
+  padding: 2em;
   box-sizing: border-box; }
 
 body {

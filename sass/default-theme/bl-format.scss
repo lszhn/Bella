@@ -1,0 +1,10 @@
+@import "general";
+em {
+  color: $default-pink;
+  background-color: $default-selected-grey;
+  padding: 2px;
+  border-radius: 2px;
+}
+strong {
+  font-weight: 700;
+}
