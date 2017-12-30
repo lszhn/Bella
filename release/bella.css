@@ -365,8 +365,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 0 5em;
-  float: left;
-  position: relative; }
+  float: left; }
 
 .raw-w {
   width: 100%;
@@ -375,9 +374,6 @@ body {
 .raw-separate {
   float: left;
   margin: 5px; }
-
-.separate {
-  padding: 0.5em; }
 
 .raw-1 {
   width: 1%;
@@ -1073,8 +1069,10 @@ body {
   cursor: pointer; }
 
 .container {
-  padding: 2em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative;
+  float: left;
+  width: 100%; }
 
 body {
   moz-user-select: text;
@@ -1148,5 +1146,12 @@ body {
 .fa {
   font-size: 2em;
   line-height: 2em; }
+
+.section {
+  box-sizing: border-box;
+  padding: 1em;
+  height: 100%;
+  float: left;
+  background-color: transparent; }
 
 /*# sourceMappingURL=bella.css.map */

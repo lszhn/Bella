@@ -37,6 +37,9 @@ $(document).ready(function () {
     //initialize global bella class
     blClassGlbCov();
 });
+$(window).resize(function () {
+    bella.resize();
+});
 
 bella = {
     version: "0.1",
@@ -103,6 +106,9 @@ bella = {
     },
     hidePopView: function () {
         $('.bl-pop-view-bg').remove();
+    },
+    resize: function () {
+        autocomposeCov($('.auto-compose').toArray());
     }
 };
 
@@ -142,7 +148,6 @@ function blClassGlbCov() {
                 funcName = funcName.replace(/-/, '');
             funcName = funcName.replace(/./, '') + 'Cov(eleListMember)';
             eval(funcName);
-            console.log(funcName);
         });
     });
     blStaticClassGlbCov();
@@ -175,23 +180,29 @@ function autocomposeCov(rawTotalSet) {
         oneblviewTotalList.forEach(function (oneblview) {
             totalWid += parseFloat($(oneblview).css("width"));
         });
-
-        var rest = parseFloat(parentWid - totalWid) - len * 6 - parentPad;
+        var rest = parseFloat(parentWid - totalWid) - parentPad;
         var avgWeight = rest / totalWid;
         oneblviewTotalList.forEach(function (oneblview) {
             var currWid = parseFloat($(oneblview).css("width"));
-            $(oneblview).css("width", currWid + avgWeight * currWid + 'px');
+            $(oneblview).css("width", currWid + avgWeight * currWid - ($(oneblview).hasClass('bl-view')?6:0) + 'px');
+
         });
 
         //uni
         var $oneuniTotalSet = $(oneRaw).find('.lazy-compose');
-        $oneuniTotalSet.push($(oneRaw).children());
+        $oneuniTotalSet.push($(oneRaw).children('.section'));
         var oneuniTotalList = $oneuniTotalSet.toArray();
         var parentHei = parseFloat($(oneRaw).css('height'));
 
         oneuniTotalList.forEach(function (oneuni) {
             var currHei = parseFloat($(oneuni).css("height"));
+            console.log(oneuni);
             if(currHei>parentHei+1){
+                $(oneuni).css({
+                    "line-height":parentHei+'px',
+                    "height":parentHei+'px'
+                });
+            }else if(currHei<parentHei-1){
                 $(oneuni).css({
                     "line-height":parentHei+'px',
                     "height":parentHei+'px'

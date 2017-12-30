@@ -1,0 +1,13 @@
+@import "general";
+.section.bg-color-bg-dark-grey {
+  @for $i from 1 through 5{
+    h#{$i}{
+      font-weight: 700;
+      color: $default-dark-grey;
+    }
+    h#{$i} *{
+      font-weight: 700;
+      color: $default-dark-grey;
+    }
+  }
+}

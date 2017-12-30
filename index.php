@@ -31,8 +31,8 @@
         </ul>
     </div>
 </div>
-<div class="raw-f">
-    <div class="container auto-compose bg-color-bg-grey raw-w">
+<div class="raw-f bg-color-bg-grey">
+    <div class="container auto-compose raw-w">
         <div class="section raw-70">
             <div class="raw-f">
                 <h1 class="display-10 font-color-dark-green">bella</h1>
@@ -54,27 +54,27 @@
     </div>
 </div>
 <div class="raw-w bg-color-white">
-    <div class="raw-f">
-        <div class="container">
-            <div class="section raw-33">
-                <h5><i class="fa fa-columns" aria-hidden="true"></i>Auto Composing</h5>
-                <div class="separate">
-                    the <em>.auto-compose</em> and <em>.lazy-compose</em> tag can make bella format the layout automatically as the page is ready, it can be done in just milliseconds.
-                </div>
-            </div>
-            <div class="section raw-33">
-                <h5><i class="fa fa-mobile" aria-hidden="true"></i>Mobile Support(Fusion)</h5>
-                <div class="separate">
-                    <em>.bl-view</em> is the foundation of <strong>fusion layout</strong>, which allow developers to create cross-platform website but not rely on responsive design.
-                </div>
-            </div>
-            <div class="section raw-33">
-                <h5><i class="fa fa-terminal" aria-hidden="true"></i>Live Script</h5>
-                <div class="separate">
-                    <em>.bella-script</em> have an extraordinary contribution to this project, devepopers can
-                    use <strong>Live Script</strong> to generate elements, like <em>Table</em> or <em>radio</em>.
-                </div>
-            </div>
+    <div class="container separate auto-compose">
+        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+            <h2 class="display-3"><i class="fa fa-columns" aria-hidden="true"></i>Auto Composing</h2>
+            <p>
+                the <em>.auto-compose</em> and <em>.lazy-compose</em> tag can make bella format the layout automatically
+                as the page is ready, it can be done in just milliseconds.
+            </p>
+        </div>
+        <div class="section raw-34 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+            <h2 class="display-3"><i class="fa fa-mobile" aria-hidden="true"></i>Mobile Support (Fusion)</h2>
+            <p>
+                <em>.bl-view</em> is the foundation of <strong>fusion layout</strong>, which allow developers to create
+                cross-platform website but not rely on responsive design.
+            </p>
+        </div>
+        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+            <h2 class="display-3"><i class="fa fa-terminal" aria-hidden="true"></i>Live Script</h2>
+            <p>
+                <em>.bella-script</em> have an extraordinary contribution to this project, devepopers can
+                use <strong>Live Script</strong> to generate elements, like <em>Table</em> or <em>radio</em>.
+            </p>
         </div>
     </div>
 </div>

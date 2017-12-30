@@ -9,25 +9,39 @@ $colorConfig: (
         dark-grey: #333333,
         border-grey: #888888,
         light-pink: #ff5252,
-        bg-grey: #fafafa,
+        bg-dark-grey: #f2f2f2,
+        bg-grey: #f7f7f7,
         orig: #333333,
         white:white,
         selected-grey: #f8f8f8,
         yellow-gold: #fff38e
 );
 $colorScheme: (
-  left-bordered: 'border-left',
-  font:'color',
-  bg:'background-color',
-  right-bordered: 'border-right',
-  top-bordered:'border-top',
-  buttom-bordered:'border-buttom'
+        border: (
+                left-bordered: 'border-left',
+                right-bordered: 'border-right',
+                top-bordered:'border-top',
+                buttom-bordered:'border-buttom',
+                round-bordered:'border',
+        ),
+        normal: (
+                font:'color',
+                bg:'background-color',
+        ),
+
+
 );
-@each $schemaName,$schemeValue in $colorScheme {
-  .#{$schemaName}- {
-    @each $colorName,$colorValue in $colorConfig {
-      &color-#{$colorName} {
-        #{$schemeValue}:$colorValue!important;
+@each $groupName,$group in $colorScheme {
+  @each $schemaName, $schemeValue in $group {
+    .#{$schemaName}- {
+      @each $colorName, $colorValue in $colorConfig {
+        &color-#{$colorName} {
+          @if($groupName == border) {
+            #{$schemeValue}: 1px solid $colorValue !important;
+          }@else{
+            #{$schemeValue}: $colorValue !important;
+        }
+        }
       }
     }
   }
