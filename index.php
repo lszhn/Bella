@@ -15,8 +15,8 @@
 <div class="raw-w default-nav">
     <div class="raw-f">
         <ul class="bl-nav center auto-compose">
-            <i class="fa fa-leaf lazy-compose left" aria-hidden="true"></i>
-            <li class="font-color-white">Home</li>
+            <a href="index.php"><i class="fa fa-leaf lazy-compose left" aria-hidden="true"></i></a>
+            <a href="index.php"><li class="font-color-white">Home</li></a>
             <li class="font-color-yellow-gold">Getting Start</li>
             <li>Component
                 <ul>
@@ -27,7 +27,7 @@
             <li>Fusion Layout</li>
             <li>bella Script</li>
             <li>About</li>
-            <a><i class="fa fa-github lazy-compose right" aria-hidden="true"></i></a>
+            <a href=""><i class="fa fa-github lazy-compose right" aria-hidden="true"></i></a>
         </ul>
     </div>
 </div>

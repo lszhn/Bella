@@ -1,3 +1,4 @@
-# latest release
+# Information
 
-now support automatic composing.
+For usage and detail, please visit:
+https://bella.huaji.io
