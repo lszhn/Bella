@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -15,6 +6,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -40,7 +40,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #006666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -74,7 +74,7 @@ body {
 h2 {
   font-size: 40px;
   line-height: 80px;
-  color: #6a737d; }
+  color: #333333; }
 
 h3 {
   font-size: 35px;
@@ -104,6 +104,7 @@ h5 {
   height: 80px !important; }
 
 button {
+  text-decoration: none !important;
   margin: 10px 5px;
   cursor: pointer;
   text-align: center;
@@ -130,6 +131,7 @@ button:active {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
 
 .bl-btn, .bl-btn-alert {
+  text-decoration: none !important;
   margin: 10px 5px;
   cursor: pointer;
   text-align: center;

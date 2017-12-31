@@ -36,6 +36,7 @@ var globalStaticClasses = [
 $(document).ready(function () {
     //initialize global bella class
     blClassGlbCov();
+    hljs.initHighlightingOnLoad();
 });
 $(window).resize(function () {
     bella.resize();
@@ -109,6 +110,9 @@ bella = {
     },
     resize: function () {
         autocomposeCov($('.auto-compose').toArray());
+    },
+    fromButtonInTableRawGet: function (e,index) {
+        return $(e).parent().parent().children('td')[index].innerHTML;
     }
 };
 
@@ -189,14 +193,11 @@ function autocomposeCov(rawTotalSet) {
         });
 
         //uni
-        var $oneuniTotalSet = $(oneRaw).find('.lazy-compose');
-        $oneuniTotalSet.push($(oneRaw).children('.section'));
+        var $oneuniTotalSet = $(oneRaw).find('>.section,.lazy-compose');
         var oneuniTotalList = $oneuniTotalSet.toArray();
         var parentHei = parseFloat($(oneRaw).css('height'));
-
         oneuniTotalList.forEach(function (oneuni) {
             var currHei = parseFloat($(oneuni).css("height"));
-            console.log(oneuni);
             if(currHei>parentHei+1){
                 $(oneuni).css({
                     "line-height":parentHei+'px',

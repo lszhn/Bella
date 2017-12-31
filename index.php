@@ -2,35 +2,13 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head lang="en">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
-    <title>标题</title>
-    <link href="release/bella.css" rel="stylesheet">
-    <link href="release/default-theme.css" rel="stylesheet">
-    <script src="release/jquery.bella.min.js"></script>
-    <script src="release/bella.js"></script>
+    <title>bella | Home</title>
+    <?php
+    include('static/common/comm-header.php');
+    ?>
 </head>
 <body>
-<div class="raw-w default-nav">
-    <div class="raw-f">
-        <ul class="bl-nav center auto-compose">
-            <a href="index.php"><i class="fa fa-leaf lazy-compose left" aria-hidden="true"></i></a>
-            <a href="index.php"><li class="font-color-white">Home</li></a>
-            <li class="font-color-yellow-gold">Getting Start</li>
-            <li>Component
-                <ul>
-                    <li>Layout</li>
-                    <li>Elements</li>
-                </ul>
-            </li>
-            <li>Fusion Layout</li>
-            <li>bella Script</li>
-            <li>About</li>
-            <a href=""><i class="fa fa-github lazy-compose right" aria-hidden="true"></i></a>
-        </ul>
-    </div>
-</div>
+<?php include('static/common/comm-nav.php') ?>
 <div class="raw-f bg-color-bg-grey">
     <div class="container auto-compose raw-w">
         <div class="section raw-70">
@@ -55,21 +33,21 @@
 </div>
 <div class="raw-w bg-color-white">
     <div class="container separate auto-compose">
-        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding">
             <h2 class="display-3"><i class="fa fa-columns" aria-hidden="true"></i>Auto Composing</h2>
             <p>
                 the <em>.auto-compose</em> and <em>.lazy-compose</em> tag can make bella format the layout automatically
                 as the page is ready, it can be done in just milliseconds.
             </p>
         </div>
-        <div class="section raw-34 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+        <div class="section raw-34 bg-color-bg-dark-grey round-bordered-color-white lg-padding">
             <h2 class="display-3"><i class="fa fa-mobile" aria-hidden="true"></i>Mobile Support (Fusion)</h2>
             <p>
                 <em>.bl-view</em> is the foundation of <strong>fusion layout</strong>, which allow developers to create
                 cross-platform website but not rely on responsive design.
             </p>
         </div>
-        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding lazy-compose">
+        <div class="section raw-33 bg-color-bg-dark-grey round-bordered-color-white lg-padding">
             <h2 class="display-3"><i class="fa fa-terminal" aria-hidden="true"></i>Live Script</h2>
             <p>
                 <em>.bella-script</em> have an extraordinary contribution to this project, devepopers can
@@ -79,126 +57,34 @@
     </div>
 </div>
 <div class="raw-w">
-    <div class="raw-f">
-        <h3 class="font-color-dark-green">Installation</h3>
-    </div>
-</div>
-<div class="raw-w default-subnav attach-tag">
-    <div class="raw-f">
-        <h2 class="raw-20">功能</h2>
-    </div>
-</div>
-<div class="raw-w">
-    <div class="raw-f auto-compose">
-        <div class="raw-f bl-view bl-markdown">
-            <div class="bl-view-header">布局</div>
-            <div class="bl-view-body">
-                <p>##视图</p>
-                <p>1.使用*.bl-view*来创建视图</p>
-                <p>2.视图（view）是bella的基础布局类组件，它允许为其添加页眉与页脚</p>
-                <p>3.通过为*.bl-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-            </div>
+    <div class="container auto-compose">
+        <div class="section raw-75 bg-color-bg-dark-grey round-bordered-color-white lg-padding">
+            <h4>Set up your project with <span class="font-color-dark-green"><i class="fa tiny fa-leaf"
+                                                                                aria-hidden="true"></i><span
+                            class="display-2">bella</span></span></h4>
+            <pre style="max-width:100%"><code class="html hljs xml" codemark="1"><span class="hljs-tag">&lt;<span
+                                class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span
+                                class="hljs-string">"https://bella.huaji.io/release/bella.css"</span> <span
+                                class="hljs-attr">rel</span>=<span
+                                class="hljs-string">"stylesheet"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span
+            class="hljs-string">"https://bella.huaji.io/release/default-theme.css"</span> <span
+            class="hljs-attr">rel</span>=<span
+            class="hljs-string">"stylesheet"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span
+            class="hljs-string">"https://bella.huaji.io/release/jquery.bella.min.js"</span>&gt;</span><span
+                            class="undefined"></span><span
+                            class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span
+            class="hljs-string">"https://bella.huaji.io/release/bella.js"</span>&gt;</span><span
+                            class="undefined"></span><span
+                            class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
         </div>
-    </div>
-</div>
-<div class="raw-w">
-    <div class="raw-f auto-compose">
-        <div class="raw-f bl-view bl-tab-view bl-markdown">
-            <div class="bl-view-header">
-                <ul>
-                    <li class="bl-tab-view-active">Apple Inc.</li>
-                    <li>Google</li>
-                    <li>Microsoft</li>
-                    <li>Amazon</li>
-                </ul>
-            </div>
-            <div class="bl-view-body">
-                <p>##标签视图0</p>
-                <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-            </div>
-            <div class="bl-view-body">
-                <p>##标签视图1</p>
-                <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                <p>2.标签视图（tabView）继承自*.bl-view*</p>
-                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-            </div>
-            <div class="bl-view-body">
-                <p>##标签视图2</p>
-
-            </div>
-            <div class="bl-view-body">
-                <p>##标签视图3</p>
-                <p>1.使用*.bl-tab-view*来创建标签视图</p>
-                <p>2.标签视图（tabView）继承自*.bl-view*</p>
-                <p>3.通过为*.bl-tab-view*添加同级类*.bl-markdown*来实现Markdown渲染</p>
-
-            </div>
-        </div>
-    </div>
-</div>
-<div class="raw-w">
-    <div class="raw-f auto-compose">
-        <div class="raw-2 bl-view switch-tag" name="comp">
-            <ul class="bl-sidebar default-sidebar-elements switch-tag">
-                <a>按钮与按钮组</a>
-                <a>输入组件</a>
-                <a>quickForm</a>
-                <a>表格输出</a>
-            </ul>
-        </div>
-        <div class="raw-8 bl-view bl-markdown">
-            <div class="bl-view-header">组件</div>
-            <ul name="comp">
-                <div class="bl-view-body bl-markdown">
-                    <p>##Button and button groups</p>
-                    <button>Form Button</button>
-                    <br>
-                    <a class="bl-btn primary" onclick="bella.notify('you clicked me',5000)">Primary Button</a>
-                    <a class="bl-btn alert" onclick="bella.alert('you clicked me again')">Alert Button</a>
-                    <br>
-                    <a class="bl-btn disabled">Disabled Button</a>
-
-                </div>
-                <div class="bl-view-body bl-markdown">
-                    <p>#####输入 input</p>
-                    <input type="text" placeholder="a normal input box">
-                    <p>#####密码输入 input[type = "password"]</p>
-                    <input type="password" value="passwords">
-                </div>
-                <div class="bl-view-body bl-markdown">
-                    <p>##quickForm 表达式</p>
-                    <div class="bella-script">form
-                        {
-                        (select)Select多重选择:(mySelect)[opt1,opt2];
-                        (checkbox)CheckBox复选:(mycheck)[opt1,opt2];
-                        (radio)Radio单选:(myradio)[opt1,opt2];
-                        }
-                    </div>
-                </div>
-                <div class="bl-view-body">
-
-                    <div class="bella-script">table
-                        {
-                        col1 | col2 | col3 | col4;
-                        data0 |data1 |data2 |
-                        <button>按钮</button>
-                        ;
-                        data0 |data1 |data2 |
-                        <button>按钮</button>
-                        ;
-                        data0 |data1 |data2 |
-                        <button>按钮</button>
-                        ;
-                        data0 |data1 |data2 |
-                        <button>按钮</button>
-                        ;
-                        }
-                    </div>
-                </div>
-            </ul>
+        <div class="section raw-25  bg-color-dark-green round-bordered-color-white lg-padding">
+            <h4>Getting start</h4>
+            <hr class="top-bordered-color-yellow-gold">
+            <a class="bl-btn bg-color-dark-green font-color-yellow-gold round-bordered-color-yellow-gold"><i
+                        class="fa fa-book left font-color-yellow-gold" aria-hidden="true"></i>Guide</a>
         </div>
     </div>
 </div>

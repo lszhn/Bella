@@ -78,7 +78,36 @@ body
     margin: 0 auto
     height: auto
     float: left
-
+hr
+  width: 6rem
+  border: 0
+  border-top: 1px solid rgba(0,0,0,.1)
+  margin: 2.5rem 0
+i
+  padding: 0 .2em!important
+.tiny
+  font-size: 1em!important
+  line-height: 1em!important
+  height: 1em!important
+.lg
+  font-size: 2em!important
+  line-height: 2em!important
+  height: 3em!important
+.lg-plus
+  font-size: 2em!important
+  line-height: 3em!important
+  height: 4em!important
+.lg-padding
+  padding: 3em!important
+  box-sizing: border-box
+  .h5
+    line-height: 1em
+@mixin default-shadow
+  box-shadow: 0 2px 5px 0 rgba(140,144,155,.15)
+.left-bordered
+  border-left: 1px solid
+.right-bordered
+  border-right: 1px solid
 //
 //Large Screen Device
 @media screen and (max-device-width: 1000px)
@@ -88,4 +117,5 @@ body
     width: 100%
     float: left
     position: relative
+
 

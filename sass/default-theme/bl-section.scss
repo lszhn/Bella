@@ -11,3 +11,18 @@
     }
   }
 }
+.section.bg-color-dark-green {
+  @for $i from 1 through 5{
+    h#{$i}{
+      font-weight: 700;
+      color: $default-yellow-gold;
+    }
+    h#{$i} *{
+      font-weight: 700;
+      color: $default-yellow-gold;
+    }
+    p {
+      color: white;
+    }
+  }
+}

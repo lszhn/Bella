@@ -24,10 +24,12 @@ $colorScheme: (
                 buttom-bordered:'border-buttom',
                 round-bordered:'border',
         ),
-        normal: (
-                font:'color',
+        bg: (
                 bg:'background-color',
         ),
+        font: (
+                font:'color',
+        )
 
 
 );
@@ -40,7 +42,12 @@ $colorScheme: (
             #{$schemeValue}: 1px solid $colorValue !important;
           }@else{
             #{$schemeValue}: $colorValue !important;
+          }
         }
+        &color-#{$colorName} *{
+          @if($groupName == font) {
+            #{$schemeValue}: $colorValue !important;
+          }
         }
       }
     }

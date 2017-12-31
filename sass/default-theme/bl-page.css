@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -16,25 +7,23 @@ body {
   -ms-user-select: text;
   user-select: text; }
 
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 @font-face {
   font-family: "SFMono";
   font-weight: 200;
-  src: url("../../fonts/sf-mono_regular.woff"); }
+  src: url("../fonts/sf-mono_regular.woff"); }
 @font-face {
-  src: url("../../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
-@font-face {
-  src: url("../../fonts/quickstandBold.woff2");
-  font-family: quickstandBold; }
-@font-face {
-  src: url("../../fonts/quickstandMed.woff2");
-  font-family: quickstandMed; }
-@font-face {
-  src: url("../../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
+  font-family: "MyraidProLight";
+  font-weight: 200;
+  src: url("../fonts/MyriadProLight.woff"); }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -46,7 +35,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #3884ff;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -55,12 +44,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: quickstandLight, "PingFang SC", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f7f7f7; }
 
 *::selection {
   background: #e6e6e6;
@@ -70,76 +64,242 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-body {
-  background-color: #fafafa; }
+h1 {
+  font-weight: 700;
+  font-size: 5em; }
 
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #555555; }
+  font-weight: 700;
+  font-size: 4em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-weight: 700;
+  font-size: 3em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+i {
+  padding: 0 0.2em !important; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
-.bl-page .bl-view-body {
+.lg-padding {
+  padding: 3em !important;
+  box-sizing: border-box; }
+  .lg-padding .h5 {
+    line-height: 1em; }
+
+.display-1 {
+  font-family: MyraidProLight;
+  font-size: 0.5em;
+  line-height: 2em; }
+
+.display-2 {
+  font-family: MyraidProLight;
+  font-size: 1em;
+  line-height: 2em; }
+
+.display-3 {
+  font-family: MyraidProLight;
+  font-size: 1.5em;
+  line-height: 2em; }
+
+.display-4 {
+  font-family: MyraidProLight;
+  font-size: 2em;
+  line-height: 2em; }
+
+.display-5 {
+  font-family: MyraidProLight;
+  font-size: 2.5em;
+  line-height: 2em; }
+
+.display-6 {
+  font-family: MyraidProLight;
+  font-size: 3em;
+  line-height: 2em; }
+
+.display-7 {
+  font-family: MyraidProLight;
+  font-size: 3.5em;
+  line-height: 2em; }
+
+.display-8 {
+  font-family: MyraidProLight;
+  font-size: 4em;
+  line-height: 2em; }
+
+.display-9 {
+  font-family: MyraidProLight;
+  font-size: 4.5em;
+  line-height: 2em; }
+
+.display-10 {
+  font-family: MyraidProLight;
+  font-size: 5em;
+  line-height: 2em; }
+
+.code-1 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.3333333333em; }
+
+.code-2 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.6666666667em; }
+
+.code-3 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1em; }
+
+.code-4 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.3333333333em; }
+
+.code-5 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.6666666667em; }
+
+.code-6 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2em; }
+
+.code-7 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.3333333333em; }
+
+.code-8 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.6666666667em; }
+
+.code-9 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3em; }
+
+.code-10 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3.3333333333em; }
+
+.bl-markdown.bl-view-body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
-  color: #555555;
-  padding: 5px 15px; }
+  margin: 15px 3%;
+  width: 94%;
+  color: #333333; }
 
-.bl-page .bl-view-body h2 {
+.bl-markdown * {
+  position: relative; }
+
+.bl-markdown.bl-view-body h2 {
   font-size: 40px; }
 
-.bl-page .bl-view-body h3 {
+.bl-markdown.bl-view-body h3 {
+  padding-left: 5px;
   font-size: 30px; }
 
-.bl-page .bl-view-body h4 {
+.bl-markdown.bl-view-body h4 {
+  padding-left: 7px;
   font-size: 25px; }
 
-.bl-page .bl-view-body em {
+.bl-markdown.bl-view-body h5 {
+  font-size: 16px;
+  padding-left: 9px; }
+
+.bl-markdown.bl-view-body em {
   font-size: 18px;
   background-color: #f8f8f8;
-  border: 1px solid #e8eaed;
+  border: 1px solid #888888;
   border-radius: 5px;
   padding: 3px !important;
   margin: 0 2px;
   font-style: normal;
-  color: #ff5252;
-  flex-wrap: wrap;
-  font-family: quickstandMed; }
+  color: #333333;
+  flex-wrap: wrap; }
 
-.bl-page .bl-view-body pre code * {
+.bl-markdown.bl-view-body pre code * {
   font-size: 13px;
   line-height: 17px;
   font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
 
-.bl-page .bl-view-body pre code {
+.bl-markdown.bl-view-body pre code {
+  line-height: 17px;
+  font-size: 13px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
+
+.bl-markdown .bl-view-body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 15px 3%;
+  width: 94%;
+  color: #333333; }
+
+.bl-markdown * {
+  position: relative; }
+
+.bl-markdown .bl-view-body h2 {
+  font-size: 40px; }
+
+.bl-markdown .bl-view-body h3 {
+  padding-left: 5px;
+  font-size: 30px; }
+
+.bl-markdown .bl-view-body h4 {
+  padding-left: 7px;
+  font-size: 25px; }
+
+.bl-markdown .bl-view-body h5 {
+  font-size: 16px;
+  padding-left: 9px; }
+
+.bl-markdown .bl-view-body em {
+  font-size: 18px;
+  background-color: #f8f8f8;
+  border: 1px solid #888888;
+  border-radius: 5px;
+  padding: 3px !important;
+  margin: 0 2px;
+  font-style: normal;
+  color: #333333;
+  flex-wrap: wrap; }
+
+.bl-markdown .bl-view-body pre code * {
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }
+
+.bl-markdown .bl-view-body pre code {
   line-height: 17px;
   font-size: 13px;
   font-family: "SF Mono", Consolas, "Liberation Mono", Menlo, Courier, monospace !important; }

@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -16,19 +7,23 @@ body {
   -ms-user-select: text;
   user-select: text; }
 
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 @font-face {
   font-family: "SFMono";
   font-weight: 200;
   src: url("../fonts/sf-mono_regular.woff"); }
 @font-face {
-  src: url("../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
-@font-face {
-  src: url("../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
+  font-family: "MyraidProLight";
+  font-weight: 200;
+  src: url("../fonts/MyriadProLight.woff"); }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -40,7 +35,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -49,12 +44,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: SFPro, quickstandLight, "PingFang SC", "Microsoft yahei light", "Microsoft yahei";
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f7f7f7; }
 
 *::selection {
   background: #e6e6e6;
@@ -64,54 +64,407 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-i {
-  font-family: FontAwesome !important; }
-
-body {
-  background-color: #fafbfc; }
+h1 {
+  font-weight: 700;
+  font-size: 5em; }
 
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #6a737d; }
+  font-weight: 700;
+  font-size: 4em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-weight: 700;
+  font-size: 3em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+i {
+  padding: 0 0.2em !important; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
+
+.lg-padding {
+  padding: 3em !important;
+  box-sizing: border-box; }
+  .lg-padding .h5 {
+    line-height: 1em; }
+
+.display-1 {
+  font-family: MyraidProLight;
+  font-size: 0.5em;
+  line-height: 2em; }
+
+.display-2 {
+  font-family: MyraidProLight;
+  font-size: 1em;
+  line-height: 2em; }
+
+.display-3 {
+  font-family: MyraidProLight;
+  font-size: 1.5em;
+  line-height: 2em; }
+
+.display-4 {
+  font-family: MyraidProLight;
+  font-size: 2em;
+  line-height: 2em; }
+
+.display-5 {
+  font-family: MyraidProLight;
+  font-size: 2.5em;
+  line-height: 2em; }
+
+.display-6 {
+  font-family: MyraidProLight;
+  font-size: 3em;
+  line-height: 2em; }
+
+.display-7 {
+  font-family: MyraidProLight;
+  font-size: 3.5em;
+  line-height: 2em; }
+
+.display-8 {
+  font-family: MyraidProLight;
+  font-size: 4em;
+  line-height: 2em; }
+
+.display-9 {
+  font-family: MyraidProLight;
+  font-size: 4.5em;
+  line-height: 2em; }
+
+.display-10 {
+  font-family: MyraidProLight;
+  font-size: 5em;
+  line-height: 2em; }
+
+.code-1 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.3333333333em; }
+
+.code-2 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.6666666667em; }
+
+.code-3 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1em; }
+
+.code-4 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.3333333333em; }
+
+.code-5 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.6666666667em; }
+
+.code-6 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2em; }
+
+.code-7 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.3333333333em; }
+
+.code-8 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.6666666667em; }
+
+.code-9 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3em; }
+
+.code-10 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3.3333333333em; }
+
+body {
+  moz-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+@font-face {
+  font-family: "SFMono";
+  font-weight: 200;
+  src: url("../fonts/sf-mono_regular.woff"); }
+@font-face {
+  font-family: "MyraidProLight";
+  font-weight: 200;
+  src: url("../fonts/MyriadProLight.woff"); }
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.pace-inactive {
+  display: none; }
+
+.pace .pace-progress {
+  background: #666;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f7f7f7; }
+
+*::selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+*::-moz-selection {
+  background: #e6e6e6;
+  color: #1589c9; }
+
+h1 {
+  font-weight: 700;
+  font-size: 5em; }
+
+h2 {
+  font-weight: 700;
+  font-size: 4em; }
+
+h3 {
+  font-weight: 700;
+  font-size: 3em; }
+
+h4 {
+  font-size: 2em;
+  color: #333333; }
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+i {
+  padding: 0 0.2em !important; }
+
+.tiny {
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
+
+.lg {
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
+
+.lg-plus {
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
+
+.lg-padding {
+  padding: 3em !important;
+  box-sizing: border-box; }
+  .lg-padding .h5 {
+    line-height: 1em; }
+
+.display-1 {
+  font-family: MyraidProLight;
+  font-size: 0.5em;
+  line-height: 2em; }
+
+.display-2 {
+  font-family: MyraidProLight;
+  font-size: 1em;
+  line-height: 2em; }
+
+.display-3 {
+  font-family: MyraidProLight;
+  font-size: 1.5em;
+  line-height: 2em; }
+
+.display-4 {
+  font-family: MyraidProLight;
+  font-size: 2em;
+  line-height: 2em; }
+
+.display-5 {
+  font-family: MyraidProLight;
+  font-size: 2.5em;
+  line-height: 2em; }
+
+.display-6 {
+  font-family: MyraidProLight;
+  font-size: 3em;
+  line-height: 2em; }
+
+.display-7 {
+  font-family: MyraidProLight;
+  font-size: 3.5em;
+  line-height: 2em; }
+
+.display-8 {
+  font-family: MyraidProLight;
+  font-size: 4em;
+  line-height: 2em; }
+
+.display-9 {
+  font-family: MyraidProLight;
+  font-size: 4.5em;
+  line-height: 2em; }
+
+.display-10 {
+  font-family: MyraidProLight;
+  font-size: 5em;
+  line-height: 2em; }
+
+.code-1 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.3333333333em; }
+
+.code-2 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.6666666667em; }
+
+.code-3 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1em; }
+
+.code-4 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.3333333333em; }
+
+.code-5 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.6666666667em; }
+
+.code-6 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2em; }
+
+.code-7 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.3333333333em; }
+
+.code-8 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.6666666667em; }
+
+.code-9 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3em; }
+
+.code-10 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3.3333333333em; }
+
+.bl-view, .bl-pop-view {
+  background-color: white;
+  margin: 3px;
+  padding: 0; }
+
+.bl-view-header {
+  line-height: 3em;
+  padding-left: 1%;
+  position: relative;
+  font-size: 1em;
+  display: block;
+  color: #999; }
+
+.bl-view-body {
+  margin: 0;
+  transition: 200ms;
+  min-height: 20em; }
+
+.bl-view-footer {
+  padding-left: 1%;
+  line-height: 3em;
+  font-size: 1em;
+  color: #999; }
+
+.shadowed {
+  box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15) !important; }
+
+.fusion {
+  background-color: transparent !important;
+  border: none !important; }
 
 .bl-pop-view-bg {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0.5; }
 
 .bl-pop-view {
-  width: 160px;
-  height: 120px;
+  box-shadow: 0 2px 5px 0 rgba(140, 144, 155, 0.15);
+  display: none;
+  border-radius: 2px #888888;
+  width: 640px;
+  height: auto;
   position: relative;
-  margin: 400px auto; }
+  margin: 240px auto;
+  background-color: white; }
 
 /*# sourceMappingURL=bl-pop-view.css.map */

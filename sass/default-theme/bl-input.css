@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -16,25 +7,23 @@ body {
   -ms-user-select: text;
   user-select: text; }
 
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 @font-face {
   font-family: "SFMono";
   font-weight: 200;
-  src: url("../../fonts/sf-mono_regular.woff"); }
+  src: url("../fonts/sf-mono_regular.woff"); }
 @font-face {
-  src: url("../../fonts/MyriadProLight.woff");
-  font-family: MyraidProLight; }
-@font-face {
-  src: url("../../fonts/sf-pro-text_regular.woff");
-  font-family: SFPro; }
-@font-face {
-  src: url("../../fonts/quickstandBold.woff2");
-  font-family: quickstandBold; }
-@font-face {
-  src: url("../../fonts/quickstandMed.woff2");
-  font-family: quickstandMed; }
-@font-face {
-  src: url("../../fonts/quickstandLight.woff2");
-  font-family: quickstandLight; }
+  font-family: "MyraidProLight";
+  font-weight: 200;
+  src: url("../fonts/MyriadProLight.woff"); }
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
@@ -46,7 +35,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #3884ff;
+  background: #666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -55,12 +44,17 @@ body {
   height: 2px; }
 
 * {
-  font-family: quickstandLight, "PingFang SC", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1em;
+  line-height: 2em;
   font-weight: 400;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: black; }
+
+body {
+  background-color: #f7f7f7; }
 
 *::selection {
   background: #e6e6e6;
@@ -70,55 +64,299 @@ body {
   background: #e6e6e6;
   color: #1589c9; }
 
-body {
-  background-color: #fafafa; }
+h1 {
+  font-weight: 700;
+  font-size: 5em; }
 
 h2 {
-  font-size: 40px;
-  line-height: 80px;
-  color: #555555; }
+  font-weight: 700;
+  font-size: 4em; }
 
 h3 {
-  font-size: 35px;
-  line-height: 40px; }
+  font-weight: 700;
+  font-size: 3em; }
 
 h4 {
-  font-size: 30px;
-  line-height: 40px; }
+  font-size: 2em;
+  color: #333333; }
 
 h5 {
-  font-size: 25px;
-  line-height: 40px; }
+  font-size: 1.2em;
+  line-height: 1.5em; }
+
+i {
+  padding: 0 0.2em !important; }
 
 .tiny {
-  font-size: 15px !important;
-  line-height: 20px !important;
-  height: 30px !important; }
+  font-size: 1em !important;
+  line-height: 1em !important;
+  height: 1em !important; }
 
 .lg {
-  font-size: 30px !important;
-  line-height: 40px !important;
-  height: 60px !important; }
+  font-size: 2em !important;
+  line-height: 2em !important;
+  height: 3em !important; }
 
 .lg-plus {
-  font-size: 40px !important;
-  line-height: 50px !important;
-  height: 80px !important; }
+  font-size: 2em !important;
+  line-height: 3em !important;
+  height: 4em !important; }
 
-input {
+.lg-padding {
+  padding: 3em !important;
+  box-sizing: border-box; }
+  .lg-padding .h5 {
+    line-height: 1em; }
+
+.display-1 {
+  font-family: MyraidProLight;
+  font-size: 0.5em;
+  line-height: 2em; }
+
+.display-2 {
+  font-family: MyraidProLight;
+  font-size: 1em;
+  line-height: 2em; }
+
+.display-3 {
+  font-family: MyraidProLight;
+  font-size: 1.5em;
+  line-height: 2em; }
+
+.display-4 {
+  font-family: MyraidProLight;
+  font-size: 2em;
+  line-height: 2em; }
+
+.display-5 {
+  font-family: MyraidProLight;
+  font-size: 2.5em;
+  line-height: 2em; }
+
+.display-6 {
+  font-family: MyraidProLight;
+  font-size: 3em;
+  line-height: 2em; }
+
+.display-7 {
+  font-family: MyraidProLight;
+  font-size: 3.5em;
+  line-height: 2em; }
+
+.display-8 {
+  font-family: MyraidProLight;
+  font-size: 4em;
+  line-height: 2em; }
+
+.display-9 {
+  font-family: MyraidProLight;
+  font-size: 4.5em;
+  line-height: 2em; }
+
+.display-10 {
+  font-family: MyraidProLight;
+  font-size: 5em;
+  line-height: 2em; }
+
+.code-1 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.3333333333em; }
+
+.code-2 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 0.6666666667em; }
+
+.code-3 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1em; }
+
+.code-4 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.3333333333em; }
+
+.code-5 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 1.6666666667em; }
+
+.code-6 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2em; }
+
+.code-7 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.3333333333em; }
+
+.code-8 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 2.6666666667em; }
+
+.code-9 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3em; }
+
+.code-10 {
+  font-family: SFMono;
+  line-height: 1em;
+  font-size: 3.3333333333em; }
+
+input, select {
   height: 40px;
+  margin: 1em 0.5em;
   line-height: 30px;
-  border-radius: 3px;
   font-size: 20px;
   padding: 0 10px;
-  background-color: #fff;
+  background-color: #f1f1f1;
   outline: none;
-  border: 1px solid transparent;
-  color: #444;
-  transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08); }
+  transition: 100ms;
+  border: 1px solid #f8f8f8;
+  border-radius: 2px; }
 
-input:hover {
-  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.26), 0 0 0 1px rgba(0, 0, 0, 0.1); }
+span label {
+  color: black !important;
+  background-color: transparent !important;
+  transition: 100ms; }
+
+input:hover, select:hover {
+  background-color: #dedede; }
+
+select {
+  margin: 1em 0.5em;
+  border-radius: 0 !important;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer; }
+
+.bl-checkbox {
+  margin: 1em 0.5em;
+  position: relative;
+  border: 0;
+  color: black;
+  background-color: #f1f1f1; }
+
+.bl-checkbox span {
+  width: 100%;
+  position: relative;
+  line-height: 34px;
+  font-size: 20px;
+  padding: 0 10px;
+  display: inline-block; }
+
+.bl-checkbox label {
+  z-index: 5; }
+
+.bl-radiobox label {
+  z-index: 5; }
+
+.bl-checkbox input[type=checkbox], .bl-checkbox select[type=checkbox] {
+  margin: 0 !important;
+  height: 40px;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 0 10px;
+  background-color: #f1f1f1;
+  outline: none;
+  transition: 100ms;
+  border: 1px solid #f8f8f8;
+  border-radius: 2px;
+  background-color: transparent;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2; }
+
+.bl-checkbox input[type=checkbox]:hover, .bl-checkbox select[type=checkbox]:hover {
+  border-left: 4px solid #666;
+  padding-left: 4px;
+  background-color: #dedede; }
+
+.bl-checkbox input[type=checkbox]:checked, .bl-checkbox select[type=checkbox]:checked {
+  border-left: 3px solid #0070c9; }
+
+.bl-checkbox input[type=checkbox]:hover + label, .bl-checkbox select[type=checkbox]:hover + label {
+  padding-left: 4px;
+  background-color: #dedede; }
+
+.bl-checkbox input[type=checkbox]:checked + label, .bl-checkbox select[type=checkbox]:checked + label {
+  padding-left: 4px;
+  color: #666; }
+
+.bl-radiobox {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  color: black;
+  margin: 1em 0.5em;
+  border: 0; }
+
+.bl-radiobox span {
+  width: 100%;
+  position: relative;
+  line-height: 34px;
+  font-size: 20px;
+  padding: 0 10px;
+  display: inline-block; }
+
+.bl-radiobox input[type=radio], .bl-radiobox select[type=radio] {
+  margin: 0 !important;
+  height: 40px;
+  line-height: 30px;
+  font-size: 20px;
+  padding: 0 10px;
+  background-color: #f1f1f1;
+  outline: none;
+  transition: 100ms;
+  border: 1px solid #f8f8f8;
+  border-radius: 2px;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.bl-radiobox input[type=radio]:hover, .bl-radiobox select[type=radio]:hover {
+  border-left: 3px solid #666;
+  padding-left: 3px;
+  background-color: #dedede; }
+
+.bl-radiobox input[type=radio]:checked, .bl-radiobox select[type=radio]:checked {
+  border-left: 3px solid #0070c9; }
+
+.bl-radiobox input[type=radio]:hover + label, .bl-radiobox select[type=radio]:hover + label {
+  padding-left: 4px;
+  background-color: #dedede; }
+
+.bl-radiobox input[type=radio]:checked + label, .bl-radiobox select[type=radio]:checked + label {
+  padding-left: 4px; }
 
 /*# sourceMappingURL=bl-input.css.map */

@@ -46,6 +46,8 @@ $default-yellow-gold: #fff38e
   height: 2px
 @mixin animate
   transition: 0.3s
+@mixin default-shadow
+  box-shadow: 0 2px 5px 0 rgba(140,144,155,.15)
 *
   -webkit-font-smoothing: antialiased
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
@@ -80,16 +82,6 @@ h4
 h5
   font-size: 1.2em
   line-height: 1.5em
-@for $num from 1 through 10
-  .display-#{$num}
-    font-family: MyraidProLight
-    font-size: #{$num/2}em
-    line-height: 2em
-@for $num from 1 through 10
-  .code-#{$num}
-    font-family: SFMono
-    line-height: 1em
-    font-size: #{$num/3}em
 i
   padding: 0 .2em!important
 .tiny
@@ -109,12 +101,17 @@ i
   box-sizing: border-box
   .h5
     line-height: 1em
-@mixin default-shadow
-  box-shadow: 0 2px 5px 0 rgba(140,144,155,.15)
-.left-bordered
-  border-left: 1px solid
-.right-bordered
-  border-right: 1px solid
+@for $num from 1 through 10
+  .display-#{$num}
+    font-family: MyraidProLight
+    font-size: #{$num/2}em
+    line-height: 2em
+@for $num from 1 through 10
+  .code-#{$num}
+    font-family: SFMono
+    line-height: 1em
+    font-size: #{$num/3}em
+
 
 
 

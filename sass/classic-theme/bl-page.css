@@ -1,13 +1,4 @@
 body {
-  moz-user-select: -moz-none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.selectable {
   moz-user-select: text;
   -moz-user-select: text;
   -o-user-select: text;
@@ -15,6 +6,15 @@ body {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text; }
+
+.unselectable {
+  moz-user-select: -moz-none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 @font-face {
   font-family: "SFMono";
@@ -40,7 +40,7 @@ body {
   display: none; }
 
 .pace .pace-progress {
-  background: #006699;
+  background: #006666;
   position: fixed;
   z-index: 2000;
   top: 0;
@@ -74,7 +74,7 @@ body {
 h2 {
   font-size: 40px;
   line-height: 80px;
-  color: #6a737d; }
+  color: #333333; }
 
 h3 {
   font-size: 35px;
@@ -110,7 +110,7 @@ h5 {
   word-wrap: break-word;
   margin: 15px 3%;
   width: 94%;
-  color: #6a737d; }
+  color: #333333; }
 
 .bl-markdown * {
   position: relative; }
@@ -133,12 +133,12 @@ h5 {
 .bl-markdown.bl-view-body em {
   font-size: 18px;
   background-color: #f8f8f8;
-  border: 1px solid #e8eaed;
+  border: 1px solid #888888;
   border-radius: 5px;
   padding: 3px !important;
   margin: 0 2px;
   font-style: normal;
-  color: #e36209;
+  color: #333333;
   flex-wrap: wrap; }
 
 .bl-markdown.bl-view-body pre code * {
@@ -158,7 +158,7 @@ h5 {
   word-wrap: break-word;
   margin: 15px 3%;
   width: 94%;
-  color: #6a737d; }
+  color: #333333; }
 
 .bl-markdown * {
   position: relative; }
@@ -181,12 +181,12 @@ h5 {
 .bl-markdown .bl-view-body em {
   font-size: 18px;
   background-color: #f8f8f8;
-  border: 1px solid #e8eaed;
+  border: 1px solid #888888;
   border-radius: 5px;
   padding: 3px !important;
   margin: 0 2px;
   font-style: normal;
-  color: #e36209;
+  color: #333333;
   flex-wrap: wrap; }
 
 .bl-markdown .bl-view-body pre code * {
