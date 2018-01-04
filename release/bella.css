@@ -2,7 +2,6 @@
 @import url(../css/hljs.default.min.css);
 @import url(../css/unslider-dots.css);
 @import url(../css/unslider.css);
-@import url(../sass/section.css);
 body {
   moz-user-select: text;
   -moz-user-select: text;
@@ -1183,5 +1182,12 @@ body {
 .fa {
   font-size: 2em;
   line-height: 2em; }
+
+.section {
+  box-sizing: border-box;
+  padding: 1em;
+  height: 100%;
+  float: left;
+  background-color: transparent; }
 
 /*# sourceMappingURL=bella.css.map */

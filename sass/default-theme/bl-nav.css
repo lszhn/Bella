@@ -270,7 +270,11 @@ i {
 
 .default-nav h1 {
   font-size: 1.5em;
-  line-height: 100%; }
+  height: 3em; }
+
+.default-nav h1 * {
+  font-size: 1em;
+  padding-right: 0.5em; }
 
 .bl-nav-active {
   background-color: white;
