@@ -9,7 +9,7 @@ https://bella.huaji.io
 
 ## Demo
 
-> NOTICE: Demo webpage is only for demonstrate this project, which are front-end functional ONLY.
+> NOTICE: Demo webpage is only for demonstrating this project, which are front-end functional ONLY.
 
 ### Demo 1
 [Direct Link](https://bella.huaji.io/manage.html)
@@ -51,12 +51,12 @@ Bella FrontEnd Library 开发者文档
 ### 如何引入
 
 在header中添加
-
+```html
     <link href="https://bella.huaji.io/release/bella.css" rel="stylesheet">
     <link href="https://bella.huaji.io/release/default-theme.css" rel="stylesheet">
     <script src="https://bella.huaji.io/release/jquery.bella.min.js"></script>
     <script src="https://bella.huaji.io/release/bella.js"></script>
-
+```
 1\. UI
 ------
 
@@ -65,7 +65,7 @@ Bella FrontEnd Library 开发者文档
 > bella默认提供的单位长度为40px
 
 布局系统类似BS的栅格布局，但是远不如BS灵活（因为 bella 暂不支持响应式），我们可以用如下代码来创建一个简单的视图。
-
+```html
      <div class="raw-w">
             <div class="raw-f">
                 <div class="col-24-10 bl-view bl-page">
@@ -76,24 +76,24 @@ Bella FrontEnd Library 开发者文档
                 </div>
             </div>
     </div>
-
+```
 代码易见：bella 通过 _raw-{ WIDTH } _与 _col-{ WIDTH }-{ HEIGHT / AUTO } _来创建页面的骨架。
 
 ### 1.2 视图
 
 bella 的页面是模块化的，任何一个基础的 可含content 的组件都是在视图的基础上继承而来。
-
+```html
     <div class="bl-view">
         <div class="bl-view-header">标题</div>
         <div class="bl-view-body">
             视图体（允许多个）
         </div>
     </div>
-
+```
 ### 1.3 标签视图
 
 继承自视图，是一种允许多 header 的视图。
-
+```html
     <div class="bl-tab-view">
         <div class="bl-view-header">
             <ul>
@@ -108,14 +108,14 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         <div class="bl-view-body"></div>
         <div class="bl-view-body"></div>
     </div>
-
+```
 2.功能
 ----
 
 ### 2.1 Ajax页面切换
-
+```
     <a href="#indexc.html">
-
+```
 在 a 链接中使用 url-HASH，bella会自动执行 url 修改与内容替换。
 
 > 旧版本的 IE 浏览器不兼容
@@ -123,7 +123,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ### 2.2 视图切换器（非Ajax实现）
 
 为 list 添加switch-tag后，bella 会根据 switch-tag 的 name（也即切换器的全局唯一名称），自动搜寻下一name，然后完成函数绑定操作。
-
+```
     <ul class="bl-sidebar switch-tag" name="demo_switch">
         <a>Apple Inc.</a>
         <a>Google</a>
@@ -137,36 +137,36 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         <div class="bl-view-body"></div>
         <div class="bl-view-body"></div>
     </ul>
-
+```
 涉及到的CSS：请参考官方网站类名，我懒得写了。
 
 ### 2.3 页面通知
 
 > 在 JavaScript 中通过 bella 对象使用框架内置函数
-
+```
     bella.notify("this is notification.");
     bella.alert("this is an alert message!");
-
+```
 注意：本功能使用了时间戳来确定通知的唯一 ID，所以建议不要在其他功能中使用时间戳。
 
 ### 2.4 MarkDown支持
 
 添加 bl-markdown 来实现自动的MarkDown转换。
-
+```
     <div class="bl-view bl-markdown">
-
+```
 > API 修改：旧版本的 bella 在此处使用bl-page
 
 ### 2.5 停驻式
 
 使用attach-tag实现滚动停驻
-
+```
     <div class="raw-w default-subnav attach-tag">
         <div class="raw-f">
             <h2 class="col-13-a">副标题</h2>
         </div>
     </div>
-
+```
 ###   
 
 ### 3.bellaScript
@@ -174,7 +174,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 使用 bellaScript 解释器来快速创建表单元素、表格等复杂HTML标签。
 
 ### 3.1创建一个form
-
+```
     <div class="bella-script">
     form{
         (select)Select多重选择:(mySelect)[opt1,opt2];
@@ -182,9 +182,9 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         (radio)Radio单选:(myradio)[opt1,opt2];
     }
     </div>
-
+```
 ### 3.2创建简单表格
-
+```
     <div class="bella-script">
     table
     {
@@ -195,14 +195,14 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         data0 |data1 |data2 | <button>按钮</button>;
     }
     </div>
-
+```
 3.使用主题
 ------
 
 替换dafault-theme.css来使用其他主题
-
+```
     <link href="release/classic-theme.css" rel="stylesheet">
-
+```
 4.懒排版与自动排版
 ----------
 
