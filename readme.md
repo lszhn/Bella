@@ -113,7 +113,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ----
 
 ### 2.1 Ajax页面切换
-```
+```javascript
     <a href="#indexc.html">
 ```
 在 a 链接中使用 url-HASH，bella会自动执行 url 修改与内容替换。
@@ -123,7 +123,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ### 2.2 视图切换器（非Ajax实现）
 
 为 list 添加switch-tag后，bella 会根据 switch-tag 的 name（也即切换器的全局唯一名称），自动搜寻下一name，然后完成函数绑定操作。
-```
+```html
     <ul class="bl-sidebar switch-tag" name="demo_switch">
         <a>Apple Inc.</a>
         <a>Google</a>
@@ -143,7 +143,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ### 2.3 页面通知
 
 > 在 JavaScript 中通过 bella 对象使用框架内置函数
-```
+```javascript
     bella.notify("this is notification.");
     bella.alert("this is an alert message!");
 ```
@@ -152,7 +152,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ### 2.4 MarkDown支持
 
 添加 bl-markdown 来实现自动的MarkDown转换。
-```
+```html
     <div class="bl-view bl-markdown">
 ```
 > API 修改：旧版本的 bella 在此处使用bl-page
@@ -160,7 +160,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ### 2.5 停驻式
 
 使用attach-tag实现滚动停驻
-```
+```html
     <div class="raw-w default-subnav attach-tag">
         <div class="raw-f">
             <h2 class="col-13-a">副标题</h2>
@@ -174,7 +174,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 使用 bellaScript 解释器来快速创建表单元素、表格等复杂HTML标签。
 
 ### 3.1创建一个form
-```
+```html
     <div class="bella-script">
     form{
         (select)Select多重选择:(mySelect)[opt1,opt2];
@@ -184,7 +184,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
     </div>
 ```
 ### 3.2创建简单表格
-```
+```html
     <div class="bella-script">
     table
     {
@@ -200,7 +200,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ------
 
 替换dafault-theme.css来使用其他主题
-```
+```html
     <link href="release/classic-theme.css" rel="stylesheet">
 ```
 4.懒排版与自动排版
