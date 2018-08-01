@@ -1,23 +1,21 @@
-# Introduction of Bella
-> Bella is an open-sourced UI library.
-## Information
-> This project was no longer maintained.
+# Introduction and Demo
+> NOTICE: Demo webpage is only for demonstrating, which are front-end functional ONLY.
 
 For offical website, please visit:
 
 https://bella.huaji.io
 
-## Demo
-
-> NOTICE: Demo webpage is only for demonstrating this project, which are front-end functional ONLY.
-
 ### Demo 1
-[Direct Link](https://bella.huaji.io/manage.html)
+[Click Me!](https://bella.huaji.io/manage.html)
+
+
 
 ![Demo1](demo_img/demo01.png)
 
 ### Demo 2
-[Direct Link](https://bella.huaji.io/login.html)
+[Click Me!](https://bella.huaji.io/login.html)
+
+
 
 ![Demo2](demo_img/demo02.png)
 
@@ -36,17 +34,38 @@ Bella FrontEnd Library 开发者文档
 > 
 > 项目（演示）官网：[https://bella.huaji.io](https://bella.huaji.io)
 
-关于bella
+
+
+# bellaScript
+
+使用 bellaScript 解释器来快速创建表单元素、表格等复杂HTML标签。
+
+### 3.1创建一个form
+```html
+    <div class="bella-script">
+    form{
+        (select)Select多重选择:(mySelect)[opt1,opt2];
+        (checkbox)CheckBox复选:(mycheck)[opt1,opt2];
+        (radio)Radio单选:(myradio)[opt1,opt2];
+    }
+    </div>
+```
+### 3.2创建简单表格
+```html
+    <div class="bella-script">
+    table
+    {
+        col1 | col2 | col3 | col4;
+        data0 |data1 |data2 | <button>按钮</button>;
+        data0 |data1 |data2 | <button>按钮</button>;
+        data0 |data1 |data2 | <button>按钮</button>;
+        data0 |data1 |data2 | <button>按钮</button>;
+    }
+    </div>
+```
+
+使用
 =======
-
-### 功能
-
-*   基本的页面元素，如 header、slider、input 等；
-*   原生 Ajax 页面切换，后台只需要对应接口即可；
-*   封装的前端开发常用的事件，如异步页面通知、异步表单提交；
-*   使用 bellaScript 来快速创建页面元素（爬虫不友好的）；
-*   视图与视图切换器机制，将开发者从过多的 tab 与 header 中解放出来；
-*   （开发中的）bellaNative，与bella之间不需要太多代码切换。
 
 ### 如何引入
 
@@ -109,10 +128,20 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         <div class="bl-view-body"></div>
     </div>
 ```
+### 1.4 弹出视图
+
+继承自视图，使用`bella.showPopView("#pop-view-id")`来弹出视图。
+```html
+    <div class="bl-pop-view" id="demo-pop-view">
+        <div class="bl-view-body">
+              This is a pop view!
+        </div>
+    </div>
+```
 2.功能
 ----
 
-### 2.1 Ajax页面切换
+### 2.1 AjaxAuto
 ```javascript
     <a href="#indexc.html">
 ```
@@ -120,7 +149,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 
 > 旧版本的 IE 浏览器不兼容
 
-### 2.2 视图切换器（非Ajax实现）
+### 2.2 视图切换器（非Ajax实现，非iFrame）
 
 为 list 添加switch-tag后，bella 会根据 switch-tag 的 name（也即切换器的全局唯一名称），自动搜寻下一name，然后完成函数绑定操作。
 ```html
@@ -138,7 +167,6 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         <div class="bl-view-body"></div>
     </ul>
 ```
-涉及到的CSS：请参考官方网站类名，我懒得写了。
 
 ### 2.3 页面通知
 
@@ -167,35 +195,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
         </div>
     </div>
 ```
-###   
 
-### 3.bellaScript
-
-使用 bellaScript 解释器来快速创建表单元素、表格等复杂HTML标签。
-
-### 3.1创建一个form
-```html
-    <div class="bella-script">
-    form{
-        (select)Select多重选择:(mySelect)[opt1,opt2];
-        (checkbox)CheckBox复选:(mycheck)[opt1,opt2];
-        (radio)Radio单选:(myradio)[opt1,opt2];
-    }
-    </div>
-```
-### 3.2创建简单表格
-```html
-    <div class="bella-script">
-    table
-    {
-        col1 | col2 | col3 | col4;
-        data0 |data1 |data2 | <button>按钮</button>;
-        data0 |data1 |data2 | <button>按钮</button>;
-        data0 |data1 |data2 | <button>按钮</button>;
-        data0 |data1 |data2 | <button>按钮</button>;
-    }
-    </div>
-```
 3.使用主题
 ------
 
@@ -205,6 +205,7 @@ bella 的页面是模块化的，任何一个基础的 可含content 的组件�
 ```
 4.懒排版与自动排版
 ----------
+> 不建议使用的功能，会破坏文档流
 
 使用 .auto-compose 与 .lazy-compose 类，允许JavaScript 自动排版，请参考官网源码。
 
